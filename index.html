@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>지하철 방향 안내 프로그램</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <!-- 시작 화면 -->
+    <section id="start-screen" class="screen active">
+      <div class="card">
+        <h1>지하철 방향 안내 프로그램</h1>
+        <p class="subtitle">지역과 노선을 선택하고 방향을 알아가세요</p>
+        <button id="start-btn" class="main-btn">시작하기</button>
+      </div>
+    </section>
+
+    <!-- 지역 선택 화면 -->
+    <section id="region-screen" class="screen">
+      <div class="card">
+        <h2>지역 선택</h2>
+        <p class="subtitle">이용할 지역을 골라주세요</p>
+
+        <div class="region-grid">
+          <button class="region-btn" data-region="수도권">수도권</button>
+          <button class="region-btn" data-region="부산·울산·경남">부산·울산·경남</button>
+          <button class="region-btn" data-region="대구·경북">대구·경북</button>
+          <button class="region-btn" data-region="대전·세종·충청">대전·세종·충청</button>
+          <button class="region-btn" data-region="광주·전남">광주·전남</button>
+        </div>
+
+        <button id="back-to-start" class="sub-btn">← 뒤로가기</button>
+      </div>
+    </section>
+
+    <!-- 노선 선택 화면 -->
+    <section id="line-screen" class="screen">
+      <div class="card">
+        <h2>노선 선택</h2>
+        <p class="selected-text">
+          선택한 지역: <span id="selected-region">없음</span>
+        </p>
+
+        <div id="line-list" class="line-grid"></div>
+
+        <button id="back-to-region" class="sub-btn">← 지역 다시 선택</button>
+      </div>
+    </section>
+
+    <!-- 역 선택 화면 -->
+    <section id="station-screen" class="screen">
+      <div class="card">
+        <h2>역 선택</h2>
+
+        <p class="selected-text">선택한 지역: <span id="station-region">없음</span></p>
+        <p class="selected-text">선택한 노선: <span id="station-line">없음</span></p>
+
+        <div class="select-box">
+          <label for="start-station">출발역</label>
+          <select id="start-station">
+            <option value="">출발역을 선택하세요</option>
+          </select>
+        </div>
+
+        <div class="select-box">
+          <label for="end-station">도착역</label>
+          <select id="end-station">
+            <option value="">도착역을 선택하세요</option>
+          </select>
+        </div>
+
+        <button id="check-btn" class="main-btn">선택 완료</button>
+        <button id="back-to-line" class="sub-btn">← 노선 다시 선택</button>
+      </div>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="result-screen" class="screen">
+      <div class="card">
+        <h2>선택 결과</h2>
+
+        <p class="selected-text">지역: <span id="final-region">없음</span></p>
+        <p class="selected-text">노선: <span id="final-line">없음</span></p>
+        <p class="selected-text">출발역: <span id="final-start">없음</span></p>
+        <p class="selected-text">도착역: <span id="final-end">없음</span></p>
+
+        <div class="info-box">
+          <p id="result-message">정상적으로 선택되었습니다.</p>
+        </div>
+
+        <div class="button-row">
+          <button id="back-to-station" class="sub-btn">← 역 다시 선택</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
