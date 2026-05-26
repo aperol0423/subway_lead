@@ -236,7 +236,7 @@ function renderLineButtons(region) {
 
       // 부산 1호선만 실제 지원
       if (!subwayStations[selectedLine]) {
-        alert("아직 이 노선의 역 데이터는 준비 중입니다, 지금은 부산 1호선만 테스트 가능합니다.");
+        alert("아직 이 노선의 역 데이터는 준비 중입니다, 지금은 부산 지하철만 테스트 가능합니다.");
         return;
       }
 
@@ -340,6 +340,6 @@ checkBtn.addEventListener("click", () => {
   finalEndText.textContent = selectedEndStation;
   const direction = getDirection(selectedLine, selectedStartStation, selectedEndStation);
 
-  resultMessage.innerHTML = `👉 <span class="highlight">${direction}</span> 열차를 타면 돼!`;
+  resultMessage.innerHTML = `👉 <span class="highlight">${direction}</span> 열차를 타십시오`;
   showScreen(resultScreen);
 });
