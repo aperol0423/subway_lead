@@ -1,0 +1,2050 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "busan",
+    "name": "부산",
+    "operator": "부산교통공사"
+  },
+  "scope": {
+    "includedLines": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "excludedForNow": [
+      "동해선",
+      "부산김해경전철"
+    ]
+  },
+  "dataQuality": {
+    "stationOrder": "verified_against_official/public_rail_data",
+    "transfers": "verified_for_lines_1_to_4",
+    "segmentDistances": "NOT_YET_IMPORTED",
+    "warning": "distanceKm가 null인 ride edge는 공식 역간거리 원본값을 아직 주입하지 않은 상태다. 최단거리 기능에서 임의의 km 값으로 사용하지 말 것. fallbackWeightStops는 개발/테스트용 정거장 수 가중치다."
+  },
+  "routingNotes": {
+    "shortestDistance": "distanceKm 값이 모두 채워진 뒤 Dijkstra 가중치로 사용",
+    "minimumTransfers": "transfer edge의 transferCountCost를 우선 최소화하고, 동률이면 distanceKm로 결정",
+    "direction": "같은 노선에서 다음 역의 index가 커지면 terminals.forward 방면, 작아지면 terminals.reverse 방면"
+  },
+  "sources": [
+    {
+      "name": "국가철도공단_부산교통공사_호선구성역정보_20250630",
+      "provider": "국가철도공단 / 공공데이터포털",
+      "coverage": "부산교통공사 1~4호선 114개 역, 역구성순서, 구간키로, 기점키로",
+      "publicDataId": "15041436"
+    },
+    {
+      "name": "부산교통공사_역간 거리 및 소요시간 정보_20250325",
+      "provider": "부산교통공사 / 부산광역시·공공데이터포털",
+      "coverage": "부산도시철도 1~4호선 114개 역 영업거리(역간거리) 및 구간 정보",
+      "publicDataId": "3033564"
+    },
+    {
+      "name": "부산교통공사 공식 노선도/운행정보",
+      "provider": "부산교통공사",
+      "coverage": "1~4호선 노선 및 종점 방향 교차확인"
+    }
+  ],
+  "lines": {
+    "1": {
+      "name": "1호선",
+      "terminals": {
+        "forward": "노포",
+        "reverse": "다대포해수욕장"
+      },
+      "stations": [
+        "다대포해수욕장",
+        "다대포항",
+        "낫개",
+        "신장림",
+        "장림",
+        "동매",
+        "신평",
+        "하단",
+        "당리",
+        "사하",
+        "괴정",
+        "대티",
+        "서대신",
+        "동대신",
+        "토성",
+        "자갈치",
+        "남포",
+        "중앙",
+        "부산역",
+        "초량",
+        "부산진",
+        "좌천",
+        "범일",
+        "범내골",
+        "서면",
+        "부전",
+        "양정",
+        "시청",
+        "연산",
+        "교대",
+        "동래",
+        "명륜",
+        "온천장",
+        "부산대",
+        "장전",
+        "구서",
+        "두실",
+        "남산",
+        "범어사",
+        "노포"
+      ]
+    },
+    "2": {
+      "name": "2호선",
+      "terminals": {
+        "forward": "양산",
+        "reverse": "장산"
+      },
+      "stations": [
+        "장산",
+        "중동",
+        "해운대",
+        "동백",
+        "벡스코",
+        "센텀시티",
+        "민락",
+        "수영",
+        "광안",
+        "금련산",
+        "남천",
+        "경성대·부경대",
+        "대연",
+        "못골",
+        "지게골",
+        "문현",
+        "국제금융센터·부산은행",
+        "전포",
+        "서면",
+        "부암",
+        "가야",
+        "동의대",
+        "개금",
+        "냉정",
+        "주례",
+        "감전",
+        "사상",
+        "덕포",
+        "모덕",
+        "모라",
+        "구남",
+        "구명",
+        "덕천",
+        "수정",
+        "화명",
+        "율리",
+        "동원",
+        "금곡",
+        "호포",
+        "증산",
+        "부산대양산캠퍼스",
+        "남양산",
+        "양산"
+      ]
+    },
+    "3": {
+      "name": "3호선",
+      "terminals": {
+        "forward": "대저",
+        "reverse": "수영"
+      },
+      "stations": [
+        "수영",
+        "망미",
+        "배산",
+        "물만골",
+        "연산",
+        "거제",
+        "종합운동장",
+        "사직",
+        "미남",
+        "만덕",
+        "남산정",
+        "숙등",
+        "덕천",
+        "구포",
+        "강서구청",
+        "체육공원",
+        "대저"
+      ]
+    },
+    "4": {
+      "name": "4호선",
+      "terminals": {
+        "forward": "안평",
+        "reverse": "미남"
+      },
+      "stations": [
+        "미남",
+        "동래",
+        "수안",
+        "낙민",
+        "충렬사",
+        "명장",
+        "서동",
+        "금사",
+        "반여농산물시장",
+        "석대",
+        "영산대",
+        "윗반송",
+        "고촌",
+        "안평"
+      ]
+    }
+  },
+  "stations": [
+    {
+      "id": "L1:다대포해수욕장",
+      "name": "다대포해수욕장",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 0
+    },
+    {
+      "id": "L1:다대포항",
+      "name": "다대포항",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 1
+    },
+    {
+      "id": "L1:낫개",
+      "name": "낫개",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 2
+    },
+    {
+      "id": "L1:신장림",
+      "name": "신장림",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 3
+    },
+    {
+      "id": "L1:장림",
+      "name": "장림",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 4
+    },
+    {
+      "id": "L1:동매",
+      "name": "동매",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 5
+    },
+    {
+      "id": "L1:신평",
+      "name": "신평",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 6
+    },
+    {
+      "id": "L1:하단",
+      "name": "하단",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 7
+    },
+    {
+      "id": "L1:당리",
+      "name": "당리",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 8
+    },
+    {
+      "id": "L1:사하",
+      "name": "사하",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 9
+    },
+    {
+      "id": "L1:괴정",
+      "name": "괴정",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 10
+    },
+    {
+      "id": "L1:대티",
+      "name": "대티",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 11
+    },
+    {
+      "id": "L1:서대신",
+      "name": "서대신",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 12
+    },
+    {
+      "id": "L1:동대신",
+      "name": "동대신",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 13
+    },
+    {
+      "id": "L1:토성",
+      "name": "토성",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 14
+    },
+    {
+      "id": "L1:자갈치",
+      "name": "자갈치",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 15
+    },
+    {
+      "id": "L1:남포",
+      "name": "남포",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 16
+    },
+    {
+      "id": "L1:중앙",
+      "name": "중앙",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 17
+    },
+    {
+      "id": "L1:부산역",
+      "name": "부산역",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 18
+    },
+    {
+      "id": "L1:초량",
+      "name": "초량",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 19
+    },
+    {
+      "id": "L1:부산진",
+      "name": "부산진",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 20
+    },
+    {
+      "id": "L1:좌천",
+      "name": "좌천",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 21
+    },
+    {
+      "id": "L1:범일",
+      "name": "범일",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 22
+    },
+    {
+      "id": "L1:범내골",
+      "name": "범내골",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 23
+    },
+    {
+      "id": "L1:서면",
+      "name": "서면",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 24
+    },
+    {
+      "id": "L1:부전",
+      "name": "부전",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 25
+    },
+    {
+      "id": "L1:양정",
+      "name": "양정",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 26
+    },
+    {
+      "id": "L1:시청",
+      "name": "시청",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 27
+    },
+    {
+      "id": "L1:연산",
+      "name": "연산",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 28
+    },
+    {
+      "id": "L1:교대",
+      "name": "교대",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 29
+    },
+    {
+      "id": "L1:동래",
+      "name": "동래",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 30
+    },
+    {
+      "id": "L1:명륜",
+      "name": "명륜",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 31
+    },
+    {
+      "id": "L1:온천장",
+      "name": "온천장",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 32
+    },
+    {
+      "id": "L1:부산대",
+      "name": "부산대",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 33
+    },
+    {
+      "id": "L1:장전",
+      "name": "장전",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 34
+    },
+    {
+      "id": "L1:구서",
+      "name": "구서",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 35
+    },
+    {
+      "id": "L1:두실",
+      "name": "두실",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 36
+    },
+    {
+      "id": "L1:남산",
+      "name": "남산",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 37
+    },
+    {
+      "id": "L1:범어사",
+      "name": "범어사",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 38
+    },
+    {
+      "id": "L1:노포",
+      "name": "노포",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 39
+    },
+    {
+      "id": "L2:장산",
+      "name": "장산",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 0
+    },
+    {
+      "id": "L2:중동",
+      "name": "중동",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 1
+    },
+    {
+      "id": "L2:해운대",
+      "name": "해운대",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 2
+    },
+    {
+      "id": "L2:동백",
+      "name": "동백",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 3
+    },
+    {
+      "id": "L2:벡스코",
+      "name": "벡스코",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 4
+    },
+    {
+      "id": "L2:센텀시티",
+      "name": "센텀시티",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 5
+    },
+    {
+      "id": "L2:민락",
+      "name": "민락",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 6
+    },
+    {
+      "id": "L2:수영",
+      "name": "수영",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 7
+    },
+    {
+      "id": "L2:광안",
+      "name": "광안",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 8
+    },
+    {
+      "id": "L2:금련산",
+      "name": "금련산",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 9
+    },
+    {
+      "id": "L2:남천",
+      "name": "남천",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 10
+    },
+    {
+      "id": "L2:경성대·부경대",
+      "name": "경성대·부경대",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 11
+    },
+    {
+      "id": "L2:대연",
+      "name": "대연",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 12
+    },
+    {
+      "id": "L2:못골",
+      "name": "못골",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 13
+    },
+    {
+      "id": "L2:지게골",
+      "name": "지게골",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 14
+    },
+    {
+      "id": "L2:문현",
+      "name": "문현",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 15
+    },
+    {
+      "id": "L2:국제금융센터·부산은행",
+      "name": "국제금융센터·부산은행",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 16
+    },
+    {
+      "id": "L2:전포",
+      "name": "전포",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 17
+    },
+    {
+      "id": "L2:서면",
+      "name": "서면",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 18
+    },
+    {
+      "id": "L2:부암",
+      "name": "부암",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 19
+    },
+    {
+      "id": "L2:가야",
+      "name": "가야",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 20
+    },
+    {
+      "id": "L2:동의대",
+      "name": "동의대",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 21
+    },
+    {
+      "id": "L2:개금",
+      "name": "개금",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 22
+    },
+    {
+      "id": "L2:냉정",
+      "name": "냉정",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 23
+    },
+    {
+      "id": "L2:주례",
+      "name": "주례",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 24
+    },
+    {
+      "id": "L2:감전",
+      "name": "감전",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 25
+    },
+    {
+      "id": "L2:사상",
+      "name": "사상",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 26
+    },
+    {
+      "id": "L2:덕포",
+      "name": "덕포",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 27
+    },
+    {
+      "id": "L2:모덕",
+      "name": "모덕",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 28
+    },
+    {
+      "id": "L2:모라",
+      "name": "모라",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 29
+    },
+    {
+      "id": "L2:구남",
+      "name": "구남",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 30
+    },
+    {
+      "id": "L2:구명",
+      "name": "구명",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 31
+    },
+    {
+      "id": "L2:덕천",
+      "name": "덕천",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 32
+    },
+    {
+      "id": "L2:수정",
+      "name": "수정",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 33
+    },
+    {
+      "id": "L2:화명",
+      "name": "화명",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 34
+    },
+    {
+      "id": "L2:율리",
+      "name": "율리",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 35
+    },
+    {
+      "id": "L2:동원",
+      "name": "동원",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 36
+    },
+    {
+      "id": "L2:금곡",
+      "name": "금곡",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 37
+    },
+    {
+      "id": "L2:호포",
+      "name": "호포",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 38
+    },
+    {
+      "id": "L2:증산",
+      "name": "증산",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 39
+    },
+    {
+      "id": "L2:부산대양산캠퍼스",
+      "name": "부산대양산캠퍼스",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 40
+    },
+    {
+      "id": "L2:남양산",
+      "name": "남양산",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 41
+    },
+    {
+      "id": "L2:양산",
+      "name": "양산",
+      "line": "2",
+      "lineName": "2호선",
+      "index": 42
+    },
+    {
+      "id": "L3:수영",
+      "name": "수영",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 0
+    },
+    {
+      "id": "L3:망미",
+      "name": "망미",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 1
+    },
+    {
+      "id": "L3:배산",
+      "name": "배산",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 2
+    },
+    {
+      "id": "L3:물만골",
+      "name": "물만골",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 3
+    },
+    {
+      "id": "L3:연산",
+      "name": "연산",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 4
+    },
+    {
+      "id": "L3:거제",
+      "name": "거제",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 5
+    },
+    {
+      "id": "L3:종합운동장",
+      "name": "종합운동장",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 6
+    },
+    {
+      "id": "L3:사직",
+      "name": "사직",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 7
+    },
+    {
+      "id": "L3:미남",
+      "name": "미남",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 8
+    },
+    {
+      "id": "L3:만덕",
+      "name": "만덕",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 9
+    },
+    {
+      "id": "L3:남산정",
+      "name": "남산정",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 10
+    },
+    {
+      "id": "L3:숙등",
+      "name": "숙등",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 11
+    },
+    {
+      "id": "L3:덕천",
+      "name": "덕천",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 12
+    },
+    {
+      "id": "L3:구포",
+      "name": "구포",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 13
+    },
+    {
+      "id": "L3:강서구청",
+      "name": "강서구청",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 14
+    },
+    {
+      "id": "L3:체육공원",
+      "name": "체육공원",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 15
+    },
+    {
+      "id": "L3:대저",
+      "name": "대저",
+      "line": "3",
+      "lineName": "3호선",
+      "index": 16
+    },
+    {
+      "id": "L4:미남",
+      "name": "미남",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 0
+    },
+    {
+      "id": "L4:동래",
+      "name": "동래",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 1
+    },
+    {
+      "id": "L4:수안",
+      "name": "수안",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 2
+    },
+    {
+      "id": "L4:낙민",
+      "name": "낙민",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 3
+    },
+    {
+      "id": "L4:충렬사",
+      "name": "충렬사",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 4
+    },
+    {
+      "id": "L4:명장",
+      "name": "명장",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 5
+    },
+    {
+      "id": "L4:서동",
+      "name": "서동",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 6
+    },
+    {
+      "id": "L4:금사",
+      "name": "금사",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 7
+    },
+    {
+      "id": "L4:반여농산물시장",
+      "name": "반여농산물시장",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 8
+    },
+    {
+      "id": "L4:석대",
+      "name": "석대",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 9
+    },
+    {
+      "id": "L4:영산대",
+      "name": "영산대",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 10
+    },
+    {
+      "id": "L4:윗반송",
+      "name": "윗반송",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 11
+    },
+    {
+      "id": "L4:고촌",
+      "name": "고촌",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 12
+    },
+    {
+      "id": "L4:안평",
+      "name": "안평",
+      "line": "4",
+      "lineName": "4호선",
+      "index": 13
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:다대포해수욕장",
+      "to": "L1:다대포항",
+      "distanceKm": 1.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:다대포항",
+      "to": "L1:낫개",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:낫개",
+      "to": "L1:신장림",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:신장림",
+      "to": "L1:장림",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:장림",
+      "to": "L1:동매",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:동매",
+      "to": "L1:신평",
+      "distanceKm": 1.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:신평",
+      "to": "L1:하단",
+      "distanceKm": 1.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:하단",
+      "to": "L1:당리",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:당리",
+      "to": "L1:사하",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:사하",
+      "to": "L1:괴정",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:괴정",
+      "to": "L1:대티",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:대티",
+      "to": "L1:서대신",
+      "distanceKm": 1.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:서대신",
+      "to": "L1:동대신",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:동대신",
+      "to": "L1:토성",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:토성",
+      "to": "L1:자갈치",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:자갈치",
+      "to": "L1:남포",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:남포",
+      "to": "L1:중앙",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:중앙",
+      "to": "L1:부산역",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:부산역",
+      "to": "L1:초량",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:초량",
+      "to": "L1:부산진",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:부산진",
+      "to": "L1:좌천",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:좌천",
+      "to": "L1:범일",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:범일",
+      "to": "L1:범내골",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:범내골",
+      "to": "L1:서면",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:서면",
+      "to": "L1:부전",
+      "distanceKm": 0.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:부전",
+      "to": "L1:양정",
+      "distanceKm": 1.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:양정",
+      "to": "L1:시청",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:시청",
+      "to": "L1:연산",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:연산",
+      "to": "L1:교대",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:교대",
+      "to": "L1:동래",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:동래",
+      "to": "L1:명륜",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:명륜",
+      "to": "L1:온천장",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:온천장",
+      "to": "L1:부산대",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:부산대",
+      "to": "L1:장전",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:장전",
+      "to": "L1:구서",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:구서",
+      "to": "L1:두실",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:두실",
+      "to": "L1:남산",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:남산",
+      "to": "L1:범어사",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:범어사",
+      "to": "L1:노포",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:장산",
+      "to": "L2:중동",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:중동",
+      "to": "L2:해운대",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:해운대",
+      "to": "L2:동백",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:동백",
+      "to": "L2:벡스코",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:벡스코",
+      "to": "L2:센텀시티",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:센텀시티",
+      "to": "L2:민락",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:민락",
+      "to": "L2:수영",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:수영",
+      "to": "L2:광안",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:광안",
+      "to": "L2:금련산",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:금련산",
+      "to": "L2:남천",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:남천",
+      "to": "L2:경성대·부경대",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:경성대·부경대",
+      "to": "L2:대연",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:대연",
+      "to": "L2:못골",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:못골",
+      "to": "L2:지게골",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:지게골",
+      "to": "L2:문현",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:문현",
+      "to": "L2:국제금융센터·부산은행",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:국제금융센터·부산은행",
+      "to": "L2:전포",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:전포",
+      "to": "L2:서면",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:서면",
+      "to": "L2:부암",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:부암",
+      "to": "L2:가야",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:가야",
+      "to": "L2:동의대",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:동의대",
+      "to": "L2:개금",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:개금",
+      "to": "L2:냉정",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:냉정",
+      "to": "L2:주례",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:주례",
+      "to": "L2:감전",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:감전",
+      "to": "L2:사상",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:사상",
+      "to": "L2:덕포",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:덕포",
+      "to": "L2:모덕",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:모덕",
+      "to": "L2:모라",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:모라",
+      "to": "L2:구남",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:구남",
+      "to": "L2:구명",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:구명",
+      "to": "L2:덕천",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:덕천",
+      "to": "L2:수정",
+      "distanceKm": 1.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:수정",
+      "to": "L2:화명",
+      "distanceKm": 1.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:화명",
+      "to": "L2:율리",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:율리",
+      "to": "L2:동원",
+      "distanceKm": 1.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:동원",
+      "to": "L2:금곡",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:금곡",
+      "to": "L2:호포",
+      "distanceKm": 1.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:호포",
+      "to": "L2:증산",
+      "distanceKm": 3.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:증산",
+      "to": "L2:부산대양산캠퍼스",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:부산대양산캠퍼스",
+      "to": "L2:남양산",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "from": "L2:남양산",
+      "to": "L2:양산",
+      "distanceKm": 1.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:수영",
+      "to": "L3:망미",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:망미",
+      "to": "L3:배산",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:배산",
+      "to": "L3:물만골",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:물만골",
+      "to": "L3:연산",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:연산",
+      "to": "L3:거제",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:거제",
+      "to": "L3:종합운동장",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:종합운동장",
+      "to": "L3:사직",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:사직",
+      "to": "L3:미남",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:미남",
+      "to": "L3:만덕",
+      "distanceKm": 3.3,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:만덕",
+      "to": "L3:남산정",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:남산정",
+      "to": "L3:숙등",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:숙등",
+      "to": "L3:덕천",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:덕천",
+      "to": "L3:구포",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:구포",
+      "to": "L3:강서구청",
+      "distanceKm": 1.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:강서구청",
+      "to": "L3:체육공원",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "from": "L3:체육공원",
+      "to": "L3:대저",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:미남",
+      "to": "L4:동래",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:동래",
+      "to": "L4:수안",
+      "distanceKm": 0.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:수안",
+      "to": "L4:낙민",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:낙민",
+      "to": "L4:충렬사",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:충렬사",
+      "to": "L4:명장",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:명장",
+      "to": "L4:서동",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:서동",
+      "to": "L4:금사",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:금사",
+      "to": "L4:반여농산물시장",
+      "distanceKm": 0.8,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:반여농산물시장",
+      "to": "L4:석대",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:석대",
+      "to": "L4:영산대",
+      "distanceKm": 1.3,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:영산대",
+      "to": "L4:윗반송",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:윗반송",
+      "to": "L4:고촌",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "from": "L4:고촌",
+      "to": "L4:안평",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": [
+    {
+      "type": "transfer",
+      "stationName": "서면",
+      "from": "L1:서면",
+      "to": "L2:서면",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "연산",
+      "from": "L1:연산",
+      "to": "L3:연산",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "동래",
+      "from": "L1:동래",
+      "to": "L4:동래",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "수영",
+      "from": "L2:수영",
+      "to": "L3:수영",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "덕천",
+      "from": "L2:덕천",
+      "to": "L3:덕천",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "미남",
+      "from": "L3:미남",
+      "to": "L4:미남",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    }
+  ]
+}
