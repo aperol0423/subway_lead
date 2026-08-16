@@ -1,0 +1,395 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "airport_railroad",
+    "name": "공항철도",
+    "graphType": "linear",
+    "terminals": [
+      "서울역",
+      "인천공항2터미널"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_공항철도_역간거리_20250630.csv",
+    "validation": {
+      "sourceRowCount": 14,
+      "stationCount": 14,
+      "rideEdgeCount": 13,
+      "expectedLinearEdgeCount": 13,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 63.8,
+      "directionalColumnComparableEdges": 13,
+      "directionalColumnMatchedEdges": 13,
+      "directionalColumnAllMatched": true
+    },
+    "notes": [
+      "업로드된 국가철도공단 2025-06-30 공항철도 역간거리 CSV를 기준으로 생성함.",
+      "공공데이터포털 정의에 따라 출발역의 후행역간거리를 다음 역까지의 거리로 우선 적용함.",
+      "도착역의 역간거리와 비교 가능한 경우 일치 여부를 directionalColumnCheck에 기록함.",
+      "원본 역명은 sourceName에 보존함."
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "서울역",
+        "to": "공덕",
+        "sourceFollowingKm": 3.3,
+        "destinationPreviousKm": 3.3,
+        "matched": true,
+        "distanceKmUsed": 3.3
+      },
+      {
+        "from": "공덕",
+        "to": "홍대입구",
+        "sourceFollowingKm": 2.8,
+        "destinationPreviousKm": 2.8,
+        "matched": true,
+        "distanceKmUsed": 2.8
+      },
+      {
+        "from": "홍대입구",
+        "to": "디지털미디어시티",
+        "sourceFollowingKm": 3.4,
+        "destinationPreviousKm": 3.4,
+        "matched": true,
+        "distanceKmUsed": 3.4
+      },
+      {
+        "from": "디지털미디어시티",
+        "to": "마곡나루",
+        "sourceFollowingKm": 8.6,
+        "destinationPreviousKm": 8.6,
+        "matched": true,
+        "distanceKmUsed": 8.6
+      },
+      {
+        "from": "마곡나루",
+        "to": "김포공항",
+        "sourceFollowingKm": 2.3,
+        "destinationPreviousKm": 2.3,
+        "matched": true,
+        "distanceKmUsed": 2.3
+      },
+      {
+        "from": "김포공항",
+        "to": "계양",
+        "sourceFollowingKm": 6.6,
+        "destinationPreviousKm": 6.6,
+        "matched": true,
+        "distanceKmUsed": 6.6
+      },
+      {
+        "from": "계양",
+        "to": "검암",
+        "sourceFollowingKm": 5.5,
+        "destinationPreviousKm": 5.5,
+        "matched": true,
+        "distanceKmUsed": 5.5
+      },
+      {
+        "from": "검암",
+        "to": "청라국제도시",
+        "sourceFollowingKm": 4.8,
+        "destinationPreviousKm": 4.8,
+        "matched": true,
+        "distanceKmUsed": 4.8
+      },
+      {
+        "from": "청라국제도시",
+        "to": "영종",
+        "sourceFollowingKm": 10.2,
+        "destinationPreviousKm": 10.2,
+        "matched": true,
+        "distanceKmUsed": 10.2
+      },
+      {
+        "from": "영종",
+        "to": "운서",
+        "sourceFollowingKm": 3.6,
+        "destinationPreviousKm": 3.6,
+        "matched": true,
+        "distanceKmUsed": 3.6
+      },
+      {
+        "from": "운서",
+        "to": "공항화물청사",
+        "sourceFollowingKm": 4.3,
+        "destinationPreviousKm": 4.3,
+        "matched": true,
+        "distanceKmUsed": 4.3
+      },
+      {
+        "from": "공항화물청사",
+        "to": "인천공항1터미널",
+        "sourceFollowingKm": 2.6,
+        "destinationPreviousKm": 2.6,
+        "matched": true,
+        "distanceKmUsed": 2.6
+      },
+      {
+        "from": "인천공항1터미널",
+        "to": "인천공항2터미널",
+        "sourceFollowingKm": 5.8,
+        "destinationPreviousKm": 5.8,
+        "matched": true,
+        "distanceKmUsed": 5.8
+      }
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "인천공항2터미널 방면",
+    "towardLowerIndex": "서울역 방면"
+  },
+  "stations": [
+    {
+      "id": "AR:서울역",
+      "name": "서울역",
+      "sourceName": "서울역",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 0
+    },
+    {
+      "id": "AR:공덕",
+      "name": "공덕",
+      "sourceName": "공덕",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 1
+    },
+    {
+      "id": "AR:홍대입구",
+      "name": "홍대입구",
+      "sourceName": "홍대입구",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 2
+    },
+    {
+      "id": "AR:디지털미디어시티",
+      "name": "디지털미디어시티",
+      "sourceName": "디지털미디어시티",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 3
+    },
+    {
+      "id": "AR:마곡나루",
+      "name": "마곡나루",
+      "sourceName": "마곡나루",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 4
+    },
+    {
+      "id": "AR:김포공항",
+      "name": "김포공항",
+      "sourceName": "김포공항",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 5
+    },
+    {
+      "id": "AR:계양",
+      "name": "계양",
+      "sourceName": "계양",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 6
+    },
+    {
+      "id": "AR:검암",
+      "name": "검암",
+      "sourceName": "검암",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 7
+    },
+    {
+      "id": "AR:청라국제도시",
+      "name": "청라국제도시",
+      "sourceName": "청라국제도시",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 8
+    },
+    {
+      "id": "AR:영종",
+      "name": "영종",
+      "sourceName": "영종",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 9
+    },
+    {
+      "id": "AR:운서",
+      "name": "운서",
+      "sourceName": "운서",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 10
+    },
+    {
+      "id": "AR:공항화물청사",
+      "name": "공항화물청사",
+      "sourceName": "공항화물청사",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 11
+    },
+    {
+      "id": "AR:인천공항1터미널",
+      "name": "인천공항1터미널",
+      "sourceName": "인천공항1터미널",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 12
+    },
+    {
+      "id": "AR:인천공항2터미널",
+      "name": "인천공항2터미널",
+      "sourceName": "인천공항2터미널",
+      "line": "airport_railroad",
+      "lineName": "공항철도",
+      "operator": "공항철도주식회사",
+      "index": 13
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:서울역",
+      "to": "AR:공덕",
+      "distanceKm": 3.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:공덕",
+      "to": "AR:홍대입구",
+      "distanceKm": 2.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:홍대입구",
+      "to": "AR:디지털미디어시티",
+      "distanceKm": 3.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:디지털미디어시티",
+      "to": "AR:마곡나루",
+      "distanceKm": 8.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:마곡나루",
+      "to": "AR:김포공항",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:김포공항",
+      "to": "AR:계양",
+      "distanceKm": 6.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:계양",
+      "to": "AR:검암",
+      "distanceKm": 5.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:검암",
+      "to": "AR:청라국제도시",
+      "distanceKm": 4.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:청라국제도시",
+      "to": "AR:영종",
+      "distanceKm": 10.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:영종",
+      "to": "AR:운서",
+      "distanceKm": 3.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:운서",
+      "to": "AR:공항화물청사",
+      "distanceKm": 4.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:공항화물청사",
+      "to": "AR:인천공항1터미널",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "airport_railroad",
+      "segment": "main",
+      "from": "AR:인천공항1터미널",
+      "to": "AR:인천공항2터미널",
+      "distanceKm": 5.8,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

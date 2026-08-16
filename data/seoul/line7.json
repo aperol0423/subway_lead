@@ -1,0 +1,1280 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "7",
+    "name": "수도권 전철 7호선",
+    "graphType": "linear",
+    "terminals": [
+      "장암",
+      "석남"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_수도권7호선_역간거리_20250630.csv",
+    "crossCheckSourceFile": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "validation": {
+      "stationCount": 53,
+      "rideEdgeCount": 52,
+      "expectedLinearEdgeCount": 52,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 61.2,
+      "seoulMetroCrossCheckComparableEdges": 39,
+      "seoulMetroCrossCheckMatchedEdges": 39,
+      "seoulMetroCrossCheckAllMatched": true
+    },
+    "notes": [
+      "서울교통공사 장암~온수 구간과 인천교통공사 까치울~석남 구간을 하나의 직선형 물리 그래프로 연결함.",
+      "운영기관 경계 온수~까치울은 국가철도공단 인천교통공사 블록의 까치울 역간거리 2.2km를 사용함.",
+      "서울교통공사 운영 구간은 별도 서울교통공사 공식 CSV와 교차검증함.",
+      "원본 병기 역명은 sourceName에 보존하고 앱 표시용 이름은 간결하게 정규화함."
+    ],
+    "crossCheck": [
+      {
+        "from": "장암",
+        "to": "도봉산",
+        "nraKm": 1.4,
+        "seoulMetroKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "도봉산",
+        "to": "수락산",
+        "nraKm": 1.6,
+        "seoulMetroKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "수락산",
+        "to": "마들",
+        "nraKm": 1.4,
+        "seoulMetroKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "마들",
+        "to": "노원",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "노원",
+        "to": "중계",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "중계",
+        "to": "하계",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "하계",
+        "to": "공릉",
+        "nraKm": 1.3,
+        "seoulMetroKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "공릉",
+        "to": "태릉입구",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "태릉입구",
+        "to": "먹골",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "먹골",
+        "to": "중화",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "중화",
+        "to": "상봉",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "상봉",
+        "to": "면목",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "면목",
+        "to": "사가정",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "사가정",
+        "to": "용마산",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "용마산",
+        "to": "중곡",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "중곡",
+        "to": "군자",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "군자",
+        "to": "어린이대공원",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "어린이대공원",
+        "to": "건대입구",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "건대입구",
+        "to": "자양",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "자양",
+        "to": "청담",
+        "nraKm": 2.0,
+        "seoulMetroKm": 2.0,
+        "matched": true
+      },
+      {
+        "from": "청담",
+        "to": "강남구청",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "강남구청",
+        "to": "학동",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "학동",
+        "to": "논현",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "논현",
+        "to": "반포",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "반포",
+        "to": "고속터미널",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "고속터미널",
+        "to": "내방",
+        "nraKm": 2.2,
+        "seoulMetroKm": 2.2,
+        "matched": true
+      },
+      {
+        "from": "내방",
+        "to": "총신대입구",
+        "nraKm": 1.0,
+        "seoulMetroKm": null,
+        "matched": null
+      },
+      {
+        "from": "총신대입구",
+        "to": "남성",
+        "nraKm": 1.0,
+        "seoulMetroKm": null,
+        "matched": null
+      },
+      {
+        "from": "남성",
+        "to": "숭실대입구",
+        "nraKm": 2.0,
+        "seoulMetroKm": 2.0,
+        "matched": true
+      },
+      {
+        "from": "숭실대입구",
+        "to": "상도",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "상도",
+        "to": "장승배기",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "장승배기",
+        "to": "신대방삼거리",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "신대방삼거리",
+        "to": "보라매",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "보라매",
+        "to": "신풍",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "신풍",
+        "to": "대림",
+        "nraKm": 1.4,
+        "seoulMetroKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "대림",
+        "to": "남구로",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "남구로",
+        "to": "가산디지털단지",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "가산디지털단지",
+        "to": "철산",
+        "nraKm": 1.4,
+        "seoulMetroKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "철산",
+        "to": "광명사거리",
+        "nraKm": 1.3,
+        "seoulMetroKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "광명사거리",
+        "to": "천왕",
+        "nraKm": 1.7,
+        "seoulMetroKm": 1.7,
+        "matched": true
+      },
+      {
+        "from": "천왕",
+        "to": "온수",
+        "nraKm": 1.5,
+        "seoulMetroKm": 1.5,
+        "matched": true
+      }
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "석남 방면",
+    "towardLowerIndex": "장암 방면"
+  },
+  "stations": [
+    {
+      "id": "L7:장암",
+      "name": "장암",
+      "sourceName": "장암",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 0
+    },
+    {
+      "id": "L7:도봉산",
+      "name": "도봉산",
+      "sourceName": "도봉산",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 1
+    },
+    {
+      "id": "L7:수락산",
+      "name": "수락산",
+      "sourceName": "수락산",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 2
+    },
+    {
+      "id": "L7:마들",
+      "name": "마들",
+      "sourceName": "마들",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 3
+    },
+    {
+      "id": "L7:노원",
+      "name": "노원",
+      "sourceName": "노원",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 4
+    },
+    {
+      "id": "L7:중계",
+      "name": "중계",
+      "sourceName": "중계",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 5
+    },
+    {
+      "id": "L7:하계",
+      "name": "하계",
+      "sourceName": "하계",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 6
+    },
+    {
+      "id": "L7:공릉",
+      "name": "공릉",
+      "sourceName": "공릉(서울과학기술대)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 7
+    },
+    {
+      "id": "L7:태릉입구",
+      "name": "태릉입구",
+      "sourceName": "태릉입구",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 8
+    },
+    {
+      "id": "L7:먹골",
+      "name": "먹골",
+      "sourceName": "먹골",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 9
+    },
+    {
+      "id": "L7:중화",
+      "name": "중화",
+      "sourceName": "중화",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 10
+    },
+    {
+      "id": "L7:상봉",
+      "name": "상봉",
+      "sourceName": "상봉(시외버스터미널)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 11
+    },
+    {
+      "id": "L7:면목",
+      "name": "면목",
+      "sourceName": "면목",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 12
+    },
+    {
+      "id": "L7:사가정",
+      "name": "사가정",
+      "sourceName": "사가정",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 13
+    },
+    {
+      "id": "L7:용마산",
+      "name": "용마산",
+      "sourceName": "용마산",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 14
+    },
+    {
+      "id": "L7:중곡",
+      "name": "중곡",
+      "sourceName": "중곡",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 15
+    },
+    {
+      "id": "L7:군자",
+      "name": "군자",
+      "sourceName": "군자(능동)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 16
+    },
+    {
+      "id": "L7:어린이대공원",
+      "name": "어린이대공원",
+      "sourceName": "어린이대공원(세종대)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 17
+    },
+    {
+      "id": "L7:건대입구",
+      "name": "건대입구",
+      "sourceName": "건대입구",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 18
+    },
+    {
+      "id": "L7:자양",
+      "name": "자양",
+      "sourceName": "자양(뚝섬한강공원)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 19
+    },
+    {
+      "id": "L7:청담",
+      "name": "청담",
+      "sourceName": "청담",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 20
+    },
+    {
+      "id": "L7:강남구청",
+      "name": "강남구청",
+      "sourceName": "강남구청",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 21
+    },
+    {
+      "id": "L7:학동",
+      "name": "학동",
+      "sourceName": "학동",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 22
+    },
+    {
+      "id": "L7:논현",
+      "name": "논현",
+      "sourceName": "논현",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 23
+    },
+    {
+      "id": "L7:반포",
+      "name": "반포",
+      "sourceName": "반포",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 24
+    },
+    {
+      "id": "L7:고속터미널",
+      "name": "고속터미널",
+      "sourceName": "고속터미널",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 25
+    },
+    {
+      "id": "L7:내방",
+      "name": "내방",
+      "sourceName": "내방",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 26
+    },
+    {
+      "id": "L7:총신대입구",
+      "name": "총신대입구",
+      "sourceName": "총신대입구(이수)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 27
+    },
+    {
+      "id": "L7:남성",
+      "name": "남성",
+      "sourceName": "남성",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 28
+    },
+    {
+      "id": "L7:숭실대입구",
+      "name": "숭실대입구",
+      "sourceName": "숭실대입구(살피재)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 29
+    },
+    {
+      "id": "L7:상도",
+      "name": "상도",
+      "sourceName": "상도",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 30
+    },
+    {
+      "id": "L7:장승배기",
+      "name": "장승배기",
+      "sourceName": "장승배기",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 31
+    },
+    {
+      "id": "L7:신대방삼거리",
+      "name": "신대방삼거리",
+      "sourceName": "신대방삼거리",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 32
+    },
+    {
+      "id": "L7:보라매",
+      "name": "보라매",
+      "sourceName": "보라매",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 33
+    },
+    {
+      "id": "L7:신풍",
+      "name": "신풍",
+      "sourceName": "신풍",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 34
+    },
+    {
+      "id": "L7:대림",
+      "name": "대림",
+      "sourceName": "대림(구로구청)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 35
+    },
+    {
+      "id": "L7:남구로",
+      "name": "남구로",
+      "sourceName": "남구로",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 36
+    },
+    {
+      "id": "L7:가산디지털단지",
+      "name": "가산디지털단지",
+      "sourceName": "가산디지털단지",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 37
+    },
+    {
+      "id": "L7:철산",
+      "name": "철산",
+      "sourceName": "철산",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 38
+    },
+    {
+      "id": "L7:광명사거리",
+      "name": "광명사거리",
+      "sourceName": "광명사거리",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 39
+    },
+    {
+      "id": "L7:천왕",
+      "name": "천왕",
+      "sourceName": "천왕",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 40
+    },
+    {
+      "id": "L7:온수",
+      "name": "온수",
+      "sourceName": "온수(성공회대입구)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "서울교통공사",
+      "index": 41
+    },
+    {
+      "id": "L7:까치울",
+      "name": "까치울",
+      "sourceName": "까치울",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 42
+    },
+    {
+      "id": "L7:부천종합운동장",
+      "name": "부천종합운동장",
+      "sourceName": "부천종합운동장",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 43
+    },
+    {
+      "id": "L7:춘의",
+      "name": "춘의",
+      "sourceName": "춘의",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 44
+    },
+    {
+      "id": "L7:신중동",
+      "name": "신중동",
+      "sourceName": "신중동",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 45
+    },
+    {
+      "id": "L7:부천시청",
+      "name": "부천시청",
+      "sourceName": "부천시청",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 46
+    },
+    {
+      "id": "L7:상동",
+      "name": "상동",
+      "sourceName": "상동",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 47
+    },
+    {
+      "id": "L7:삼산체육관",
+      "name": "삼산체육관",
+      "sourceName": "삼산체육관",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 48
+    },
+    {
+      "id": "L7:굴포천",
+      "name": "굴포천",
+      "sourceName": "굴포천",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 49
+    },
+    {
+      "id": "L7:부평구청",
+      "name": "부평구청",
+      "sourceName": "부평구청",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 50
+    },
+    {
+      "id": "L7:산곡",
+      "name": "산곡",
+      "sourceName": "산곡",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 51
+    },
+    {
+      "id": "L7:석남",
+      "name": "석남",
+      "sourceName": "석남(거북시장)",
+      "line": "7",
+      "lineName": "수도권 전철 7호선",
+      "operator": "인천교통공사",
+      "index": 52
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:장암",
+      "to": "L7:도봉산",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:도봉산",
+      "to": "L7:수락산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:수락산",
+      "to": "L7:마들",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:마들",
+      "to": "L7:노원",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:노원",
+      "to": "L7:중계",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:중계",
+      "to": "L7:하계",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:하계",
+      "to": "L7:공릉",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:공릉",
+      "to": "L7:태릉입구",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:태릉입구",
+      "to": "L7:먹골",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:먹골",
+      "to": "L7:중화",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:중화",
+      "to": "L7:상봉",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:상봉",
+      "to": "L7:면목",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:면목",
+      "to": "L7:사가정",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:사가정",
+      "to": "L7:용마산",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:용마산",
+      "to": "L7:중곡",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:중곡",
+      "to": "L7:군자",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:군자",
+      "to": "L7:어린이대공원",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:어린이대공원",
+      "to": "L7:건대입구",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:건대입구",
+      "to": "L7:자양",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:자양",
+      "to": "L7:청담",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:청담",
+      "to": "L7:강남구청",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:강남구청",
+      "to": "L7:학동",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:학동",
+      "to": "L7:논현",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:논현",
+      "to": "L7:반포",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:반포",
+      "to": "L7:고속터미널",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:고속터미널",
+      "to": "L7:내방",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:내방",
+      "to": "L7:총신대입구",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:총신대입구",
+      "to": "L7:남성",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:남성",
+      "to": "L7:숭실대입구",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:숭실대입구",
+      "to": "L7:상도",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:상도",
+      "to": "L7:장승배기",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:장승배기",
+      "to": "L7:신대방삼거리",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:신대방삼거리",
+      "to": "L7:보라매",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:보라매",
+      "to": "L7:신풍",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:신풍",
+      "to": "L7:대림",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:대림",
+      "to": "L7:남구로",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:남구로",
+      "to": "L7:가산디지털단지",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:가산디지털단지",
+      "to": "L7:철산",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:철산",
+      "to": "L7:광명사거리",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:광명사거리",
+      "to": "L7:천왕",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "seoul_metro",
+      "from": "L7:천왕",
+      "to": "L7:온수",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:온수",
+      "to": "L7:까치울",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:까치울",
+      "to": "L7:부천종합운동장",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:부천종합운동장",
+      "to": "L7:춘의",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:춘의",
+      "to": "L7:신중동",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:신중동",
+      "to": "L7:부천시청",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:부천시청",
+      "to": "L7:상동",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:상동",
+      "to": "L7:삼산체육관",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:삼산체육관",
+      "to": "L7:굴포천",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:굴포천",
+      "to": "L7:부평구청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:부평구청",
+      "to": "L7:산곡",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "7",
+      "segment": "incheon_extension",
+      "from": "L7:산곡",
+      "to": "L7:석남",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

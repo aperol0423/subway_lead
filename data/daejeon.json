@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "daejeon",
+    "name": "대전",
+    "operator": "대전교통공사"
+  },
+  "scope": {
+    "includedLines": [
+      "1"
+    ],
+    "note": "현재 영업 운행 중인 대전 도시철도 1호선 기준"
+  },
+  "dataQuality": {
+    "stationOrder": "verified_against_DJTC_official_line_information",
+    "stationCodes": "verified_against_DJTC_official_line_information",
+    "segmentDistances": "user_transcribed_from_DJTC_official_interstation_distance_table",
+    "transfers": "none_within_current_Daejeon_metro_scope",
+    "note": "20번째 구간은 사용자가 제공한 표에서 120→120으로 표기되어 있었으나, 연속 역 순서상 노은(120)→지족(121) 구간으로 적용함."
+  },
+  "routingNotes": {
+    "direction": "같은 노선에서 다음 역의 index가 커지면 반석 방면, 작아지면 판암 방면",
+    "officialDirectionLabels": {
+      "towardLowerIndex": "판암 방면",
+      "towardHigherIndex": "반석 방면"
+    },
+    "serviceDestinationLabels": [
+      "판암행",
+      "반석행"
+    ]
+  },
+  "lines": {
+    "1": {
+      "name": "1호선",
+      "stationCount": 22,
+      "terminals": {
+        "forward": "반석",
+        "reverse": "판암"
+      },
+      "stations": [
+        "판암",
+        "신흥",
+        "대동",
+        "대전",
+        "중앙로",
+        "중구청",
+        "서대전네거리",
+        "오룡",
+        "용문",
+        "탄방",
+        "시청",
+        "정부청사",
+        "갈마",
+        "월평",
+        "갑천",
+        "유성온천",
+        "구암",
+        "현충원",
+        "월드컵경기장",
+        "노은",
+        "지족",
+        "반석"
+      ]
+    }
+  },
+  "stations": [
+    {
+      "id": "L1:판암",
+      "name": "판암",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 0,
+      "stationCode": "101"
+    },
+    {
+      "id": "L1:신흥",
+      "name": "신흥",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 1,
+      "stationCode": "102"
+    },
+    {
+      "id": "L1:대동",
+      "name": "대동",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 2,
+      "stationCode": "103"
+    },
+    {
+      "id": "L1:대전",
+      "name": "대전",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 3,
+      "stationCode": "104"
+    },
+    {
+      "id": "L1:중앙로",
+      "name": "중앙로",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 4,
+      "stationCode": "105"
+    },
+    {
+      "id": "L1:중구청",
+      "name": "중구청",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 5,
+      "stationCode": "106"
+    },
+    {
+      "id": "L1:서대전네거리",
+      "name": "서대전네거리",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 6,
+      "stationCode": "107"
+    },
+    {
+      "id": "L1:오룡",
+      "name": "오룡",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 7,
+      "stationCode": "108"
+    },
+    {
+      "id": "L1:용문",
+      "name": "용문",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 8,
+      "stationCode": "109"
+    },
+    {
+      "id": "L1:탄방",
+      "name": "탄방",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 9,
+      "stationCode": "110"
+    },
+    {
+      "id": "L1:시청",
+      "name": "시청",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 10,
+      "stationCode": "111"
+    },
+    {
+      "id": "L1:정부청사",
+      "name": "정부청사",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 11,
+      "stationCode": "112"
+    },
+    {
+      "id": "L1:갈마",
+      "name": "갈마",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 12,
+      "stationCode": "113"
+    },
+    {
+      "id": "L1:월평",
+      "name": "월평",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 13,
+      "stationCode": "114"
+    },
+    {
+      "id": "L1:갑천",
+      "name": "갑천",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 14,
+      "stationCode": "115"
+    },
+    {
+      "id": "L1:유성온천",
+      "name": "유성온천",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 15,
+      "stationCode": "116"
+    },
+    {
+      "id": "L1:구암",
+      "name": "구암",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 16,
+      "stationCode": "117"
+    },
+    {
+      "id": "L1:현충원",
+      "name": "현충원",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 17,
+      "stationCode": "118"
+    },
+    {
+      "id": "L1:월드컵경기장",
+      "name": "월드컵경기장",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 18,
+      "stationCode": "119"
+    },
+    {
+      "id": "L1:노은",
+      "name": "노은",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 19,
+      "stationCode": "120"
+    },
+    {
+      "id": "L1:지족",
+      "name": "지족",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 20,
+      "stationCode": "121"
+    },
+    {
+      "id": "L1:반석",
+      "name": "반석",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 21,
+      "stationCode": "122"
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:판암",
+      "to": "L1:신흥",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:신흥",
+      "to": "L1:대동",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:대동",
+      "to": "L1:대전",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:대전",
+      "to": "L1:중앙로",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:중앙로",
+      "to": "L1:중구청",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:중구청",
+      "to": "L1:서대전네거리",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:서대전네거리",
+      "to": "L1:오룡",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:오룡",
+      "to": "L1:용문",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:용문",
+      "to": "L1:탄방",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:탄방",
+      "to": "L1:시청",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:시청",
+      "to": "L1:정부청사",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:정부청사",
+      "to": "L1:갈마",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:갈마",
+      "to": "L1:월평",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:월평",
+      "to": "L1:갑천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:갑천",
+      "to": "L1:유성온천",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:유성온천",
+      "to": "L1:구암",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:구암",
+      "to": "L1:현충원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:현충원",
+      "to": "L1:월드컵경기장",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:월드컵경기장",
+      "to": "L1:노은",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:노은",
+      "to": "L1:지족",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:지족",
+      "to": "L1:반석",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

@@ -1,0 +1,957 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "daegu",
+    "name": "대구",
+    "operator": "대구교통공사"
+  },
+  "line": {
+    "id": "1",
+    "name": "대구 도시철도 1호선",
+    "graphType": "linear",
+    "terminals": [
+      "설화명곡",
+      "하양"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "대구교통공사_1호선 역 구간정보_20251231.csv",
+    "sourceType": "대구교통공사 공식 역 구간정보",
+    "validation": {
+      "sourceRowCount": 37,
+      "passengerStationCount": 35,
+      "excludedNonPassengerRowCount": 2,
+      "rideEdgeCount": 34,
+      "expectedLinearEdgeCount": 34,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "directionalColumnComparableEdges": 34,
+      "directionalColumnMatchedEdges": 34,
+      "directionalColumnAllMatched": true,
+      "totalStationToStationDistanceKm": 37.6
+    },
+    "excludedNonPassengerRows": [
+      {
+        "name": "월배기지",
+        "stationCode": "100",
+        "stationType": "차량기지"
+      },
+      {
+        "name": "안심기지",
+        "stationCode": "199",
+        "stationType": "차량기지"
+      }
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "설화명곡",
+        "to": "화원",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "화원",
+        "to": "대곡",
+        "sourceDownKm": 1.3,
+        "nextStationUpKm": 1.3,
+        "matched": true,
+        "distanceKmUsed": 1.3
+      },
+      {
+        "from": "대곡",
+        "to": "진천",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "진천",
+        "to": "월배",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "월배",
+        "to": "상인",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "상인",
+        "to": "월촌",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "월촌",
+        "to": "송현",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "송현",
+        "to": "서부정류장",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "서부정류장",
+        "to": "대명",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "대명",
+        "to": "안지랑",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "안지랑",
+        "to": "현충로",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "현충로",
+        "to": "영대병원",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "영대병원",
+        "to": "교대",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "교대",
+        "to": "명덕1",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "명덕1",
+        "to": "반월당1",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "반월당1",
+        "to": "중앙로",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "중앙로",
+        "to": "대구역",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "대구역",
+        "to": "칠성시장",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "칠성시장",
+        "to": "신천",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "신천",
+        "to": "동대구역",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "동대구역",
+        "to": "동구청",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "동구청",
+        "to": "아양교",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "아양교",
+        "to": "동촌",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "동촌",
+        "to": "해안",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "해안",
+        "to": "방촌",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "방촌",
+        "to": "용계",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "용계",
+        "to": "율하",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "율하",
+        "to": "신기",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "신기",
+        "to": "반야월",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "반야월",
+        "to": "각산",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "각산",
+        "to": "안심",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "안심",
+        "to": "대구한의대병원",
+        "sourceDownKm": 1.6,
+        "nextStationUpKm": 1.6,
+        "matched": true,
+        "distanceKmUsed": 1.6
+      },
+      {
+        "from": "대구한의대병원",
+        "to": "부호",
+        "sourceDownKm": 5.9,
+        "nextStationUpKm": 5.9,
+        "matched": true,
+        "distanceKmUsed": 5.9
+      },
+      {
+        "from": "부호",
+        "to": "하양",
+        "sourceDownKm": 1.7,
+        "nextStationUpKm": 1.7,
+        "matched": true,
+        "distanceKmUsed": 1.7
+      }
+    ],
+    "notes": [
+      "업로드된 대구교통공사 2025-12-31 역 구간정보 CSV를 기준으로 생성함.",
+      "역종류에 '기지'가 포함된 행은 여객역이 아니므로 stations 및 rideEdges에서 제외함.",
+      "인접 구간은 현재 역의 하행키로와 다음 여객역의 상행키로를 교차검증함.",
+      "거리값은 현재 역의 하행키로를 우선 사용하고, 없을 경우 다음 역의 상행키로를 사용함.",
+      "원본 역코드와 역종류는 station metadata에 보존함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "하양 방면",
+    "towardLowerIndex": "설화명곡 방면"
+  },
+  "stations": [
+    {
+      "id": "DG1:설화명곡",
+      "name": "설화명곡",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "115",
+      "stationType": "일반역",
+      "index": 0
+    },
+    {
+      "id": "DG1:화원",
+      "name": "화원",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "116",
+      "stationType": "일반역",
+      "index": 1
+    },
+    {
+      "id": "DG1:대곡",
+      "name": "대곡",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "117",
+      "stationType": "일반역",
+      "index": 2
+    },
+    {
+      "id": "DG1:진천",
+      "name": "진천",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "118",
+      "stationType": "일반역",
+      "index": 3
+    },
+    {
+      "id": "DG1:월배",
+      "name": "월배",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "119",
+      "stationType": "일반역",
+      "index": 4
+    },
+    {
+      "id": "DG1:상인",
+      "name": "상인",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "120",
+      "stationType": "일반역",
+      "index": 5
+    },
+    {
+      "id": "DG1:월촌",
+      "name": "월촌",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "121",
+      "stationType": "일반역",
+      "index": 6
+    },
+    {
+      "id": "DG1:송현",
+      "name": "송현",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "122",
+      "stationType": "일반역",
+      "index": 7
+    },
+    {
+      "id": "DG1:서부정류장",
+      "name": "서부정류장",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "123",
+      "stationType": "일반역",
+      "index": 8
+    },
+    {
+      "id": "DG1:대명",
+      "name": "대명",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "124",
+      "stationType": "일반역",
+      "index": 9
+    },
+    {
+      "id": "DG1:안지랑",
+      "name": "안지랑",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "125",
+      "stationType": "일반역",
+      "index": 10
+    },
+    {
+      "id": "DG1:현충로",
+      "name": "현충로",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "126",
+      "stationType": "일반역",
+      "index": 11
+    },
+    {
+      "id": "DG1:영대병원",
+      "name": "영대병원",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "127",
+      "stationType": "일반역",
+      "index": 12
+    },
+    {
+      "id": "DG1:교대",
+      "name": "교대",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "128",
+      "stationType": "일반역",
+      "index": 13
+    },
+    {
+      "id": "DG1:명덕1",
+      "name": "명덕1",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "129",
+      "stationType": "일반역",
+      "index": 14
+    },
+    {
+      "id": "DG1:반월당1",
+      "name": "반월당1",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "130",
+      "stationType": "일반역",
+      "index": 15
+    },
+    {
+      "id": "DG1:중앙로",
+      "name": "중앙로",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "131",
+      "stationType": "일반역",
+      "index": 16
+    },
+    {
+      "id": "DG1:대구역",
+      "name": "대구역",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "132",
+      "stationType": "일반역",
+      "index": 17
+    },
+    {
+      "id": "DG1:칠성시장",
+      "name": "칠성시장",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "133",
+      "stationType": "일반역",
+      "index": 18
+    },
+    {
+      "id": "DG1:신천",
+      "name": "신천",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "134",
+      "stationType": "일반역",
+      "index": 19
+    },
+    {
+      "id": "DG1:동대구역",
+      "name": "동대구역",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "135",
+      "stationType": "일반역",
+      "index": 20
+    },
+    {
+      "id": "DG1:동구청",
+      "name": "동구청",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "136",
+      "stationType": "일반역",
+      "index": 21
+    },
+    {
+      "id": "DG1:아양교",
+      "name": "아양교",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "137",
+      "stationType": "일반역",
+      "index": 22
+    },
+    {
+      "id": "DG1:동촌",
+      "name": "동촌",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "138",
+      "stationType": "일반역",
+      "index": 23
+    },
+    {
+      "id": "DG1:해안",
+      "name": "해안",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "139",
+      "stationType": "일반역",
+      "index": 24
+    },
+    {
+      "id": "DG1:방촌",
+      "name": "방촌",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "140",
+      "stationType": "일반역",
+      "index": 25
+    },
+    {
+      "id": "DG1:용계",
+      "name": "용계",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "141",
+      "stationType": "일반역",
+      "index": 26
+    },
+    {
+      "id": "DG1:율하",
+      "name": "율하",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "142",
+      "stationType": "일반역",
+      "index": 27
+    },
+    {
+      "id": "DG1:신기",
+      "name": "신기",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "143",
+      "stationType": "일반역",
+      "index": 28
+    },
+    {
+      "id": "DG1:반야월",
+      "name": "반야월",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "144",
+      "stationType": "일반역",
+      "index": 29
+    },
+    {
+      "id": "DG1:각산",
+      "name": "각산",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "145",
+      "stationType": "일반역",
+      "index": 30
+    },
+    {
+      "id": "DG1:안심",
+      "name": "안심",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "146",
+      "stationType": "일반역",
+      "index": 31
+    },
+    {
+      "id": "DG1:대구한의대병원",
+      "name": "대구한의대병원",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "147",
+      "stationType": "일반역",
+      "index": 32
+    },
+    {
+      "id": "DG1:부호",
+      "name": "부호",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "148",
+      "stationType": "일반역",
+      "index": 33
+    },
+    {
+      "id": "DG1:하양",
+      "name": "하양",
+      "line": "1",
+      "lineName": "대구 도시철도 1호선",
+      "stationCode": "149",
+      "stationType": "일반역",
+      "index": 34
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:설화명곡",
+      "to": "DG1:화원",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:화원",
+      "to": "DG1:대곡",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:대곡",
+      "to": "DG1:진천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:진천",
+      "to": "DG1:월배",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:월배",
+      "to": "DG1:상인",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:상인",
+      "to": "DG1:월촌",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:월촌",
+      "to": "DG1:송현",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:송현",
+      "to": "DG1:서부정류장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:서부정류장",
+      "to": "DG1:대명",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:대명",
+      "to": "DG1:안지랑",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:안지랑",
+      "to": "DG1:현충로",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:현충로",
+      "to": "DG1:영대병원",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:영대병원",
+      "to": "DG1:교대",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:교대",
+      "to": "DG1:명덕1",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:명덕1",
+      "to": "DG1:반월당1",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:반월당1",
+      "to": "DG1:중앙로",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:중앙로",
+      "to": "DG1:대구역",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:대구역",
+      "to": "DG1:칠성시장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:칠성시장",
+      "to": "DG1:신천",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:신천",
+      "to": "DG1:동대구역",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:동대구역",
+      "to": "DG1:동구청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:동구청",
+      "to": "DG1:아양교",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:아양교",
+      "to": "DG1:동촌",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:동촌",
+      "to": "DG1:해안",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:해안",
+      "to": "DG1:방촌",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:방촌",
+      "to": "DG1:용계",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:용계",
+      "to": "DG1:율하",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:율하",
+      "to": "DG1:신기",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:신기",
+      "to": "DG1:반야월",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:반야월",
+      "to": "DG1:각산",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:각산",
+      "to": "DG1:안심",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:안심",
+      "to": "DG1:대구한의대병원",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:대구한의대병원",
+      "to": "DG1:부호",
+      "distanceKm": 5.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "DG1:부호",
+      "to": "DG1:하양",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

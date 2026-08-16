@@ -1,0 +1,1451 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권",
+    "operator": "서울교통공사"
+  },
+  "line": {
+    "id": "5",
+    "name": "서울 지하철 5호선",
+    "graphType": "branched_tree"
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_수도권5호선_역간거리_20250630.csv",
+    "crossCheckSourceFile": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "validation": {
+      "uniqueStationCount": 56,
+      "rideEdgeCount": 55,
+      "expectedTreeEdgeCount": 55,
+      "treeCheckPassed": true,
+      "allDistancesPositive": true,
+      "crossCheckComparableEdges": 54,
+      "crossCheckMatchedEdges": 54,
+      "crossCheckAllMatched": true
+    },
+    "notes": [
+      "국가철도공단 파일의 방화→하남검단산, 방화→마천 두 운행계통을 강동 공통축과 두 분기로 정규화함.",
+      "중복 공통구간은 하나의 물리 edge로 저장함.",
+      "서울교통공사 별도 공식 CSV와 비교 가능한 모든 edge를 교차검증함."
+    ],
+    "crossCheck": [
+      {
+        "from": "방화",
+        "to": "개화산",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "개화산",
+        "to": "김포공항",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "김포공항",
+        "to": "송정",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "송정",
+        "to": "마곡",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "마곡",
+        "to": "발산",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "발산",
+        "to": "우장산",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "우장산",
+        "to": "화곡",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "화곡",
+        "to": "까치산",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "까치산",
+        "to": "신정",
+        "nraKm": 1.3,
+        "seoulMetroKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "신정",
+        "to": "목동",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "목동",
+        "to": "오목교",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "오목교",
+        "to": "양평",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "양평",
+        "to": "영등포구청",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "영등포구청",
+        "to": "영등포시장",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "영등포시장",
+        "to": "신길",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "신길",
+        "to": "여의도",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "여의도",
+        "to": "여의나루",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "여의나루",
+        "to": "마포",
+        "nraKm": 1.8,
+        "seoulMetroKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "마포",
+        "to": "공덕",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "공덕",
+        "to": "애오개",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "애오개",
+        "to": "충정로",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "충정로",
+        "to": "서대문",
+        "nraKm": 0.7,
+        "seoulMetroKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "서대문",
+        "to": "광화문",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "광화문",
+        "to": "종로3가",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "종로3가",
+        "to": "을지로4가",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "을지로4가",
+        "to": "동대문역사문화공원",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "동대문역사문화공원",
+        "to": "청구",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "청구",
+        "to": "신금호",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "신금호",
+        "to": "행당",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "행당",
+        "to": "왕십리",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "왕십리",
+        "to": "마장",
+        "nraKm": 0.7,
+        "seoulMetroKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "마장",
+        "to": "답십리",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "답십리",
+        "to": "장한평",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "장한평",
+        "to": "군자",
+        "nraKm": 1.5,
+        "seoulMetroKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "군자",
+        "to": "아차산",
+        "nraKm": 1.0,
+        "seoulMetroKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "아차산",
+        "to": "광나루",
+        "nraKm": 1.5,
+        "seoulMetroKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "광나루",
+        "to": "천호",
+        "nraKm": 2.0,
+        "seoulMetroKm": 2.0,
+        "matched": true
+      },
+      {
+        "from": "천호",
+        "to": "강동",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "강동",
+        "to": "길동",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "길동",
+        "to": "굽은다리",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "굽은다리",
+        "to": "명일",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "명일",
+        "to": "고덕",
+        "nraKm": 1.2,
+        "seoulMetroKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "고덕",
+        "to": "상일동",
+        "nraKm": 1.1,
+        "seoulMetroKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "상일동",
+        "to": "강일",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "강일",
+        "to": "미사",
+        "nraKm": 1.7,
+        "seoulMetroKm": 1.7,
+        "matched": true
+      },
+      {
+        "from": "미사",
+        "to": "하남풍산",
+        "nraKm": 2.1,
+        "seoulMetroKm": 2.1,
+        "matched": true
+      },
+      {
+        "from": "하남풍산",
+        "to": "하남시청",
+        "nraKm": 1.3,
+        "seoulMetroKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "하남시청",
+        "to": "하남검단산",
+        "nraKm": 1.6,
+        "seoulMetroKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "강동",
+        "to": "둔촌동",
+        "nraKm": 1.2,
+        "seoulMetroKm": null,
+        "matched": null
+      },
+      {
+        "from": "둔촌동",
+        "to": "올림픽공원",
+        "nraKm": 1.4,
+        "seoulMetroKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "올림픽공원",
+        "to": "방이",
+        "nraKm": 0.8,
+        "seoulMetroKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "방이",
+        "to": "오금",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "오금",
+        "to": "개롱",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "개롱",
+        "to": "거여",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "거여",
+        "to": "마천",
+        "nraKm": 0.9,
+        "seoulMetroKm": 0.9,
+        "matched": true
+      }
+    ]
+  },
+  "routingNotes": {
+    "commonTrunk": "방화~강동",
+    "junction": "강동",
+    "branchDirections": {
+      "hanam_branch": {
+        "outbound": "하남검단산 방면",
+        "inbound": "방화 방면"
+      },
+      "macheon_branch": {
+        "outbound": "마천 방면",
+        "inbound": "방화 방면"
+      }
+    },
+    "important": "강동 이후 목적지에 따라 하남검단산 방면과 마천 방면을 구분해야 함."
+  },
+  "branches": {
+    "commonTrunk": [
+      "방화",
+      "개화산",
+      "김포공항",
+      "송정",
+      "마곡",
+      "발산",
+      "우장산",
+      "화곡",
+      "까치산",
+      "신정",
+      "목동",
+      "오목교",
+      "양평",
+      "영등포구청",
+      "영등포시장",
+      "신길",
+      "여의도",
+      "여의나루",
+      "마포",
+      "공덕",
+      "애오개",
+      "충정로",
+      "서대문",
+      "광화문",
+      "종로3가",
+      "을지로4가",
+      "동대문역사문화공원",
+      "청구",
+      "신금호",
+      "행당",
+      "왕십리",
+      "마장",
+      "답십리",
+      "장한평",
+      "군자",
+      "아차산",
+      "광나루",
+      "천호",
+      "강동"
+    ],
+    "hanamBranch": [
+      "강동",
+      "길동",
+      "굽은다리",
+      "명일",
+      "고덕",
+      "상일동",
+      "강일",
+      "미사",
+      "하남풍산",
+      "하남시청",
+      "하남검단산"
+    ],
+    "macheonBranch": [
+      "강동",
+      "둔촌동",
+      "올림픽공원",
+      "방이",
+      "오금",
+      "개롱",
+      "거여",
+      "마천"
+    ]
+  },
+  "stations": [
+    {
+      "id": "L5:방화",
+      "name": "방화",
+      "sourceName": "방화",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 0
+    },
+    {
+      "id": "L5:개화산",
+      "name": "개화산",
+      "sourceName": "개화산",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 1
+    },
+    {
+      "id": "L5:김포공항",
+      "name": "김포공항",
+      "sourceName": "김포공항",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 2
+    },
+    {
+      "id": "L5:송정",
+      "name": "송정",
+      "sourceName": "송정",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 3
+    },
+    {
+      "id": "L5:마곡",
+      "name": "마곡",
+      "sourceName": "마곡",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 4
+    },
+    {
+      "id": "L5:발산",
+      "name": "발산",
+      "sourceName": "발산",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 5
+    },
+    {
+      "id": "L5:우장산",
+      "name": "우장산",
+      "sourceName": "우장산",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 6
+    },
+    {
+      "id": "L5:화곡",
+      "name": "화곡",
+      "sourceName": "화곡",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 7
+    },
+    {
+      "id": "L5:까치산",
+      "name": "까치산",
+      "sourceName": "까치산",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 8
+    },
+    {
+      "id": "L5:신정",
+      "name": "신정",
+      "sourceName": "신정(은행정)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 9
+    },
+    {
+      "id": "L5:목동",
+      "name": "목동",
+      "sourceName": "목동",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 10
+    },
+    {
+      "id": "L5:오목교",
+      "name": "오목교",
+      "sourceName": "오목교(목동운동장앞)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 11
+    },
+    {
+      "id": "L5:양평",
+      "name": "양평",
+      "sourceName": "양평",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 12
+    },
+    {
+      "id": "L5:영등포구청",
+      "name": "영등포구청",
+      "sourceName": "영등포구청",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 13
+    },
+    {
+      "id": "L5:영등포시장",
+      "name": "영등포시장",
+      "sourceName": "영등포시장",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 14
+    },
+    {
+      "id": "L5:신길",
+      "name": "신길",
+      "sourceName": "신길",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 15
+    },
+    {
+      "id": "L5:여의도",
+      "name": "여의도",
+      "sourceName": "여의도",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 16
+    },
+    {
+      "id": "L5:여의나루",
+      "name": "여의나루",
+      "sourceName": "여의나루",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 17
+    },
+    {
+      "id": "L5:마포",
+      "name": "마포",
+      "sourceName": "마포",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 18
+    },
+    {
+      "id": "L5:공덕",
+      "name": "공덕",
+      "sourceName": "공덕",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 19
+    },
+    {
+      "id": "L5:애오개",
+      "name": "애오개",
+      "sourceName": "애오개",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 20
+    },
+    {
+      "id": "L5:충정로",
+      "name": "충정로",
+      "sourceName": "충정로(경기대입구)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 21
+    },
+    {
+      "id": "L5:서대문",
+      "name": "서대문",
+      "sourceName": "서대문",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 22
+    },
+    {
+      "id": "L5:광화문",
+      "name": "광화문",
+      "sourceName": "광화문(세종문화회관)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 23
+    },
+    {
+      "id": "L5:종로3가",
+      "name": "종로3가",
+      "sourceName": "종로3가(탑골공원)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 24
+    },
+    {
+      "id": "L5:을지로4가",
+      "name": "을지로4가",
+      "sourceName": "을지로4가",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 25
+    },
+    {
+      "id": "L5:동대문역사문화공원",
+      "name": "동대문역사문화공원",
+      "sourceName": "동대문역사문화공원",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 26
+    },
+    {
+      "id": "L5:청구",
+      "name": "청구",
+      "sourceName": "청구",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 27
+    },
+    {
+      "id": "L5:신금호",
+      "name": "신금호",
+      "sourceName": "신금호",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 28
+    },
+    {
+      "id": "L5:행당",
+      "name": "행당",
+      "sourceName": "행당",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 29
+    },
+    {
+      "id": "L5:왕십리",
+      "name": "왕십리",
+      "sourceName": "왕십리",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 30
+    },
+    {
+      "id": "L5:마장",
+      "name": "마장",
+      "sourceName": "마장",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 31
+    },
+    {
+      "id": "L5:답십리",
+      "name": "답십리",
+      "sourceName": "답십리",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 32
+    },
+    {
+      "id": "L5:장한평",
+      "name": "장한평",
+      "sourceName": "장한평",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 33
+    },
+    {
+      "id": "L5:군자",
+      "name": "군자",
+      "sourceName": "군자(능동)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 34
+    },
+    {
+      "id": "L5:아차산",
+      "name": "아차산",
+      "sourceName": "아차산(어린이대공원후문)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 35
+    },
+    {
+      "id": "L5:광나루",
+      "name": "광나루",
+      "sourceName": "광나루(장신대)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 36
+    },
+    {
+      "id": "L5:천호",
+      "name": "천호",
+      "sourceName": "천호(풍납토성)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 37
+    },
+    {
+      "id": "L5:강동",
+      "name": "강동",
+      "sourceName": "강동",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 38,
+      "branchRoles": [
+        "하남검단산/마천 분기"
+      ]
+    },
+    {
+      "id": "L5:길동",
+      "name": "길동",
+      "sourceName": "길동",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 39
+    },
+    {
+      "id": "L5:굽은다리",
+      "name": "굽은다리",
+      "sourceName": "굽은다리(강동구민회관앞)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 40
+    },
+    {
+      "id": "L5:명일",
+      "name": "명일",
+      "sourceName": "명일",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 41
+    },
+    {
+      "id": "L5:고덕",
+      "name": "고덕",
+      "sourceName": "고덕",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 42
+    },
+    {
+      "id": "L5:상일동",
+      "name": "상일동",
+      "sourceName": "상일동",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 43
+    },
+    {
+      "id": "L5:강일",
+      "name": "강일",
+      "sourceName": "강일",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 44
+    },
+    {
+      "id": "L5:미사",
+      "name": "미사",
+      "sourceName": "미사",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 45
+    },
+    {
+      "id": "L5:하남풍산",
+      "name": "하남풍산",
+      "sourceName": "하남풍산",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 46
+    },
+    {
+      "id": "L5:하남시청",
+      "name": "하남시청",
+      "sourceName": "하남시청(덕풍·신장)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 47
+    },
+    {
+      "id": "L5:하남검단산",
+      "name": "하남검단산",
+      "sourceName": "하남검단산역",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 48
+    },
+    {
+      "id": "L5:둔촌동",
+      "name": "둔촌동",
+      "sourceName": "둔촌동",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 49
+    },
+    {
+      "id": "L5:올림픽공원",
+      "name": "올림픽공원",
+      "sourceName": "올림픽공원(한국체대)",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 50
+    },
+    {
+      "id": "L5:방이",
+      "name": "방이",
+      "sourceName": "방이",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 51
+    },
+    {
+      "id": "L5:오금",
+      "name": "오금",
+      "sourceName": "오금",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 52
+    },
+    {
+      "id": "L5:개롱",
+      "name": "개롱",
+      "sourceName": "개롱",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 53
+    },
+    {
+      "id": "L5:거여",
+      "name": "거여",
+      "sourceName": "거여",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 54
+    },
+    {
+      "id": "L5:마천",
+      "name": "마천",
+      "sourceName": "마천",
+      "line": "5",
+      "lineName": "서울 지하철 5호선",
+      "index": 55
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:방화",
+      "to": "L5:개화산",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:개화산",
+      "to": "L5:김포공항",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:김포공항",
+      "to": "L5:송정",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:송정",
+      "to": "L5:마곡",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:마곡",
+      "to": "L5:발산",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:발산",
+      "to": "L5:우장산",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:우장산",
+      "to": "L5:화곡",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:화곡",
+      "to": "L5:까치산",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:까치산",
+      "to": "L5:신정",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:신정",
+      "to": "L5:목동",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:목동",
+      "to": "L5:오목교",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:오목교",
+      "to": "L5:양평",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:양평",
+      "to": "L5:영등포구청",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:영등포구청",
+      "to": "L5:영등포시장",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:영등포시장",
+      "to": "L5:신길",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:신길",
+      "to": "L5:여의도",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:여의도",
+      "to": "L5:여의나루",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:여의나루",
+      "to": "L5:마포",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:마포",
+      "to": "L5:공덕",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:공덕",
+      "to": "L5:애오개",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:애오개",
+      "to": "L5:충정로",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:충정로",
+      "to": "L5:서대문",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:서대문",
+      "to": "L5:광화문",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:광화문",
+      "to": "L5:종로3가",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:종로3가",
+      "to": "L5:을지로4가",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:을지로4가",
+      "to": "L5:동대문역사문화공원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:동대문역사문화공원",
+      "to": "L5:청구",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:청구",
+      "to": "L5:신금호",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:신금호",
+      "to": "L5:행당",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:행당",
+      "to": "L5:왕십리",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:왕십리",
+      "to": "L5:마장",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:마장",
+      "to": "L5:답십리",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:답십리",
+      "to": "L5:장한평",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:장한평",
+      "to": "L5:군자",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:군자",
+      "to": "L5:아차산",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:아차산",
+      "to": "L5:광나루",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:광나루",
+      "to": "L5:천호",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "common_trunk",
+      "from": "L5:천호",
+      "to": "L5:강동",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:강동",
+      "to": "L5:길동",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:길동",
+      "to": "L5:굽은다리",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:굽은다리",
+      "to": "L5:명일",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:명일",
+      "to": "L5:고덕",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:고덕",
+      "to": "L5:상일동",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:상일동",
+      "to": "L5:강일",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:강일",
+      "to": "L5:미사",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:미사",
+      "to": "L5:하남풍산",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:하남풍산",
+      "to": "L5:하남시청",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "hanam_branch",
+      "from": "L5:하남시청",
+      "to": "L5:하남검단산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:강동",
+      "to": "L5:둔촌동",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:둔촌동",
+      "to": "L5:올림픽공원",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:올림픽공원",
+      "to": "L5:방이",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:방이",
+      "to": "L5:오금",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:오금",
+      "to": "L5:개롱",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:개롱",
+      "to": "L5:거여",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "5",
+      "segment": "macheon_branch",
+      "from": "L5:거여",
+      "to": "L5:마천",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

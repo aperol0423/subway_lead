@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>지하철 방향 안내 프로그램</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <div class="app">
@@ -25,11 +25,12 @@
         <p class="subtitle">이용할 지역을 골라주세요</p>
 
         <div class="region-grid">
-          <button class="region-btn" data-region="수도권">수도권</button>
-          <button class="region-btn" data-region="부산·울산·경남">부산·울산·경남</button>
-          <button class="region-btn" data-region="대구·경북">대구·경북</button>
-          <button class="region-btn" data-region="대전·세종·충청">대전·세종·충청</button>
-          <button class="region-btn" data-region="광주·전남">광주·전남</button>
+          <button class="region-btn" data-region="seoul">서울특별시</button>
+          <button class="region-btn" data-region="busan">부산광역시</button>
+          <button class="region-btn" data-region="daegu">대구광역시</button>
+          <button class="region-btn" data-region="gwangju">광주광역시</button>
+          <button class="region-btn" data-region="incheon">인천광역시</button>
+          <button class="region-btn" data-region="daejeon">대전광역시</button>
         </div>
 
         <button id="back-to-start" class="sub-btn">← 뒤로가기</button>
@@ -150,8 +151,9 @@
 
   </div>
 
-  <script src="stationData.js"></script>
-  <script src="routeFinder.js"></script>
-  <script src="script.js"></script>
+  <script src="stationData.js?v=3"></script>
+  <script src="routeFinder.js?v=3"></script>
+  <script src="fastTransfer.js?v=4"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>

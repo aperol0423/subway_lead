@@ -1,0 +1,1592 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "gyeongui_jungang",
+    "name": "경의·중앙선",
+    "graphType": "branched_tree",
+    "majorTerminals": [
+      "도라산",
+      "지평",
+      "서울역"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_경의중앙선_역간거리_20250630.csv",
+    "sourceRowCount": 78,
+    "uniqueStationCount": 58,
+    "validation": {
+      "rideEdgeCount": 57,
+      "expectedTreeEdgeCount": 57,
+      "treeCheckPassed": true,
+      "allDistancesPositive": true,
+      "sumOfUniquePhysicalEdgesKm": 137.8
+    },
+    "notes": [
+      "업로드된 국가철도공단 2025-06-30 경의중앙선 역간거리 CSV의 78행을 실제 물리 그래프로 정규화함.",
+      "원본은 도라산~지평 계통과 문산~서울역 계통의 공통 구간을 중복 수록하므로 중복 물리 edge는 한 번만 저장함.",
+      "서울역 지선은 가좌-신촌-서울역으로 별도 branch 처리함.",
+      "도라산-임진강-운천-문산 구간은 일반 본선과 운행 빈도/형태가 다를 수 있어 north_limited segment로 구분함.",
+      "원본 두 거리 열의 귀속 방식이 전 구간에서 완전히 일정하지 않아, 각 edge가 어떤 원본 행/열을 사용했는지 edgeSourceMap에 보존함.",
+      "원본 병기 역명은 sourceName에 보존함."
+    ],
+    "edgeSourceMap": [
+      {
+        "from": "도라산",
+        "to": "임진강",
+        "distanceKm": 3.7,
+        "sourceField": "역간거리",
+        "sourceStation": "도라산"
+      },
+      {
+        "from": "임진강",
+        "to": "운천",
+        "distanceKm": 2.3,
+        "sourceField": "후행역간거리",
+        "sourceStation": "임진강"
+      },
+      {
+        "from": "운천",
+        "to": "문산",
+        "distanceKm": 3.8,
+        "sourceField": "후행역간거리",
+        "sourceStation": "운천",
+        "note": "운천 신설 이후 인접 문산 연결값으로 원본의 운천 후행역간거리 사용"
+      },
+      {
+        "from": "문산",
+        "to": "파주",
+        "distanceKm": 4.4,
+        "sourceField": "역간거리",
+        "sourceStation": "문산"
+      },
+      {
+        "from": "파주",
+        "to": "월롱",
+        "distanceKm": 2.2,
+        "sourceField": "역간거리",
+        "sourceStation": "파주"
+      },
+      {
+        "from": "월롱",
+        "to": "금촌",
+        "distanceKm": 4.1,
+        "sourceField": "역간거리",
+        "sourceStation": "월롱"
+      },
+      {
+        "from": "금촌",
+        "to": "금릉",
+        "distanceKm": 2.1,
+        "sourceField": "역간거리",
+        "sourceStation": "금촌"
+      },
+      {
+        "from": "금릉",
+        "to": "운정",
+        "distanceKm": 3.1,
+        "sourceField": "역간거리",
+        "sourceStation": "금릉"
+      },
+      {
+        "from": "운정",
+        "to": "야당",
+        "distanceKm": 1.5,
+        "sourceField": "후행역간거리",
+        "sourceStation": "운정",
+        "note": "야당 신설 반영 구간으로 원본 운정 행 후행역간거리 사용"
+      },
+      {
+        "from": "야당",
+        "to": "탄현",
+        "distanceKm": 2.0,
+        "sourceField": "역간거리",
+        "sourceStation": "야당",
+        "note": "원본 야당 행의 역간거리 사용"
+      },
+      {
+        "from": "탄현",
+        "to": "일산",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "탄현"
+      },
+      {
+        "from": "일산",
+        "to": "풍산",
+        "distanceKm": 1.9,
+        "sourceField": "역간거리",
+        "sourceStation": "일산"
+      },
+      {
+        "from": "풍산",
+        "to": "백마",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "풍산"
+      },
+      {
+        "from": "백마",
+        "to": "곡산",
+        "distanceKm": 1.6,
+        "sourceField": "역간거리",
+        "sourceStation": "백마"
+      },
+      {
+        "from": "곡산",
+        "to": "대곡",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "곡산"
+      },
+      {
+        "from": "대곡",
+        "to": "능곡",
+        "distanceKm": 1.8,
+        "sourceField": "역간거리",
+        "sourceStation": "대곡"
+      },
+      {
+        "from": "능곡",
+        "to": "행신",
+        "distanceKm": 1.5,
+        "sourceField": "역간거리",
+        "sourceStation": "능곡"
+      },
+      {
+        "from": "행신",
+        "to": "강매",
+        "distanceKm": 1.0,
+        "sourceField": "역간거리",
+        "sourceStation": "행신"
+      },
+      {
+        "from": "강매",
+        "to": "한국항공대",
+        "distanceKm": 2.4,
+        "sourceField": "역간거리",
+        "sourceStation": "강매"
+      },
+      {
+        "from": "한국항공대",
+        "to": "수색",
+        "distanceKm": 3.4,
+        "sourceField": "역간거리",
+        "sourceStation": "한국항공대"
+      },
+      {
+        "from": "수색",
+        "to": "디지털미디어시티",
+        "distanceKm": 0.6,
+        "sourceField": "역간거리",
+        "sourceStation": "수색"
+      },
+      {
+        "from": "디지털미디어시티",
+        "to": "가좌",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "디지털미디어시티"
+      },
+      {
+        "from": "가좌",
+        "to": "홍대입구",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "가좌"
+      },
+      {
+        "from": "홍대입구",
+        "to": "서강대",
+        "distanceKm": 0.9,
+        "sourceField": "역간거리",
+        "sourceStation": "홍대입구"
+      },
+      {
+        "from": "서강대",
+        "to": "공덕",
+        "distanceKm": 1.9,
+        "sourceField": "역간거리",
+        "sourceStation": "서강대"
+      },
+      {
+        "from": "공덕",
+        "to": "효창공원앞",
+        "distanceKm": 1.0,
+        "sourceField": "역간거리",
+        "sourceStation": "공덕"
+      },
+      {
+        "from": "효창공원앞",
+        "to": "용산",
+        "distanceKm": 1.5,
+        "sourceField": "역간거리",
+        "sourceStation": "효창공원앞"
+      },
+      {
+        "from": "용산",
+        "to": "이촌",
+        "distanceKm": 1.9,
+        "sourceField": "역간거리",
+        "sourceStation": "이촌",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "이촌",
+        "to": "서빙고",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "서빙고",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "서빙고",
+        "to": "한남",
+        "distanceKm": 1.9,
+        "sourceField": "역간거리",
+        "sourceStation": "한남",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "한남",
+        "to": "옥수",
+        "distanceKm": 1.6,
+        "sourceField": "역간거리",
+        "sourceStation": "옥수",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "옥수",
+        "to": "응봉",
+        "distanceKm": 1.8,
+        "sourceField": "역간거리",
+        "sourceStation": "응봉",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "응봉",
+        "to": "왕십리",
+        "distanceKm": 1.4,
+        "sourceField": "역간거리",
+        "sourceStation": "왕십리",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "왕십리",
+        "to": "청량리",
+        "distanceKm": 2.4,
+        "sourceField": "역간거리",
+        "sourceStation": "청량리",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "청량리",
+        "to": "회기",
+        "distanceKm": 1.4,
+        "sourceField": "역간거리",
+        "sourceStation": "회기",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "회기",
+        "to": "중랑",
+        "distanceKm": 0.8,
+        "sourceField": "역간거리",
+        "sourceStation": "중랑",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "중랑",
+        "to": "상봉",
+        "distanceKm": 0.8,
+        "sourceField": "역간거리",
+        "sourceStation": "상봉",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "상봉",
+        "to": "망우",
+        "distanceKm": 0.6,
+        "sourceField": "역간거리",
+        "sourceStation": "망우",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "망우",
+        "to": "양원",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "양원",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "양원",
+        "to": "구리",
+        "distanceKm": 3.2,
+        "sourceField": "역간거리",
+        "sourceStation": "구리",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "구리",
+        "to": "도농",
+        "distanceKm": 1.7,
+        "sourceField": "역간거리",
+        "sourceStation": "도농",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "도농",
+        "to": "양정",
+        "distanceKm": 3.7,
+        "sourceField": "역간거리",
+        "sourceStation": "양정",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "양정",
+        "to": "덕소",
+        "distanceKm": 2.3,
+        "sourceField": "역간거리",
+        "sourceStation": "덕소",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "덕소",
+        "to": "도심",
+        "distanceKm": 1.5,
+        "sourceField": "역간거리",
+        "sourceStation": "도심",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "도심",
+        "to": "팔당",
+        "distanceKm": 4.2,
+        "sourceField": "역간거리",
+        "sourceStation": "팔당",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "팔당",
+        "to": "운길산",
+        "distanceKm": 6.4,
+        "sourceField": "역간거리",
+        "sourceStation": "운길산",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "운길산",
+        "to": "양수",
+        "distanceKm": 1.9,
+        "sourceField": "역간거리",
+        "sourceStation": "양수",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "양수",
+        "to": "신원",
+        "distanceKm": 4.7,
+        "sourceField": "역간거리",
+        "sourceStation": "신원",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "신원",
+        "to": "국수",
+        "distanceKm": 2.9,
+        "sourceField": "역간거리",
+        "sourceStation": "국수",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "국수",
+        "to": "아신",
+        "distanceKm": 4.1,
+        "sourceField": "역간거리",
+        "sourceStation": "아신",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "아신",
+        "to": "오빈",
+        "distanceKm": 2.8,
+        "sourceField": "역간거리",
+        "sourceStation": "오빈",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "오빈",
+        "to": "양평",
+        "distanceKm": 2.2,
+        "sourceField": "역간거리",
+        "sourceStation": "양평",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "양평",
+        "to": "원덕",
+        "distanceKm": 5.8,
+        "sourceField": "역간거리",
+        "sourceStation": "원덕",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "원덕",
+        "to": "용문",
+        "distanceKm": 5.8,
+        "sourceField": "역간거리",
+        "sourceStation": "용문",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "용문",
+        "to": "지평",
+        "distanceKm": 3.6,
+        "sourceField": "역간거리",
+        "sourceStation": "지평",
+        "note": "중앙선 구간은 도착역 행의 역간거리 값을 이전 인접역과의 거리로 적용"
+      },
+      {
+        "from": "가좌",
+        "to": "신촌",
+        "distanceKm": 2.7,
+        "sourceField": "후행역간거리",
+        "sourceStation": "신촌"
+      },
+      {
+        "from": "신촌",
+        "to": "서울역",
+        "distanceKm": 3.1,
+        "sourceField": "역간거리",
+        "sourceStation": "신촌"
+      }
+    ]
+  },
+  "routingNotes": {
+    "important": "경의·중앙선은 중간 종착·서울역 지선·문산 북쪽 제한운행이 있어 단순 종점 두 개만으로 실제 열차 행선지를 고정하면 안 됨.",
+    "mainDirections": [
+      "문산/도라산 방면",
+      "용문/지평 방면"
+    ],
+    "seoulStationBranchDirections": [
+      "서울역 방면",
+      "문산 방면"
+    ],
+    "serviceCaveat": "문산 북쪽 운천·임진강·도라산 구간은 실제 이용 시 최신 시간표/운행 여부를 별도로 확인하도록 설계 권장"
+  },
+  "branches": {
+    "mainPhysicalPath": [
+      "도라산",
+      "임진강",
+      "운천",
+      "문산",
+      "파주",
+      "월롱",
+      "금촌",
+      "금릉",
+      "운정",
+      "야당",
+      "탄현",
+      "일산",
+      "풍산",
+      "백마",
+      "곡산",
+      "대곡",
+      "능곡",
+      "행신",
+      "강매",
+      "한국항공대",
+      "수색",
+      "디지털미디어시티",
+      "가좌",
+      "홍대입구",
+      "서강대",
+      "공덕",
+      "효창공원앞",
+      "용산",
+      "이촌",
+      "서빙고",
+      "한남",
+      "옥수",
+      "응봉",
+      "왕십리",
+      "청량리",
+      "회기",
+      "중랑",
+      "상봉",
+      "망우",
+      "양원",
+      "구리",
+      "도농",
+      "양정",
+      "덕소",
+      "도심",
+      "팔당",
+      "운길산",
+      "양수",
+      "신원",
+      "국수",
+      "아신",
+      "오빈",
+      "양평",
+      "원덕",
+      "용문",
+      "지평"
+    ],
+    "seoulStationBranch": [
+      "가좌",
+      "신촌",
+      "서울역"
+    ]
+  },
+  "stations": [
+    {
+      "id": "GJ:도라산",
+      "name": "도라산",
+      "sourceName": "도라산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 0
+    },
+    {
+      "id": "GJ:임진강",
+      "name": "임진강",
+      "sourceName": "임진강",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 1
+    },
+    {
+      "id": "GJ:운천",
+      "name": "운천",
+      "sourceName": "운천",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 2
+    },
+    {
+      "id": "GJ:문산",
+      "name": "문산",
+      "sourceName": "문산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 3,
+      "specialRoles": [
+        "임진강·도라산 방면 제한운행 구간 경계"
+      ]
+    },
+    {
+      "id": "GJ:파주",
+      "name": "파주",
+      "sourceName": "파주(두원대학)",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 4
+    },
+    {
+      "id": "GJ:월롱",
+      "name": "월롱",
+      "sourceName": "월롱(서영대학교)",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 5
+    },
+    {
+      "id": "GJ:금촌",
+      "name": "금촌",
+      "sourceName": "금촌",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 6
+    },
+    {
+      "id": "GJ:금릉",
+      "name": "금릉",
+      "sourceName": "금릉",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 7
+    },
+    {
+      "id": "GJ:운정",
+      "name": "운정",
+      "sourceName": "운정",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 8
+    },
+    {
+      "id": "GJ:야당",
+      "name": "야당",
+      "sourceName": "야당",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 9
+    },
+    {
+      "id": "GJ:탄현",
+      "name": "탄현",
+      "sourceName": "탄현",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 10
+    },
+    {
+      "id": "GJ:일산",
+      "name": "일산",
+      "sourceName": "일산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 11
+    },
+    {
+      "id": "GJ:풍산",
+      "name": "풍산",
+      "sourceName": "풍산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 12
+    },
+    {
+      "id": "GJ:백마",
+      "name": "백마",
+      "sourceName": "백마",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 13
+    },
+    {
+      "id": "GJ:곡산",
+      "name": "곡산",
+      "sourceName": "곡산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 14
+    },
+    {
+      "id": "GJ:대곡",
+      "name": "대곡",
+      "sourceName": "대곡",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 15
+    },
+    {
+      "id": "GJ:능곡",
+      "name": "능곡",
+      "sourceName": "능곡",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 16
+    },
+    {
+      "id": "GJ:행신",
+      "name": "행신",
+      "sourceName": "행신",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 17
+    },
+    {
+      "id": "GJ:강매",
+      "name": "강매",
+      "sourceName": "강매",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 18
+    },
+    {
+      "id": "GJ:한국항공대",
+      "name": "한국항공대",
+      "sourceName": "한국항공대",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 19
+    },
+    {
+      "id": "GJ:수색",
+      "name": "수색",
+      "sourceName": "수색",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 20
+    },
+    {
+      "id": "GJ:디지털미디어시티",
+      "name": "디지털미디어시티",
+      "sourceName": "디지털미디어시티",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 21
+    },
+    {
+      "id": "GJ:가좌",
+      "name": "가좌",
+      "sourceName": "가좌",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 22,
+      "specialRoles": [
+        "서울역 지선 분기"
+      ]
+    },
+    {
+      "id": "GJ:홍대입구",
+      "name": "홍대입구",
+      "sourceName": "홍대입구",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 23
+    },
+    {
+      "id": "GJ:서강대",
+      "name": "서강대",
+      "sourceName": "서강대",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 24
+    },
+    {
+      "id": "GJ:공덕",
+      "name": "공덕",
+      "sourceName": "공덕",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 25
+    },
+    {
+      "id": "GJ:효창공원앞",
+      "name": "효창공원앞",
+      "sourceName": "효창공원앞",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 26
+    },
+    {
+      "id": "GJ:용산",
+      "name": "용산",
+      "sourceName": "용산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 27
+    },
+    {
+      "id": "GJ:이촌",
+      "name": "이촌",
+      "sourceName": "이촌",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 28
+    },
+    {
+      "id": "GJ:서빙고",
+      "name": "서빙고",
+      "sourceName": "서빙고",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 29
+    },
+    {
+      "id": "GJ:한남",
+      "name": "한남",
+      "sourceName": "한남",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 30
+    },
+    {
+      "id": "GJ:옥수",
+      "name": "옥수",
+      "sourceName": "옥수",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 31
+    },
+    {
+      "id": "GJ:응봉",
+      "name": "응봉",
+      "sourceName": "응봉",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 32
+    },
+    {
+      "id": "GJ:왕십리",
+      "name": "왕십리",
+      "sourceName": "왕십리",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 33
+    },
+    {
+      "id": "GJ:청량리",
+      "name": "청량리",
+      "sourceName": "청량리",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 34
+    },
+    {
+      "id": "GJ:회기",
+      "name": "회기",
+      "sourceName": "회기",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 35
+    },
+    {
+      "id": "GJ:중랑",
+      "name": "중랑",
+      "sourceName": "중랑",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 36
+    },
+    {
+      "id": "GJ:상봉",
+      "name": "상봉",
+      "sourceName": "상봉",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 37
+    },
+    {
+      "id": "GJ:망우",
+      "name": "망우",
+      "sourceName": "망우",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 38
+    },
+    {
+      "id": "GJ:양원",
+      "name": "양원",
+      "sourceName": "양원(서울시북부병원)",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 39
+    },
+    {
+      "id": "GJ:구리",
+      "name": "구리",
+      "sourceName": "구리",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 40
+    },
+    {
+      "id": "GJ:도농",
+      "name": "도농",
+      "sourceName": "도농",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 41
+    },
+    {
+      "id": "GJ:양정",
+      "name": "양정",
+      "sourceName": "양정",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 42
+    },
+    {
+      "id": "GJ:덕소",
+      "name": "덕소",
+      "sourceName": "덕소",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 43
+    },
+    {
+      "id": "GJ:도심",
+      "name": "도심",
+      "sourceName": "도심",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 44
+    },
+    {
+      "id": "GJ:팔당",
+      "name": "팔당",
+      "sourceName": "팔당",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 45
+    },
+    {
+      "id": "GJ:운길산",
+      "name": "운길산",
+      "sourceName": "운길산",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 46
+    },
+    {
+      "id": "GJ:양수",
+      "name": "양수",
+      "sourceName": "양수",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 47
+    },
+    {
+      "id": "GJ:신원",
+      "name": "신원",
+      "sourceName": "신원",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 48
+    },
+    {
+      "id": "GJ:국수",
+      "name": "국수",
+      "sourceName": "국수",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 49
+    },
+    {
+      "id": "GJ:아신",
+      "name": "아신",
+      "sourceName": "아신(아세아연합신학대)",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 50
+    },
+    {
+      "id": "GJ:오빈",
+      "name": "오빈",
+      "sourceName": "오빈",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 51
+    },
+    {
+      "id": "GJ:양평",
+      "name": "양평",
+      "sourceName": "양평",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 52
+    },
+    {
+      "id": "GJ:원덕",
+      "name": "원덕",
+      "sourceName": "원덕(추읍산)",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 53
+    },
+    {
+      "id": "GJ:용문",
+      "name": "용문",
+      "sourceName": "용문",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 54
+    },
+    {
+      "id": "GJ:지평",
+      "name": "지평",
+      "sourceName": "지평",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 55
+    },
+    {
+      "id": "GJ:신촌",
+      "name": "신촌",
+      "sourceName": "신촌",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 56
+    },
+    {
+      "id": "GJ:서울역",
+      "name": "서울역",
+      "sourceName": "서울역",
+      "line": "gyeongui_jungang",
+      "lineName": "경의·중앙선",
+      "operator": "코레일",
+      "graphIndex": 57
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "north_limited",
+      "from": "GJ:도라산",
+      "to": "GJ:임진강",
+      "distanceKm": 3.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "north_limited",
+      "from": "GJ:임진강",
+      "to": "GJ:운천",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "north_limited",
+      "from": "GJ:운천",
+      "to": "GJ:문산",
+      "distanceKm": 3.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:문산",
+      "to": "GJ:파주",
+      "distanceKm": 4.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:파주",
+      "to": "GJ:월롱",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:월롱",
+      "to": "GJ:금촌",
+      "distanceKm": 4.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:금촌",
+      "to": "GJ:금릉",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:금릉",
+      "to": "GJ:운정",
+      "distanceKm": 3.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:운정",
+      "to": "GJ:야당",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:야당",
+      "to": "GJ:탄현",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:탄현",
+      "to": "GJ:일산",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:일산",
+      "to": "GJ:풍산",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:풍산",
+      "to": "GJ:백마",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:백마",
+      "to": "GJ:곡산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:곡산",
+      "to": "GJ:대곡",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:대곡",
+      "to": "GJ:능곡",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:능곡",
+      "to": "GJ:행신",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:행신",
+      "to": "GJ:강매",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:강매",
+      "to": "GJ:한국항공대",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:한국항공대",
+      "to": "GJ:수색",
+      "distanceKm": 3.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:수색",
+      "to": "GJ:디지털미디어시티",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:디지털미디어시티",
+      "to": "GJ:가좌",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:가좌",
+      "to": "GJ:홍대입구",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:홍대입구",
+      "to": "GJ:서강대",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:서강대",
+      "to": "GJ:공덕",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:공덕",
+      "to": "GJ:효창공원앞",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "gyeongui_main",
+      "from": "GJ:효창공원앞",
+      "to": "GJ:용산",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:용산",
+      "to": "GJ:이촌",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:이촌",
+      "to": "GJ:서빙고",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:서빙고",
+      "to": "GJ:한남",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:한남",
+      "to": "GJ:옥수",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:옥수",
+      "to": "GJ:응봉",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:응봉",
+      "to": "GJ:왕십리",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:왕십리",
+      "to": "GJ:청량리",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:청량리",
+      "to": "GJ:회기",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:회기",
+      "to": "GJ:중랑",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:중랑",
+      "to": "GJ:상봉",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:상봉",
+      "to": "GJ:망우",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:망우",
+      "to": "GJ:양원",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:양원",
+      "to": "GJ:구리",
+      "distanceKm": 3.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:구리",
+      "to": "GJ:도농",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:도농",
+      "to": "GJ:양정",
+      "distanceKm": 3.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:양정",
+      "to": "GJ:덕소",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:덕소",
+      "to": "GJ:도심",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:도심",
+      "to": "GJ:팔당",
+      "distanceKm": 4.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:팔당",
+      "to": "GJ:운길산",
+      "distanceKm": 6.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:운길산",
+      "to": "GJ:양수",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:양수",
+      "to": "GJ:신원",
+      "distanceKm": 4.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:신원",
+      "to": "GJ:국수",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:국수",
+      "to": "GJ:아신",
+      "distanceKm": 4.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:아신",
+      "to": "GJ:오빈",
+      "distanceKm": 2.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:오빈",
+      "to": "GJ:양평",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:양평",
+      "to": "GJ:원덕",
+      "distanceKm": 5.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:원덕",
+      "to": "GJ:용문",
+      "distanceKm": 5.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "jungang_main",
+      "from": "GJ:용문",
+      "to": "GJ:지평",
+      "distanceKm": 3.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "seoul_station_branch",
+      "from": "GJ:가좌",
+      "to": "GJ:신촌",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongui_jungang",
+      "segment": "seoul_station_branch",
+      "from": "GJ:신촌",
+      "to": "GJ:서울역",
+      "distanceKm": 3.1,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

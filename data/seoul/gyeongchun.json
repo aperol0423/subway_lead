@@ -1,0 +1,748 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "gyeongchun",
+    "name": "경춘선",
+    "graphType": "linear_main_with_unresolved_gwangundae_service",
+    "mainDistancePathTerminals": [
+      "청량리",
+      "춘천"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_경춘선_역간거리_20250630.csv",
+    "sourceRowCount": 26,
+    "validation": {
+      "stationCount": 25,
+      "resolvedRideEdgeCount": 23,
+      "mainPathStationCount": 24,
+      "mainPathExpectedEdgeCount": 23,
+      "mainPathLinearCheckPassed": true,
+      "allResolvedDistancesPositive": true,
+      "mainPathDistanceSumKm": 84.7,
+      "directionalColumnComparableEdges": 22,
+      "directionalColumnMatchedEdges": 17
+    },
+    "unresolvedServiceConnections": [
+      {
+        "station": "광운대",
+        "reason": "원본 마지막의 상봉·광운대 두 행만으로는 광운대가 어느 물리 역과 어떤 거리로 연결되는지 확정할 수 없음. 상봉 행 0.8/0.6과 광운대 행 1.1/1.1은 인접 pair 값으로 일치하지 않음.",
+        "sourceExtraRows": [
+          {
+            "station": "상봉",
+            "sourceName": "상봉",
+            "previousKm": 0.8,
+            "followingKm": 0.6
+          },
+          {
+            "station": "광운대",
+            "sourceName": "광운대",
+            "previousKm": 1.1,
+            "followingKm": 1.1
+          }
+        ]
+      }
+    ],
+    "notes": [
+      "업로드된 국가철도공단 2025-06-30 경춘선 역간거리 CSV만을 근거로 생성함.",
+      "첫 24행은 청량리~춘천 연속 역 목록으로 처리함.",
+      "연속 본선 edge는 도착역 행의 역간거리를 우선 사용하고, 출발역 후행역간거리와의 비교 결과를 directionalColumnCheck에 보존함.",
+      "마지막 상봉·광운대 행은 원본만으로 물리 연결 관계가 명확하지 않아 광운대 edge를 추측해 생성하지 않음.",
+      "원본 병기 역명은 sourceName에 보존함."
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "청량리",
+        "to": "회기",
+        "distanceKmUsed": 1.4,
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": null,
+        "matched": null,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "회기"
+      },
+      {
+        "from": "회기",
+        "to": "중랑",
+        "distanceKmUsed": 0.8,
+        "destinationPreviousKm": 0.8,
+        "sourceFollowingKm": 0.8,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "중랑"
+      },
+      {
+        "from": "중랑",
+        "to": "상봉",
+        "distanceKmUsed": 0.8,
+        "destinationPreviousKm": 0.8,
+        "sourceFollowingKm": 1.8,
+        "matched": false,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "상봉"
+      },
+      {
+        "from": "상봉",
+        "to": "망우",
+        "distanceKmUsed": 0.6,
+        "destinationPreviousKm": 0.6,
+        "sourceFollowingKm": 0.6,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "망우"
+      },
+      {
+        "from": "망우",
+        "to": "신내",
+        "distanceKmUsed": 2.6,
+        "destinationPreviousKm": 2.6,
+        "sourceFollowingKm": 1.7,
+        "matched": false,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "신내"
+      },
+      {
+        "from": "신내",
+        "to": "갈매",
+        "distanceKmUsed": 2.6,
+        "destinationPreviousKm": 2.6,
+        "sourceFollowingKm": 2.1,
+        "matched": false,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "갈매"
+      },
+      {
+        "from": "갈매",
+        "to": "별내",
+        "distanceKmUsed": 1.5,
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.4,
+        "matched": false,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "별내"
+      },
+      {
+        "from": "별내",
+        "to": "퇴계원",
+        "distanceKmUsed": 1.6,
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "퇴계원"
+      },
+      {
+        "from": "퇴계원",
+        "to": "사릉",
+        "distanceKmUsed": 3.3,
+        "destinationPreviousKm": 3.3,
+        "sourceFollowingKm": 3.3,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "사릉"
+      },
+      {
+        "from": "사릉",
+        "to": "금곡",
+        "distanceKmUsed": 3.6,
+        "destinationPreviousKm": 3.6,
+        "sourceFollowingKm": 3.6,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "금곡"
+      },
+      {
+        "from": "금곡",
+        "to": "평내호평",
+        "distanceKmUsed": 4.0,
+        "destinationPreviousKm": 4.0,
+        "sourceFollowingKm": 4.0,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "평내호평"
+      },
+      {
+        "from": "평내호평",
+        "to": "천마산",
+        "distanceKmUsed": 4.0,
+        "destinationPreviousKm": 4.0,
+        "sourceFollowingKm": 4.5,
+        "matched": false,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "천마산"
+      },
+      {
+        "from": "천마산",
+        "to": "마석",
+        "distanceKmUsed": 2.2,
+        "destinationPreviousKm": 2.2,
+        "sourceFollowingKm": 2.2,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "마석"
+      },
+      {
+        "from": "마석",
+        "to": "대성리",
+        "distanceKmUsed": 7.4,
+        "destinationPreviousKm": 7.4,
+        "sourceFollowingKm": 7.4,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "대성리"
+      },
+      {
+        "from": "대성리",
+        "to": "청평",
+        "distanceKmUsed": 7.5,
+        "destinationPreviousKm": 7.5,
+        "sourceFollowingKm": 7.5,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "청평"
+      },
+      {
+        "from": "청평",
+        "to": "상천",
+        "distanceKmUsed": 4.8,
+        "destinationPreviousKm": 4.8,
+        "sourceFollowingKm": 4.8,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "상천"
+      },
+      {
+        "from": "상천",
+        "to": "가평",
+        "distanceKmUsed": 7.1,
+        "destinationPreviousKm": 7.1,
+        "sourceFollowingKm": 7.1,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "가평"
+      },
+      {
+        "from": "가평",
+        "to": "굴봉산",
+        "distanceKmUsed": 4.7,
+        "destinationPreviousKm": 4.7,
+        "sourceFollowingKm": 4.7,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "굴봉산"
+      },
+      {
+        "from": "굴봉산",
+        "to": "백양리",
+        "distanceKmUsed": 2.9,
+        "destinationPreviousKm": 2.9,
+        "sourceFollowingKm": 2.9,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "백양리"
+      },
+      {
+        "from": "백양리",
+        "to": "강촌",
+        "distanceKmUsed": 5.3,
+        "destinationPreviousKm": 5.3,
+        "sourceFollowingKm": 5.3,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "강촌"
+      },
+      {
+        "from": "강촌",
+        "to": "김유정",
+        "distanceKmUsed": 7.4,
+        "destinationPreviousKm": 7.4,
+        "sourceFollowingKm": 7.4,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "김유정"
+      },
+      {
+        "from": "김유정",
+        "to": "남춘천",
+        "distanceKmUsed": 5.9,
+        "destinationPreviousKm": 5.9,
+        "sourceFollowingKm": 5.9,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "남춘천"
+      },
+      {
+        "from": "남춘천",
+        "to": "춘천",
+        "distanceKmUsed": 2.7,
+        "destinationPreviousKm": 2.7,
+        "sourceFollowingKm": 2.7,
+        "matched": true,
+        "usedSourceField": "역간거리",
+        "usedSourceStation": "춘천"
+      }
+    ],
+    "extraSourceRows": [
+      {
+        "station": "상봉",
+        "sourceName": "상봉",
+        "previousKm": 0.8,
+        "followingKm": 0.6
+      },
+      {
+        "station": "광운대",
+        "sourceName": "광운대",
+        "previousKm": 1.1,
+        "followingKm": 1.1
+      }
+    ]
+  },
+  "routingNotes": {
+    "mainDirections": [
+      "청량리/상봉 방면",
+      "춘천 방면"
+    ],
+    "important": "광운대 운행계통은 이 CSV만으로 물리 연결 edge를 확정하지 않았으므로 별도 공식자료 검증 후 추가해야 함."
+  },
+  "stations": [
+    {
+      "id": "GC:청량리",
+      "name": "청량리",
+      "sourceName": "청량리",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 0
+    },
+    {
+      "id": "GC:회기",
+      "name": "회기",
+      "sourceName": "회기",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 1
+    },
+    {
+      "id": "GC:중랑",
+      "name": "중랑",
+      "sourceName": "중랑",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 2
+    },
+    {
+      "id": "GC:상봉",
+      "name": "상봉",
+      "sourceName": "상봉",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 3
+    },
+    {
+      "id": "GC:망우",
+      "name": "망우",
+      "sourceName": "망우",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 4
+    },
+    {
+      "id": "GC:신내",
+      "name": "신내",
+      "sourceName": "신내",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 5
+    },
+    {
+      "id": "GC:갈매",
+      "name": "갈매",
+      "sourceName": "갈매",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 6
+    },
+    {
+      "id": "GC:별내",
+      "name": "별내",
+      "sourceName": "별내(삼육대학교)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 7
+    },
+    {
+      "id": "GC:퇴계원",
+      "name": "퇴계원",
+      "sourceName": "퇴계원",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 8
+    },
+    {
+      "id": "GC:사릉",
+      "name": "사릉",
+      "sourceName": "사릉",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 9
+    },
+    {
+      "id": "GC:금곡",
+      "name": "금곡",
+      "sourceName": "금곡",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 10
+    },
+    {
+      "id": "GC:평내호평",
+      "name": "평내호평",
+      "sourceName": "평내호평",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 11
+    },
+    {
+      "id": "GC:천마산",
+      "name": "천마산",
+      "sourceName": "천마산",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 12
+    },
+    {
+      "id": "GC:마석",
+      "name": "마석",
+      "sourceName": "마석",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 13
+    },
+    {
+      "id": "GC:대성리",
+      "name": "대성리",
+      "sourceName": "대성리",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 14
+    },
+    {
+      "id": "GC:청평",
+      "name": "청평",
+      "sourceName": "청평",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 15
+    },
+    {
+      "id": "GC:상천",
+      "name": "상천",
+      "sourceName": "상천(호명호수)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 16
+    },
+    {
+      "id": "GC:가평",
+      "name": "가평",
+      "sourceName": "가평(자라섬·남이섬)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 17
+    },
+    {
+      "id": "GC:굴봉산",
+      "name": "굴봉산",
+      "sourceName": "굴봉산(제이드가든)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 18
+    },
+    {
+      "id": "GC:백양리",
+      "name": "백양리",
+      "sourceName": "백양리(엘리시안강촌)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 19
+    },
+    {
+      "id": "GC:강촌",
+      "name": "강촌",
+      "sourceName": "강촌",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 20
+    },
+    {
+      "id": "GC:김유정",
+      "name": "김유정",
+      "sourceName": "김유정",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 21
+    },
+    {
+      "id": "GC:남춘천",
+      "name": "남춘천",
+      "sourceName": "남춘천(강원대)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 22
+    },
+    {
+      "id": "GC:춘천",
+      "name": "춘천",
+      "sourceName": "춘천(한림대)",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 23
+    },
+    {
+      "id": "GC:광운대",
+      "name": "광운대",
+      "sourceName": "광운대",
+      "line": "gyeongchun",
+      "lineName": "경춘선",
+      "operator": "코레일",
+      "index": 24
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:청량리",
+      "to": "GC:회기",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:회기",
+      "to": "GC:중랑",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:중랑",
+      "to": "GC:상봉",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:상봉",
+      "to": "GC:망우",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:망우",
+      "to": "GC:신내",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:신내",
+      "to": "GC:갈매",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:갈매",
+      "to": "GC:별내",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:별내",
+      "to": "GC:퇴계원",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:퇴계원",
+      "to": "GC:사릉",
+      "distanceKm": 3.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:사릉",
+      "to": "GC:금곡",
+      "distanceKm": 3.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:금곡",
+      "to": "GC:평내호평",
+      "distanceKm": 4.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:평내호평",
+      "to": "GC:천마산",
+      "distanceKm": 4.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:천마산",
+      "to": "GC:마석",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:마석",
+      "to": "GC:대성리",
+      "distanceKm": 7.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:대성리",
+      "to": "GC:청평",
+      "distanceKm": 7.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:청평",
+      "to": "GC:상천",
+      "distanceKm": 4.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:상천",
+      "to": "GC:가평",
+      "distanceKm": 7.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:가평",
+      "to": "GC:굴봉산",
+      "distanceKm": 4.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:굴봉산",
+      "to": "GC:백양리",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:백양리",
+      "to": "GC:강촌",
+      "distanceKm": 5.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:강촌",
+      "to": "GC:김유정",
+      "distanceKm": 7.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:김유정",
+      "to": "GC:남춘천",
+      "distanceKm": 5.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "gyeongchun",
+      "segment": "main_service_path",
+      "from": "GC:남춘천",
+      "to": "GC:춘천",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

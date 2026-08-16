@@ -1,0 +1,232 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "sillim",
+    "name": "신림선",
+    "graphType": "linear",
+    "terminals": [
+      "샛강",
+      "관악산"
+    ]
+  },
+  "dataQuality": {
+    "primarySource": "서울특별시의회 공식 검토보고서 - 신림선 도시철도 민간투자사업 정거장간 거리 표",
+    "stationOrderSource": "신림선 도시철도 공식 운영사 노선안내",
+    "validation": {
+      "stationCount": 11,
+      "rideEdgeCount": 10,
+      "expectedLinearEdgeCount": 10,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "sumOfInterstationDistancesM": 7506,
+      "sumOfInterstationDistancesKm": 7.506
+    },
+    "notes": [
+      "서울시의회 공식 문서에 수록된 '신림선 도시철도 민간투자사업' 101~111 정거장간 거리값을 사용함.",
+      "공식 표의 101~102부터 110~111까지 값은 각각 609, 808, 626, 674, 623, 518, 635, 836, 1049, 1128m임.",
+      "현재 역명은 신림선 공식 운영사 노선안내의 11개 역 순서를 적용함.",
+      "정거장간 거리 합계 7.506km는 노선 전체 사업/영업 연장 표기와 개념이 다를 수 있으므로 전체 연장값으로 억지 보정하지 않음."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "관악산 방면",
+    "towardLowerIndex": "샛강 방면"
+  },
+  "stations": [
+    {
+      "id": "SL:샛강",
+      "name": "샛강",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 101,
+      "index": 0
+    },
+    {
+      "id": "SL:대방",
+      "name": "대방",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 102,
+      "index": 1
+    },
+    {
+      "id": "SL:서울지방병무청",
+      "name": "서울지방병무청",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 103,
+      "index": 2
+    },
+    {
+      "id": "SL:보라매",
+      "name": "보라매",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 104,
+      "index": 3
+    },
+    {
+      "id": "SL:보라매공원",
+      "name": "보라매공원",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 105,
+      "index": 4
+    },
+    {
+      "id": "SL:보라매병원",
+      "name": "보라매병원",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 106,
+      "index": 5
+    },
+    {
+      "id": "SL:당곡",
+      "name": "당곡",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 107,
+      "index": 6
+    },
+    {
+      "id": "SL:신림",
+      "name": "신림",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 108,
+      "index": 7
+    },
+    {
+      "id": "SL:서원",
+      "name": "서원",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 109,
+      "index": 8
+    },
+    {
+      "id": "SL:서울대벤처타운",
+      "name": "서울대벤처타운",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 110,
+      "index": 9
+    },
+    {
+      "id": "SL:관악산",
+      "name": "관악산",
+      "line": "sillim",
+      "lineName": "신림선",
+      "stationNumber": 111,
+      "index": 10
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:샛강",
+      "to": "SL:대방",
+      "distanceKm": 0.609,
+      "distanceM": 609,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:대방",
+      "to": "SL:서울지방병무청",
+      "distanceKm": 0.808,
+      "distanceM": 808,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:서울지방병무청",
+      "to": "SL:보라매",
+      "distanceKm": 0.626,
+      "distanceM": 626,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:보라매",
+      "to": "SL:보라매공원",
+      "distanceKm": 0.674,
+      "distanceM": 674,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:보라매공원",
+      "to": "SL:보라매병원",
+      "distanceKm": 0.623,
+      "distanceM": 623,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:보라매병원",
+      "to": "SL:당곡",
+      "distanceKm": 0.518,
+      "distanceM": 518,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:당곡",
+      "to": "SL:신림",
+      "distanceKm": 0.635,
+      "distanceM": 635,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:신림",
+      "to": "SL:서원",
+      "distanceKm": 0.836,
+      "distanceM": 836,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:서원",
+      "to": "SL:서울대벤처타운",
+      "distanceKm": 1.049,
+      "distanceM": 1049,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "sillim",
+      "segment": "main",
+      "from": "SL:서울대벤처타운",
+      "to": "SL:관악산",
+      "distanceKm": 1.128,
+      "distanceM": 1128,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

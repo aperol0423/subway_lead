@@ -1,0 +1,267 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "ui_sinseol",
+    "name": "우이신설선",
+    "graphType": "linear",
+    "terminals": [
+      "북한산우이",
+      "신설동"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_우이신설 역간거리_20251231.csv",
+    "validation": {
+      "stationCount": 13,
+      "rideEdgeCount": 12,
+      "expectedLinearEdgeCount": 12,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 11.0
+    },
+    "notes": [
+      "업로드된 국가철도공단 2025-12-31 우이신설 역간거리 CSV를 기준으로 생성함.",
+      "이 원본은 후행역간거리 열이 없고, 각 행의 역간거리 값이 해당 역에서 다음 역까지의 거리로 배열되어 있음.",
+      "따라서 북한산우이 행 0.8km는 북한산우이→솔밭공원, 보문 행 1.0km는 보문→신설동으로 적용함.",
+      "마지막 신설동 행은 다음 역이 없으므로 역간거리 값이 공란임."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "신설동 방면",
+    "towardLowerIndex": "북한산우이 방면"
+  },
+  "stations": [
+    {
+      "id": "UI:북한산우이",
+      "name": "북한산우이",
+      "sourceName": "북한산우이",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 0
+    },
+    {
+      "id": "UI:솔밭공원",
+      "name": "솔밭공원",
+      "sourceName": "솔밭공원",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 1
+    },
+    {
+      "id": "UI:4.19민주묘지",
+      "name": "4.19민주묘지",
+      "sourceName": "4.19민주묘지",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 2
+    },
+    {
+      "id": "UI:가오리",
+      "name": "가오리",
+      "sourceName": "가오리",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 3
+    },
+    {
+      "id": "UI:화계",
+      "name": "화계",
+      "sourceName": "화계",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 4
+    },
+    {
+      "id": "UI:삼양",
+      "name": "삼양",
+      "sourceName": "삼양",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 5
+    },
+    {
+      "id": "UI:삼양사거리",
+      "name": "삼양사거리",
+      "sourceName": "삼양사거리",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 6
+    },
+    {
+      "id": "UI:솔샘",
+      "name": "솔샘",
+      "sourceName": "솔샘",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 7
+    },
+    {
+      "id": "UI:북한산보국문",
+      "name": "북한산보국문",
+      "sourceName": "북한산보국문",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 8
+    },
+    {
+      "id": "UI:정릉",
+      "name": "정릉",
+      "sourceName": "정릉",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 9
+    },
+    {
+      "id": "UI:성신여대입구",
+      "name": "성신여대입구",
+      "sourceName": "성신여대입구",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 10
+    },
+    {
+      "id": "UI:보문",
+      "name": "보문",
+      "sourceName": "보문",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 11
+    },
+    {
+      "id": "UI:신설동",
+      "name": "신설동",
+      "sourceName": "신설동",
+      "line": "ui_sinseol",
+      "lineName": "우이신설선",
+      "operator": "우이신설경전철주식회사",
+      "index": 12
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:북한산우이",
+      "to": "UI:솔밭공원",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:솔밭공원",
+      "to": "UI:4.19민주묘지",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:4.19민주묘지",
+      "to": "UI:가오리",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:가오리",
+      "to": "UI:화계",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:화계",
+      "to": "UI:삼양",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:삼양",
+      "to": "UI:삼양사거리",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:삼양사거리",
+      "to": "UI:솔샘",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:솔샘",
+      "to": "UI:북한산보국문",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:북한산보국문",
+      "to": "UI:정릉",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:정릉",
+      "to": "UI:성신여대입구",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:성신여대입구",
+      "to": "UI:보문",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "ui_sinseol",
+      "segment": "main",
+      "from": "UI:보문",
+      "to": "UI:신설동",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

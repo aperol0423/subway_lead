@@ -1,0 +1,941 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권",
+    "operator": "서울교통공사"
+  },
+  "line": {
+    "id": "2",
+    "name": "서울 지하철 2호선",
+    "graphType": "circular_with_branches"
+  },
+  "dataQuality": {
+    "sourceFile": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "sourceType": "user-provided official Seoul Metro interstation-distance CSV",
+    "segmentDistances": "official Seoul Metro values from supplied source",
+    "validation": {
+      "uniqueStationCount": 51,
+      "rideEdgeCount": 51,
+      "mainLoopStationCount": 43,
+      "mainLoopEdgeCount": 43,
+      "mainLoopDistanceKm": 48.8,
+      "seongsuBranchDistanceKm": 5.4,
+      "sinjeongBranchDistanceKm": 6.0,
+      "totalDistanceKm": 60.2,
+      "officialCumulativeDistanceCheckPassed": true,
+      "allDistancesPositive": true
+    },
+    "notes": [
+      "본선은 시청에서 출발해 충정로를 거쳐 다시 시청으로 닫히는 43역 순환 그래프로 저장함.",
+      "성수지선은 성수-용답-신답-용두-신설동으로 별도 저장함.",
+      "신정지선은 신도림-도림천-양천구청-신정네거리-까치산으로 별도 저장함.",
+      "CSV의 누계 표기 순서를 물리적으로 그대로 연결하지 않고 본선/지선을 분리해 실제 그래프로 정규화함."
+    ]
+  },
+  "routingNotes": {
+    "mainLoopDirectionLabels": [
+      "내선순환",
+      "외선순환"
+    ],
+    "branchDirectionLabels": {
+      "seongsu_branch": {
+        "towardBranchTerminal": "신설동 방면",
+        "towardMainLine": "성수 방면"
+      },
+      "sinjeong_branch": {
+        "towardBranchTerminal": "까치산 방면",
+        "towardMainLine": "신도림 방면"
+      }
+    },
+    "important": "본선 방향 안내는 단순 index 증감이 아니라 실제 선택된 순환 방향에 따라 내선순환/외선순환을 결정해야 함."
+  },
+  "branches": {
+    "mainLoop": [
+      "시청",
+      "을지로입구",
+      "을지로3가",
+      "을지로4가",
+      "동대문역사문화공원",
+      "신당",
+      "상왕십리",
+      "왕십리",
+      "한양대",
+      "뚝섬",
+      "성수",
+      "건대입구",
+      "구의",
+      "강변",
+      "잠실나루",
+      "잠실",
+      "잠실새내",
+      "종합운동장",
+      "삼성",
+      "선릉",
+      "역삼",
+      "강남",
+      "교대",
+      "서초",
+      "방배",
+      "사당",
+      "낙성대",
+      "서울대입구",
+      "봉천",
+      "신림",
+      "신대방",
+      "구로디지털단지",
+      "대림",
+      "신도림",
+      "문래",
+      "영등포구청",
+      "당산",
+      "합정",
+      "홍대입구",
+      "신촌",
+      "이대",
+      "아현",
+      "충정로"
+    ],
+    "seongsuBranch": [
+      "성수",
+      "용답",
+      "신답",
+      "용두",
+      "신설동"
+    ],
+    "sinjeongBranch": [
+      "신도림",
+      "도림천",
+      "양천구청",
+      "신정네거리",
+      "까치산"
+    ]
+  },
+  "stations": [
+    {
+      "id": "L2:시청",
+      "name": "시청",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 0
+    },
+    {
+      "id": "L2:을지로입구",
+      "name": "을지로입구",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 1
+    },
+    {
+      "id": "L2:을지로3가",
+      "name": "을지로3가",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 2
+    },
+    {
+      "id": "L2:을지로4가",
+      "name": "을지로4가",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 3
+    },
+    {
+      "id": "L2:동대문역사문화공원",
+      "name": "동대문역사문화공원",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 4
+    },
+    {
+      "id": "L2:신당",
+      "name": "신당",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 5
+    },
+    {
+      "id": "L2:상왕십리",
+      "name": "상왕십리",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 6
+    },
+    {
+      "id": "L2:왕십리",
+      "name": "왕십리",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 7
+    },
+    {
+      "id": "L2:한양대",
+      "name": "한양대",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 8
+    },
+    {
+      "id": "L2:뚝섬",
+      "name": "뚝섬",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 9
+    },
+    {
+      "id": "L2:성수",
+      "name": "성수",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 10,
+      "branchRoles": [
+        "성수지선 분기"
+      ]
+    },
+    {
+      "id": "L2:건대입구",
+      "name": "건대입구",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 11
+    },
+    {
+      "id": "L2:구의",
+      "name": "구의",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 12
+    },
+    {
+      "id": "L2:강변",
+      "name": "강변",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 13
+    },
+    {
+      "id": "L2:잠실나루",
+      "name": "잠실나루",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 14
+    },
+    {
+      "id": "L2:잠실",
+      "name": "잠실",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 15
+    },
+    {
+      "id": "L2:잠실새내",
+      "name": "잠실새내",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 16
+    },
+    {
+      "id": "L2:종합운동장",
+      "name": "종합운동장",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 17
+    },
+    {
+      "id": "L2:삼성",
+      "name": "삼성",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 18
+    },
+    {
+      "id": "L2:선릉",
+      "name": "선릉",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 19
+    },
+    {
+      "id": "L2:역삼",
+      "name": "역삼",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 20
+    },
+    {
+      "id": "L2:강남",
+      "name": "강남",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 21
+    },
+    {
+      "id": "L2:교대",
+      "name": "교대",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 22
+    },
+    {
+      "id": "L2:서초",
+      "name": "서초",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 23
+    },
+    {
+      "id": "L2:방배",
+      "name": "방배",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 24
+    },
+    {
+      "id": "L2:사당",
+      "name": "사당",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 25
+    },
+    {
+      "id": "L2:낙성대",
+      "name": "낙성대",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 26
+    },
+    {
+      "id": "L2:서울대입구",
+      "name": "서울대입구",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 27
+    },
+    {
+      "id": "L2:봉천",
+      "name": "봉천",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 28
+    },
+    {
+      "id": "L2:신림",
+      "name": "신림",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 29
+    },
+    {
+      "id": "L2:신대방",
+      "name": "신대방",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 30
+    },
+    {
+      "id": "L2:구로디지털단지",
+      "name": "구로디지털단지",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 31
+    },
+    {
+      "id": "L2:대림",
+      "name": "대림",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 32
+    },
+    {
+      "id": "L2:신도림",
+      "name": "신도림",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 33,
+      "branchRoles": [
+        "신정지선 분기"
+      ]
+    },
+    {
+      "id": "L2:문래",
+      "name": "문래",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 34
+    },
+    {
+      "id": "L2:영등포구청",
+      "name": "영등포구청",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 35
+    },
+    {
+      "id": "L2:당산",
+      "name": "당산",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 36
+    },
+    {
+      "id": "L2:합정",
+      "name": "합정",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 37
+    },
+    {
+      "id": "L2:홍대입구",
+      "name": "홍대입구",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 38
+    },
+    {
+      "id": "L2:신촌",
+      "name": "신촌",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 39
+    },
+    {
+      "id": "L2:이대",
+      "name": "이대",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 40
+    },
+    {
+      "id": "L2:아현",
+      "name": "아현",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 41
+    },
+    {
+      "id": "L2:충정로",
+      "name": "충정로",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 42
+    },
+    {
+      "id": "L2:용답",
+      "name": "용답",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 43
+    },
+    {
+      "id": "L2:신답",
+      "name": "신답",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 44
+    },
+    {
+      "id": "L2:용두",
+      "name": "용두",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 45
+    },
+    {
+      "id": "L2:신설동",
+      "name": "신설동",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 46
+    },
+    {
+      "id": "L2:도림천",
+      "name": "도림천",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 47
+    },
+    {
+      "id": "L2:양천구청",
+      "name": "양천구청",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 48
+    },
+    {
+      "id": "L2:신정네거리",
+      "name": "신정네거리",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 49
+    },
+    {
+      "id": "L2:까치산",
+      "name": "까치산",
+      "line": "2",
+      "lineName": "2호선",
+      "graphIndex": 50
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:시청",
+      "to": "L2:을지로입구",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:을지로입구",
+      "to": "L2:을지로3가",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:을지로3가",
+      "to": "L2:을지로4가",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:을지로4가",
+      "to": "L2:동대문역사문화공원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:동대문역사문화공원",
+      "to": "L2:신당",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:신당",
+      "to": "L2:상왕십리",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:상왕십리",
+      "to": "L2:왕십리",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:왕십리",
+      "to": "L2:한양대",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:한양대",
+      "to": "L2:뚝섬",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:뚝섬",
+      "to": "L2:성수",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:성수",
+      "to": "L2:건대입구",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:건대입구",
+      "to": "L2:구의",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:구의",
+      "to": "L2:강변",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:강변",
+      "to": "L2:잠실나루",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:잠실나루",
+      "to": "L2:잠실",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:잠실",
+      "to": "L2:잠실새내",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:잠실새내",
+      "to": "L2:종합운동장",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:종합운동장",
+      "to": "L2:삼성",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:삼성",
+      "to": "L2:선릉",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:선릉",
+      "to": "L2:역삼",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:역삼",
+      "to": "L2:강남",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:강남",
+      "to": "L2:교대",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:교대",
+      "to": "L2:서초",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:서초",
+      "to": "L2:방배",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:방배",
+      "to": "L2:사당",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:사당",
+      "to": "L2:낙성대",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:낙성대",
+      "to": "L2:서울대입구",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:서울대입구",
+      "to": "L2:봉천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:봉천",
+      "to": "L2:신림",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:신림",
+      "to": "L2:신대방",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:신대방",
+      "to": "L2:구로디지털단지",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:구로디지털단지",
+      "to": "L2:대림",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:대림",
+      "to": "L2:신도림",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:신도림",
+      "to": "L2:문래",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:문래",
+      "to": "L2:영등포구청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:영등포구청",
+      "to": "L2:당산",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:당산",
+      "to": "L2:합정",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:합정",
+      "to": "L2:홍대입구",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:홍대입구",
+      "to": "L2:신촌",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:신촌",
+      "to": "L2:이대",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:이대",
+      "to": "L2:아현",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:아현",
+      "to": "L2:충정로",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main_loop",
+      "from": "L2:충정로",
+      "to": "L2:시청",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "seongsu_branch",
+      "from": "L2:성수",
+      "to": "L2:용답",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "seongsu_branch",
+      "from": "L2:용답",
+      "to": "L2:신답",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "seongsu_branch",
+      "from": "L2:신답",
+      "to": "L2:용두",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "seongsu_branch",
+      "from": "L2:용두",
+      "to": "L2:신설동",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "sinjeong_branch",
+      "from": "L2:신도림",
+      "to": "L2:도림천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "sinjeong_branch",
+      "from": "L2:도림천",
+      "to": "L2:양천구청",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "sinjeong_branch",
+      "from": "L2:양천구청",
+      "to": "L2:신정네거리",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "sinjeong_branch",
+      "from": "L2:신정네거리",
+      "to": "L2:까치산",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

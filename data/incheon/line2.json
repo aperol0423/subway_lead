@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "incheon",
+    "name": "인천",
+    "operator": "인천교통공사"
+  },
+  "line": {
+    "id": "2",
+    "name": "인천 도시철도 2호선",
+    "graphType": "linear",
+    "terminals": [
+      "검단오류",
+      "운연"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_인천2호선 역간거리_20251231.CSV",
+    "validation": {
+      "sourceRowCount": 27,
+      "stationCount": 27,
+      "rideEdgeCount": 26,
+      "expectedLinearEdgeCount": 26,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalStationToStationDistanceKm": 29.1
+    },
+    "notes": [
+      "국가철도공단 2025-12-31 인천2호선 역간거리 CSV를 기준으로 생성함.",
+      "이 원본은 각 행의 역간거리(km)가 해당 역에서 다음 역까지의 거리로 배열되어 있으며 마지막 운연 행은 공란임.",
+      "따라서 검단오류 행 1.3km는 검단오류→왕길, 인천대공원 행 1.3km는 인천대공원→운연으로 적용함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "운연 방면",
+    "towardLowerIndex": "검단오류 방면"
+  },
+  "stations": [
+    {
+      "id": "IC2:검단오류",
+      "name": "검단오류",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 0
+    },
+    {
+      "id": "IC2:왕길",
+      "name": "왕길",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 1
+    },
+    {
+      "id": "IC2:검단사거리",
+      "name": "검단사거리",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 2
+    },
+    {
+      "id": "IC2:마전",
+      "name": "마전",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 3
+    },
+    {
+      "id": "IC2:완정",
+      "name": "완정",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 4
+    },
+    {
+      "id": "IC2:독정",
+      "name": "독정",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 5
+    },
+    {
+      "id": "IC2:검암",
+      "name": "검암",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 6
+    },
+    {
+      "id": "IC2:검바위",
+      "name": "검바위",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 7
+    },
+    {
+      "id": "IC2:아시아드경기장",
+      "name": "아시아드경기장",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 8
+    },
+    {
+      "id": "IC2:서구청",
+      "name": "서구청",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 9
+    },
+    {
+      "id": "IC2:가정",
+      "name": "가정",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 10
+    },
+    {
+      "id": "IC2:가정중앙시장",
+      "name": "가정중앙시장",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 11
+    },
+    {
+      "id": "IC2:석남",
+      "name": "석남",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 12
+    },
+    {
+      "id": "IC2:서부여성회관",
+      "name": "서부여성회관",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 13
+    },
+    {
+      "id": "IC2:인천가좌",
+      "name": "인천가좌",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 14
+    },
+    {
+      "id": "IC2:가재울",
+      "name": "가재울",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 15
+    },
+    {
+      "id": "IC2:주안국가산단",
+      "name": "주안국가산단",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 16
+    },
+    {
+      "id": "IC2:주안",
+      "name": "주안",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 17
+    },
+    {
+      "id": "IC2:시민공원",
+      "name": "시민공원",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 18
+    },
+    {
+      "id": "IC2:석바위시장",
+      "name": "석바위시장",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 19
+    },
+    {
+      "id": "IC2:인천시청",
+      "name": "인천시청",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 20
+    },
+    {
+      "id": "IC2:석천사거리",
+      "name": "석천사거리",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 21
+    },
+    {
+      "id": "IC2:모래내시장",
+      "name": "모래내시장",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 22
+    },
+    {
+      "id": "IC2:만수",
+      "name": "만수",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 23
+    },
+    {
+      "id": "IC2:남동구청",
+      "name": "남동구청",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 24
+    },
+    {
+      "id": "IC2:인천대공원",
+      "name": "인천대공원",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 25
+    },
+    {
+      "id": "IC2:운연",
+      "name": "운연",
+      "line": "2",
+      "lineName": "인천 도시철도 2호선",
+      "index": 26
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:검단오류",
+      "to": "IC2:왕길",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:왕길",
+      "to": "IC2:검단사거리",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:검단사거리",
+      "to": "IC2:마전",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:마전",
+      "to": "IC2:완정",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:완정",
+      "to": "IC2:독정",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:독정",
+      "to": "IC2:검암",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:검암",
+      "to": "IC2:검바위",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:검바위",
+      "to": "IC2:아시아드경기장",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:아시아드경기장",
+      "to": "IC2:서구청",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:서구청",
+      "to": "IC2:가정",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:가정",
+      "to": "IC2:가정중앙시장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:가정중앙시장",
+      "to": "IC2:석남",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:석남",
+      "to": "IC2:서부여성회관",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:서부여성회관",
+      "to": "IC2:인천가좌",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:인천가좌",
+      "to": "IC2:가재울",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:가재울",
+      "to": "IC2:주안국가산단",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:주안국가산단",
+      "to": "IC2:주안",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:주안",
+      "to": "IC2:시민공원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:시민공원",
+      "to": "IC2:석바위시장",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:석바위시장",
+      "to": "IC2:인천시청",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:인천시청",
+      "to": "IC2:석천사거리",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:석천사거리",
+      "to": "IC2:모래내시장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:모래내시장",
+      "to": "IC2:만수",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:만수",
+      "to": "IC2:남동구청",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:남동구청",
+      "to": "IC2:인천대공원",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "IC2:인천대공원",
+      "to": "IC2:운연",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

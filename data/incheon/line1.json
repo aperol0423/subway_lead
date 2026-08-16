@@ -1,0 +1,630 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "incheon",
+    "name": "인천",
+    "operator": "인천교통공사"
+  },
+  "line": {
+    "id": "1",
+    "name": "인천 도시철도 1호선",
+    "graphType": "linear",
+    "terminals": [
+      "검단호수공원",
+      "송도달빛축제공원"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_인천1호선 역간거리_20250630.csv",
+    "supplementalOfficialSource": "인천교통공사 공식 운영개요(2025-06-28 검단연장 반영)",
+    "validation": {
+      "primarySourceRowCount": 30,
+      "stationCount": 33,
+      "rideEdgeCount": 32,
+      "expectedLinearEdgeCount": 32,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalStationToStationDistanceKm": 37.1,
+      "geomdanExtensionEdgeCount": 3
+    },
+    "notes": [
+      "국가철도공단 2025-06-30 인천1호선 역간거리 CSV는 계양~송도달빛축제공원 30역을 수록하고 있어, 2025-06-28 개통한 검단 연장 3역은 인천교통공사 최신 공식 운영개요로 보강함.",
+      "검단 연장 공식 영업거리는 검단호수공원→신검단중앙 0.8km, 신검단중앙→아라 2.0km, 아라→계양 4.0km로 적용함.",
+      "기존 계양~송도달빛축제공원 구간은 도착역 행의 역간거리 값을 직전역과의 거리로 적용함.",
+      "최종 여객역은 33개이며 역번호는 I107 검단호수공원부터 순차적으로 부여함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "송도달빛축제공원 방면",
+    "towardLowerIndex": "검단호수공원 방면"
+  },
+  "stations": [
+    {
+      "id": "IC1:검단호수공원",
+      "name": "검단호수공원",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I107",
+      "index": 0
+    },
+    {
+      "id": "IC1:신검단중앙",
+      "name": "신검단중앙",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I108",
+      "index": 1
+    },
+    {
+      "id": "IC1:아라",
+      "name": "아라",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I109",
+      "index": 2
+    },
+    {
+      "id": "IC1:계양",
+      "name": "계양",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I110",
+      "index": 3
+    },
+    {
+      "id": "IC1:귤현",
+      "name": "귤현",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I111",
+      "index": 4
+    },
+    {
+      "id": "IC1:박촌",
+      "name": "박촌",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I112",
+      "index": 5
+    },
+    {
+      "id": "IC1:임학",
+      "name": "임학",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I113",
+      "index": 6
+    },
+    {
+      "id": "IC1:계산",
+      "name": "계산",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I114",
+      "index": 7
+    },
+    {
+      "id": "IC1:경인교대입구",
+      "name": "경인교대입구",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I115",
+      "index": 8
+    },
+    {
+      "id": "IC1:작전",
+      "name": "작전",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I116",
+      "index": 9
+    },
+    {
+      "id": "IC1:갈산",
+      "name": "갈산",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I117",
+      "index": 10
+    },
+    {
+      "id": "IC1:부평구청",
+      "name": "부평구청",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I118",
+      "index": 11
+    },
+    {
+      "id": "IC1:부평시장",
+      "name": "부평시장",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I119",
+      "index": 12
+    },
+    {
+      "id": "IC1:부평",
+      "name": "부평",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I120",
+      "index": 13
+    },
+    {
+      "id": "IC1:동수",
+      "name": "동수",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I121",
+      "index": 14
+    },
+    {
+      "id": "IC1:부평삼거리",
+      "name": "부평삼거리",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I122",
+      "index": 15
+    },
+    {
+      "id": "IC1:간석오거리",
+      "name": "간석오거리",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I123",
+      "index": 16
+    },
+    {
+      "id": "IC1:인천시청",
+      "name": "인천시청",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I124",
+      "index": 17
+    },
+    {
+      "id": "IC1:예술회관",
+      "name": "예술회관",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I125",
+      "index": 18
+    },
+    {
+      "id": "IC1:인천터미널",
+      "name": "인천터미널",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I126",
+      "index": 19
+    },
+    {
+      "id": "IC1:문학경기장",
+      "name": "문학경기장",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I127",
+      "index": 20
+    },
+    {
+      "id": "IC1:선학",
+      "name": "선학",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I128",
+      "index": 21
+    },
+    {
+      "id": "IC1:신연수",
+      "name": "신연수",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I129",
+      "index": 22
+    },
+    {
+      "id": "IC1:원인재",
+      "name": "원인재",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I130",
+      "index": 23
+    },
+    {
+      "id": "IC1:동춘",
+      "name": "동춘",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I131",
+      "index": 24
+    },
+    {
+      "id": "IC1:동막",
+      "name": "동막",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I132",
+      "index": 25
+    },
+    {
+      "id": "IC1:캠퍼스타운",
+      "name": "캠퍼스타운",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I133",
+      "index": 26
+    },
+    {
+      "id": "IC1:테크노파크",
+      "name": "테크노파크",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I134",
+      "index": 27
+    },
+    {
+      "id": "IC1:지식정보단지",
+      "name": "지식정보단지",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I135",
+      "index": 28
+    },
+    {
+      "id": "IC1:인천대입구",
+      "name": "인천대입구",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I136",
+      "index": 29
+    },
+    {
+      "id": "IC1:센트럴파크",
+      "name": "센트럴파크",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I137",
+      "index": 30
+    },
+    {
+      "id": "IC1:국제업무지구",
+      "name": "국제업무지구",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I138",
+      "index": 31
+    },
+    {
+      "id": "IC1:송도달빛축제공원",
+      "name": "송도달빛축제공원",
+      "line": "1",
+      "lineName": "인천 도시철도 1호선",
+      "stationCode": "I139",
+      "index": 32
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "geomdan_extension",
+      "from": "IC1:검단호수공원",
+      "to": "IC1:신검단중앙",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_supplement"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "geomdan_extension",
+      "from": "IC1:신검단중앙",
+      "to": "IC1:아라",
+      "distanceKm": 2.0,
+      "bidirectional": true,
+      "sourceTier": "official_supplement"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "geomdan_extension",
+      "from": "IC1:아라",
+      "to": "IC1:계양",
+      "distanceKm": 4.0,
+      "bidirectional": true,
+      "sourceTier": "official_supplement"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:계양",
+      "to": "IC1:귤현",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:귤현",
+      "to": "IC1:박촌",
+      "distanceKm": 1.5,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:박촌",
+      "to": "IC1:임학",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:임학",
+      "to": "IC1:계산",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:계산",
+      "to": "IC1:경인교대입구",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:경인교대입구",
+      "to": "IC1:작전",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:작전",
+      "to": "IC1:갈산",
+      "distanceKm": 1.4,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:갈산",
+      "to": "IC1:부평구청",
+      "distanceKm": 1.0,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:부평구청",
+      "to": "IC1:부평시장",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:부평시장",
+      "to": "IC1:부평",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:부평",
+      "to": "IC1:동수",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:동수",
+      "to": "IC1:부평삼거리",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:부평삼거리",
+      "to": "IC1:간석오거리",
+      "distanceKm": 1.2,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:간석오거리",
+      "to": "IC1:인천시청",
+      "distanceKm": 1.4,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:인천시청",
+      "to": "IC1:예술회관",
+      "distanceKm": 1.0,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:예술회관",
+      "to": "IC1:인천터미널",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:인천터미널",
+      "to": "IC1:문학경기장",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:문학경기장",
+      "to": "IC1:선학",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:선학",
+      "to": "IC1:신연수",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:신연수",
+      "to": "IC1:원인재",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:원인재",
+      "to": "IC1:동춘",
+      "distanceKm": 1.1,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:동춘",
+      "to": "IC1:동막",
+      "distanceKm": 1.0,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:동막",
+      "to": "IC1:캠퍼스타운",
+      "distanceKm": 1.6,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:캠퍼스타운",
+      "to": "IC1:테크노파크",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:테크노파크",
+      "to": "IC1:지식정보단지",
+      "distanceKm": 1.4,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:지식정보단지",
+      "to": "IC1:인천대입구",
+      "distanceKm": 1.0,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:인천대입구",
+      "to": "IC1:센트럴파크",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:센트럴파크",
+      "to": "IC1:국제업무지구",
+      "distanceKm": 0.8,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "main",
+      "from": "IC1:국제업무지구",
+      "to": "IC1:송도달빛축제공원",
+      "distanceKm": 0.9,
+      "bidirectional": true,
+      "sourceTier": "official_primary"
+    }
+  ],
+  "transferEdges": []
+}

@@ -1,0 +1,720 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "9",
+    "name": "서울 지하철 9호선",
+    "graphType": "linear",
+    "terminals": [
+      "개화",
+      "중앙보훈병원"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_수도권9호선_역간거리_20250630.csv",
+    "validation": {
+      "stationCount": 38,
+      "rideEdgeCount": 37,
+      "expectedLinearEdgeCount": 37,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 39.7
+    },
+    "notes": [
+      "국가철도공단 2025-06-30 수도권9호선 역간거리 CSV를 기준으로 개화~중앙보훈병원 물리 그래프를 생성함.",
+      "원본 병기 역명은 sourceName에 보존하고 앱 표시용 name은 기본 역명으로 정규화함.",
+      "급행 정차 정보는 이 역간거리 원본 파일이 직접 제공하는 정보가 아니므로 추측하여 삽입하지 않음."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "중앙보훈병원 방면",
+    "towardLowerIndex": "개화 방면",
+    "expressService": {
+      "supportedByThisSource": false,
+      "note": "급행 정차 패턴은 별도의 공식 운행/정차 자료로 추가 검증 후 넣을 것"
+    }
+  },
+  "stations": [
+    {
+      "id": "L9:개화",
+      "name": "개화",
+      "sourceName": "개화",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 0
+    },
+    {
+      "id": "L9:김포공항",
+      "name": "김포공항",
+      "sourceName": "김포공항",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 1
+    },
+    {
+      "id": "L9:공항시장",
+      "name": "공항시장",
+      "sourceName": "공항시장",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 2
+    },
+    {
+      "id": "L9:신방화",
+      "name": "신방화",
+      "sourceName": "신방화",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 3
+    },
+    {
+      "id": "L9:마곡나루",
+      "name": "마곡나루",
+      "sourceName": "마곡나루",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 4
+    },
+    {
+      "id": "L9:양천향교",
+      "name": "양천향교",
+      "sourceName": "양천향교",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 5
+    },
+    {
+      "id": "L9:가양",
+      "name": "가양",
+      "sourceName": "가양",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 6
+    },
+    {
+      "id": "L9:증미",
+      "name": "증미",
+      "sourceName": "증미",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 7
+    },
+    {
+      "id": "L9:등촌",
+      "name": "등촌",
+      "sourceName": "등촌",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 8
+    },
+    {
+      "id": "L9:염창",
+      "name": "염창",
+      "sourceName": "염창",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 9
+    },
+    {
+      "id": "L9:신목동",
+      "name": "신목동",
+      "sourceName": "신목동",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 10
+    },
+    {
+      "id": "L9:선유도",
+      "name": "선유도",
+      "sourceName": "선유도",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 11
+    },
+    {
+      "id": "L9:당산",
+      "name": "당산",
+      "sourceName": "당산",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 12
+    },
+    {
+      "id": "L9:국회의사당",
+      "name": "국회의사당",
+      "sourceName": "국회의사당",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 13
+    },
+    {
+      "id": "L9:여의도",
+      "name": "여의도",
+      "sourceName": "여의도",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 14
+    },
+    {
+      "id": "L9:샛강",
+      "name": "샛강",
+      "sourceName": "샛강",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 15
+    },
+    {
+      "id": "L9:노량진",
+      "name": "노량진",
+      "sourceName": "노량진",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 16
+    },
+    {
+      "id": "L9:노들",
+      "name": "노들",
+      "sourceName": "노들",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 17
+    },
+    {
+      "id": "L9:흑석",
+      "name": "흑석",
+      "sourceName": "흑석(중앙대입구)",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 18
+    },
+    {
+      "id": "L9:동작",
+      "name": "동작",
+      "sourceName": "동작(현충원)",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 19
+    },
+    {
+      "id": "L9:구반포",
+      "name": "구반포",
+      "sourceName": "구반포",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 20
+    },
+    {
+      "id": "L9:신반포",
+      "name": "신반포",
+      "sourceName": "신반포",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 21
+    },
+    {
+      "id": "L9:고속터미널",
+      "name": "고속터미널",
+      "sourceName": "고속터미널",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 22
+    },
+    {
+      "id": "L9:사평",
+      "name": "사평",
+      "sourceName": "사평",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 23
+    },
+    {
+      "id": "L9:신논현",
+      "name": "신논현",
+      "sourceName": "신논현",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 24
+    },
+    {
+      "id": "L9:언주",
+      "name": "언주",
+      "sourceName": "언주",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 25
+    },
+    {
+      "id": "L9:선정릉",
+      "name": "선정릉",
+      "sourceName": "선정릉",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 26
+    },
+    {
+      "id": "L9:삼성중앙",
+      "name": "삼성중앙",
+      "sourceName": "삼성중앙",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 27
+    },
+    {
+      "id": "L9:봉은사",
+      "name": "봉은사",
+      "sourceName": "봉은사",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 28
+    },
+    {
+      "id": "L9:종합운동장",
+      "name": "종합운동장",
+      "sourceName": "종합운동장",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 29
+    },
+    {
+      "id": "L9:삼전",
+      "name": "삼전",
+      "sourceName": "삼전",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 30
+    },
+    {
+      "id": "L9:석촌고분",
+      "name": "석촌고분",
+      "sourceName": "석촌고분",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 31
+    },
+    {
+      "id": "L9:석촌",
+      "name": "석촌",
+      "sourceName": "석촌",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 32
+    },
+    {
+      "id": "L9:송파나루",
+      "name": "송파나루",
+      "sourceName": "송파나루",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 33
+    },
+    {
+      "id": "L9:한성백제",
+      "name": "한성백제",
+      "sourceName": "한성백제",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 34
+    },
+    {
+      "id": "L9:올림픽공원",
+      "name": "올림픽공원",
+      "sourceName": "올림픽공원(한국체대)",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 35
+    },
+    {
+      "id": "L9:둔촌오륜",
+      "name": "둔촌오륜",
+      "sourceName": "둔촌오륜",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 36
+    },
+    {
+      "id": "L9:중앙보훈병원",
+      "name": "중앙보훈병원",
+      "sourceName": "중앙보훈병원",
+      "line": "9",
+      "lineName": "서울 지하철 9호선",
+      "operator": "서울시메트로9호선주식회사",
+      "index": 37
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:개화",
+      "to": "L9:김포공항",
+      "distanceKm": 3.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:김포공항",
+      "to": "L9:공항시장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:공항시장",
+      "to": "L9:신방화",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:신방화",
+      "to": "L9:마곡나루",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:마곡나루",
+      "to": "L9:양천향교",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:양천향교",
+      "to": "L9:가양",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:가양",
+      "to": "L9:증미",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:증미",
+      "to": "L9:등촌",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:등촌",
+      "to": "L9:염창",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:염창",
+      "to": "L9:신목동",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:신목동",
+      "to": "L9:선유도",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:선유도",
+      "to": "L9:당산",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:당산",
+      "to": "L9:국회의사당",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:국회의사당",
+      "to": "L9:여의도",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:여의도",
+      "to": "L9:샛강",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:샛강",
+      "to": "L9:노량진",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:노량진",
+      "to": "L9:노들",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:노들",
+      "to": "L9:흑석",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:흑석",
+      "to": "L9:동작",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:동작",
+      "to": "L9:구반포",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:구반포",
+      "to": "L9:신반포",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:신반포",
+      "to": "L9:고속터미널",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:고속터미널",
+      "to": "L9:사평",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:사평",
+      "to": "L9:신논현",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:신논현",
+      "to": "L9:언주",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:언주",
+      "to": "L9:선정릉",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:선정릉",
+      "to": "L9:삼성중앙",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:삼성중앙",
+      "to": "L9:봉은사",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:봉은사",
+      "to": "L9:종합운동장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:종합운동장",
+      "to": "L9:삼전",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:삼전",
+      "to": "L9:석촌고분",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:석촌고분",
+      "to": "L9:석촌",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:석촌",
+      "to": "L9:송파나루",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:송파나루",
+      "to": "L9:한성백제",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:한성백제",
+      "to": "L9:올림픽공원",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:올림픽공원",
+      "to": "L9:둔촌오륜",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "9",
+      "segment": "main",
+      "from": "L9:둔촌오륜",
+      "to": "L9:중앙보훈병원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

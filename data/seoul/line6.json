@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권",
+    "operator": "서울교통공사"
+  },
+  "line": {
+    "id": "6",
+    "name": "서울 지하철 6호선",
+    "graphType": "linear_with_one_way_loop",
+    "mainTerminals": [
+      "응암",
+      "신내"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_수도권6호선_역간거리_20250630.csv",
+    "crossCheckSourceFile": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "validation": {
+      "uniqueStationCount": 39,
+      "rideEdgeCount": 39,
+      "mainTrunkStationCount": 34,
+      "eungamLoopStationCount": 6,
+      "allDistancesPositive": true,
+      "crossCheckComparableEdges": 38,
+      "crossCheckMatchedEdges": 38,
+      "crossCheckAllMatched": true
+    },
+    "notes": [
+      "국가철도공단 원본의 응암→역촌→불광→독바위→연신내→구산 순서를 응암순환으로 정규화하고 구산→응암 폐합 edge를 추가함.",
+      "응암순환 edge는 실제 운행 방향을 반영해 bidirectional=false로 저장함.",
+      "응암→새절→...→신내는 본선으로 저장하고 양방향 이동 가능하게 함.",
+      "원본의 병기 역명은 sourceName에 보존하고 앱 표시용 name은 간결하게 정규화함."
+    ],
+    "crossCheck": [
+      {
+        "from": "응암",
+        "to": "역촌",
+        "nraKm": 1.1,
+        "seoulMetroCandidateKm": [
+          1.1
+        ],
+        "matched": true
+      },
+      {
+        "from": "역촌",
+        "to": "불광",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "불광",
+        "to": "독바위",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "독바위",
+        "to": "연신내",
+        "nraKm": 1.4,
+        "seoulMetroCandidateKm": [
+          1.4
+        ],
+        "matched": true
+      },
+      {
+        "from": "연신내",
+        "to": "구산",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "구산",
+        "to": "응암",
+        "nraKm": 1.5,
+        "seoulMetroCandidateKm": [
+          1.5
+        ],
+        "matched": true
+      },
+      {
+        "from": "응암",
+        "to": "새절",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "새절",
+        "to": "증산",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "증산",
+        "to": "디지털미디어시티",
+        "nraKm": 1.1,
+        "seoulMetroCandidateKm": [
+          1.1
+        ],
+        "matched": true
+      },
+      {
+        "from": "디지털미디어시티",
+        "to": "월드컵경기장",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "월드컵경기장",
+        "to": "마포구청",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "마포구청",
+        "to": "망원",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "망원",
+        "to": "합정",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "합정",
+        "to": "상수",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "상수",
+        "to": "광흥창",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "광흥창",
+        "to": "대흥",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "대흥",
+        "to": "공덕",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "공덕",
+        "to": "효창공원앞",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "효창공원앞",
+        "to": "삼각지",
+        "nraKm": 1.2,
+        "seoulMetroCandidateKm": [
+          1.2
+        ],
+        "matched": true
+      },
+      {
+        "from": "삼각지",
+        "to": "녹사평",
+        "nraKm": 1.1,
+        "seoulMetroCandidateKm": [
+          1.1
+        ],
+        "matched": true
+      },
+      {
+        "from": "녹사평",
+        "to": "이태원",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "이태원",
+        "to": "한강진",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "한강진",
+        "to": "버티고개",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "버티고개",
+        "to": "약수",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "약수",
+        "to": "청구",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "청구",
+        "to": "신당",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "신당",
+        "to": "동묘앞",
+        "nraKm": 0.6,
+        "seoulMetroCandidateKm": [
+          0.6
+        ],
+        "matched": true
+      },
+      {
+        "from": "동묘앞",
+        "to": "창신",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "창신",
+        "to": "보문",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "보문",
+        "to": "안암",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "안암",
+        "to": "고려대",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "고려대",
+        "to": "월곡",
+        "nraKm": 1.4,
+        "seoulMetroCandidateKm": [
+          1.4
+        ],
+        "matched": true
+      },
+      {
+        "from": "월곡",
+        "to": "상월곡",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "상월곡",
+        "to": "돌곶이",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "돌곶이",
+        "to": "석계",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "석계",
+        "to": "태릉입구",
+        "nraKm": 0.8,
+        "seoulMetroCandidateKm": [
+          0.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "태릉입구",
+        "to": "화랑대",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "화랑대",
+        "to": "봉화산",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "봉화산",
+        "to": "신내",
+        "nraKm": 1.3,
+        "seoulMetroCandidateKm": [],
+        "matched": null
+      }
+    ]
+  },
+  "routingNotes": {
+    "important": "응암순환은 양방향 순환선이 아니다. 응암→역촌→불광→독바위→연신내→구산→응암 방향으로만 운행하는 순환 구간으로 처리해야 한다.",
+    "mainTrunkDirections": {
+      "towardEast": "신내 방면",
+      "towardWest": "응암 방면"
+    },
+    "eungamLoopDirection": "응암 → 역촌 → 불광 → 독바위 → 연신내 → 구산 → 응암",
+    "displayPolicy": "응암순환 구간에서는 '응암순환' 표기를 우선 사용하고, 본선에서는 '신내 방면' 또는 '응암 방면'을 사용"
+  },
+  "branches": {
+    "mainTrunk": [
+      "응암",
+      "새절",
+      "증산",
+      "디지털미디어시티",
+      "월드컵경기장",
+      "마포구청",
+      "망원",
+      "합정",
+      "상수",
+      "광흥창",
+      "대흥",
+      "공덕",
+      "효창공원앞",
+      "삼각지",
+      "녹사평",
+      "이태원",
+      "한강진",
+      "버티고개",
+      "약수",
+      "청구",
+      "신당",
+      "동묘앞",
+      "창신",
+      "보문",
+      "안암",
+      "고려대",
+      "월곡",
+      "상월곡",
+      "돌곶이",
+      "석계",
+      "태릉입구",
+      "화랑대",
+      "봉화산",
+      "신내"
+    ],
+    "eungamLoop": [
+      "응암",
+      "역촌",
+      "불광",
+      "독바위",
+      "연신내",
+      "구산",
+      "응암"
+    ]
+  },
+  "stations": [
+    {
+      "id": "L6:응암",
+      "name": "응암",
+      "sourceName": "응암",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 0,
+      "specialRoles": [
+        "응암순환 진입/종료",
+        "본선 연결"
+      ]
+    },
+    {
+      "id": "L6:역촌",
+      "name": "역촌",
+      "sourceName": "역촌",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 1
+    },
+    {
+      "id": "L6:불광",
+      "name": "불광",
+      "sourceName": "불광",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 2
+    },
+    {
+      "id": "L6:독바위",
+      "name": "독바위",
+      "sourceName": "독바위",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 3
+    },
+    {
+      "id": "L6:연신내",
+      "name": "연신내",
+      "sourceName": "연신내",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 4
+    },
+    {
+      "id": "L6:구산",
+      "name": "구산",
+      "sourceName": "구산",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 5
+    },
+    {
+      "id": "L6:새절",
+      "name": "새절",
+      "sourceName": "새절(신사)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 6
+    },
+    {
+      "id": "L6:증산",
+      "name": "증산",
+      "sourceName": "증산(명지대앞)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 7
+    },
+    {
+      "id": "L6:디지털미디어시티",
+      "name": "디지털미디어시티",
+      "sourceName": "디지털미디어시티",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 8
+    },
+    {
+      "id": "L6:월드컵경기장",
+      "name": "월드컵경기장",
+      "sourceName": "월드컵경기장(성산)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 9
+    },
+    {
+      "id": "L6:마포구청",
+      "name": "마포구청",
+      "sourceName": "마포구청",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 10
+    },
+    {
+      "id": "L6:망원",
+      "name": "망원",
+      "sourceName": "망원",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 11
+    },
+    {
+      "id": "L6:합정",
+      "name": "합정",
+      "sourceName": "합정",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 12
+    },
+    {
+      "id": "L6:상수",
+      "name": "상수",
+      "sourceName": "상수",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 13
+    },
+    {
+      "id": "L6:광흥창",
+      "name": "광흥창",
+      "sourceName": "광흥창(서강)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 14
+    },
+    {
+      "id": "L6:대흥",
+      "name": "대흥",
+      "sourceName": "대흥(서강대앞)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 15
+    },
+    {
+      "id": "L6:공덕",
+      "name": "공덕",
+      "sourceName": "공덕",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 16
+    },
+    {
+      "id": "L6:효창공원앞",
+      "name": "효창공원앞",
+      "sourceName": "효창공원앞",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 17
+    },
+    {
+      "id": "L6:삼각지",
+      "name": "삼각지",
+      "sourceName": "삼각지",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 18
+    },
+    {
+      "id": "L6:녹사평",
+      "name": "녹사평",
+      "sourceName": "녹사평(용산구청)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 19
+    },
+    {
+      "id": "L6:이태원",
+      "name": "이태원",
+      "sourceName": "이태원",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 20
+    },
+    {
+      "id": "L6:한강진",
+      "name": "한강진",
+      "sourceName": "한강진",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 21
+    },
+    {
+      "id": "L6:버티고개",
+      "name": "버티고개",
+      "sourceName": "버티고개",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 22
+    },
+    {
+      "id": "L6:약수",
+      "name": "약수",
+      "sourceName": "약수",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 23
+    },
+    {
+      "id": "L6:청구",
+      "name": "청구",
+      "sourceName": "청구",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 24
+    },
+    {
+      "id": "L6:신당",
+      "name": "신당",
+      "sourceName": "신당",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 25
+    },
+    {
+      "id": "L6:동묘앞",
+      "name": "동묘앞",
+      "sourceName": "동묘앞",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 26
+    },
+    {
+      "id": "L6:창신",
+      "name": "창신",
+      "sourceName": "창신",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 27
+    },
+    {
+      "id": "L6:보문",
+      "name": "보문",
+      "sourceName": "보문",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 28
+    },
+    {
+      "id": "L6:안암",
+      "name": "안암",
+      "sourceName": "안암(고대병원앞)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 29
+    },
+    {
+      "id": "L6:고려대",
+      "name": "고려대",
+      "sourceName": "고려대(종암)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 30
+    },
+    {
+      "id": "L6:월곡",
+      "name": "월곡",
+      "sourceName": "월곡(동덕여대)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 31
+    },
+    {
+      "id": "L6:상월곡",
+      "name": "상월곡",
+      "sourceName": "상월곡(한국과학기술연구원)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 32
+    },
+    {
+      "id": "L6:돌곶이",
+      "name": "돌곶이",
+      "sourceName": "돌곶이",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 33
+    },
+    {
+      "id": "L6:석계",
+      "name": "석계",
+      "sourceName": "석계",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 34
+    },
+    {
+      "id": "L6:태릉입구",
+      "name": "태릉입구",
+      "sourceName": "태릉입구",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 35
+    },
+    {
+      "id": "L6:화랑대",
+      "name": "화랑대",
+      "sourceName": "화랑대(서울여대입구)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 36
+    },
+    {
+      "id": "L6:봉화산",
+      "name": "봉화산",
+      "sourceName": "봉화산(서울의료원)",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 37
+    },
+    {
+      "id": "L6:신내",
+      "name": "신내",
+      "sourceName": "신내",
+      "line": "6",
+      "lineName": "서울 지하철 6호선",
+      "graphIndex": 38
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:응암",
+      "to": "L6:역촌",
+      "distanceKm": 1.1,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:역촌",
+      "to": "L6:불광",
+      "distanceKm": 0.8,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:불광",
+      "to": "L6:독바위",
+      "distanceKm": 0.9,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:독바위",
+      "to": "L6:연신내",
+      "distanceKm": 1.4,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:연신내",
+      "to": "L6:구산",
+      "distanceKm": 0.9,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "eungam_loop",
+      "from": "L6:구산",
+      "to": "L6:응암",
+      "distanceKm": 1.5,
+      "bidirectional": false,
+      "serviceDirection": "응암순환"
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:응암",
+      "to": "L6:새절",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:새절",
+      "to": "L6:증산",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:증산",
+      "to": "L6:디지털미디어시티",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:디지털미디어시티",
+      "to": "L6:월드컵경기장",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:월드컵경기장",
+      "to": "L6:마포구청",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:마포구청",
+      "to": "L6:망원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:망원",
+      "to": "L6:합정",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:합정",
+      "to": "L6:상수",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:상수",
+      "to": "L6:광흥창",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:광흥창",
+      "to": "L6:대흥",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:대흥",
+      "to": "L6:공덕",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:공덕",
+      "to": "L6:효창공원앞",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:효창공원앞",
+      "to": "L6:삼각지",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:삼각지",
+      "to": "L6:녹사평",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:녹사평",
+      "to": "L6:이태원",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:이태원",
+      "to": "L6:한강진",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:한강진",
+      "to": "L6:버티고개",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:버티고개",
+      "to": "L6:약수",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:약수",
+      "to": "L6:청구",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:청구",
+      "to": "L6:신당",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:신당",
+      "to": "L6:동묘앞",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:동묘앞",
+      "to": "L6:창신",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:창신",
+      "to": "L6:보문",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:보문",
+      "to": "L6:안암",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:안암",
+      "to": "L6:고려대",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:고려대",
+      "to": "L6:월곡",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:월곡",
+      "to": "L6:상월곡",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:상월곡",
+      "to": "L6:돌곶이",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:돌곶이",
+      "to": "L6:석계",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:석계",
+      "to": "L6:태릉입구",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:태릉입구",
+      "to": "L6:화랑대",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:화랑대",
+      "to": "L6:봉화산",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "6",
+      "segment": "main_trunk",
+      "from": "L6:봉화산",
+      "to": "L6:신내",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

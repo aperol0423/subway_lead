@@ -1,0 +1,739 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권",
+    "operator": "한국철도공사 / 서울교통공사"
+  },
+  "line": {
+    "id": "3",
+    "name": "수도권 전철 3호선",
+    "graphType": "linear"
+  },
+  "dataQuality": {
+    "sources": [
+      "국가철도공단_수도권3호선_역간거리_20250630.csv",
+      "서울교통공사 역간거리 및 소요시간_240810.csv"
+    ],
+    "stationOrder": "normalized as a single continuous 대화-오금 physical graph",
+    "segmentDistances": "official uploaded datasets",
+    "validation": {
+      "stationCount": 44,
+      "rideEdgeCount": 43,
+      "expectedLinearEdgeCount": 43,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "seoulMetroCrossCheckCount": 33,
+      "seoulMetroCrossCheckMatches": 25
+    },
+    "notes": [
+      "대화~삼송 일산선과 지축~오금 서울교통공사 구간을 하나의 연속 그래프로 정규화함.",
+      "서울교통공사 구간은 별도로 업로드된 서울교통공사 역간거리 CSV 값으로 교차 확인/적용함.",
+      "삼송~지축 운영경계 구간은 국가철도공단 수도권3호선 공식 데이터의 1.7km를 적용함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "오금 방면",
+    "towardLowerIndex": "대화 방면"
+  },
+  "stations": [
+    {
+      "id": "L3:대화",
+      "name": "대화",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 0
+    },
+    {
+      "id": "L3:주엽",
+      "name": "주엽",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 1
+    },
+    {
+      "id": "L3:정발산",
+      "name": "정발산",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 2
+    },
+    {
+      "id": "L3:마두",
+      "name": "마두",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 3
+    },
+    {
+      "id": "L3:백석",
+      "name": "백석",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 4
+    },
+    {
+      "id": "L3:대곡",
+      "name": "대곡",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 5
+    },
+    {
+      "id": "L3:화정",
+      "name": "화정",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 6
+    },
+    {
+      "id": "L3:원당",
+      "name": "원당",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 7
+    },
+    {
+      "id": "L3:원흥",
+      "name": "원흥",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 8
+    },
+    {
+      "id": "L3:삼송",
+      "name": "삼송",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 9
+    },
+    {
+      "id": "L3:지축",
+      "name": "지축",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 10
+    },
+    {
+      "id": "L3:구파발",
+      "name": "구파발",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 11
+    },
+    {
+      "id": "L3:연신내",
+      "name": "연신내",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 12
+    },
+    {
+      "id": "L3:불광",
+      "name": "불광",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 13
+    },
+    {
+      "id": "L3:녹번",
+      "name": "녹번",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 14
+    },
+    {
+      "id": "L3:홍제",
+      "name": "홍제",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 15
+    },
+    {
+      "id": "L3:무악재",
+      "name": "무악재",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 16
+    },
+    {
+      "id": "L3:독립문",
+      "name": "독립문",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 17
+    },
+    {
+      "id": "L3:경복궁",
+      "name": "경복궁",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 18
+    },
+    {
+      "id": "L3:안국",
+      "name": "안국",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 19
+    },
+    {
+      "id": "L3:종로3가",
+      "name": "종로3가",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 20
+    },
+    {
+      "id": "L3:을지로3가",
+      "name": "을지로3가",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 21
+    },
+    {
+      "id": "L3:충무로",
+      "name": "충무로",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 22
+    },
+    {
+      "id": "L3:동대입구",
+      "name": "동대입구",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 23
+    },
+    {
+      "id": "L3:약수",
+      "name": "약수",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 24
+    },
+    {
+      "id": "L3:금호",
+      "name": "금호",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 25
+    },
+    {
+      "id": "L3:옥수",
+      "name": "옥수",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 26
+    },
+    {
+      "id": "L3:압구정",
+      "name": "압구정",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 27
+    },
+    {
+      "id": "L3:신사",
+      "name": "신사",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 28
+    },
+    {
+      "id": "L3:잠원",
+      "name": "잠원",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 29
+    },
+    {
+      "id": "L3:고속터미널",
+      "name": "고속터미널",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 30
+    },
+    {
+      "id": "L3:교대",
+      "name": "교대",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 31
+    },
+    {
+      "id": "L3:남부터미널",
+      "name": "남부터미널",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 32
+    },
+    {
+      "id": "L3:양재",
+      "name": "양재",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 33
+    },
+    {
+      "id": "L3:매봉",
+      "name": "매봉",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 34
+    },
+    {
+      "id": "L3:도곡",
+      "name": "도곡",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 35
+    },
+    {
+      "id": "L3:대치",
+      "name": "대치",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 36
+    },
+    {
+      "id": "L3:학여울",
+      "name": "학여울",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 37
+    },
+    {
+      "id": "L3:대청",
+      "name": "대청",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 38
+    },
+    {
+      "id": "L3:일원",
+      "name": "일원",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 39
+    },
+    {
+      "id": "L3:수서",
+      "name": "수서",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 40
+    },
+    {
+      "id": "L3:가락시장",
+      "name": "가락시장",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 41
+    },
+    {
+      "id": "L3:경찰병원",
+      "name": "경찰병원",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 42
+    },
+    {
+      "id": "L3:오금",
+      "name": "오금",
+      "line": "3",
+      "lineName": "수도권 전철 3호선",
+      "index": 43
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:대화",
+      "to": "L3:주엽",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:주엽",
+      "to": "L3:정발산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:정발산",
+      "to": "L3:마두",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:마두",
+      "to": "L3:백석",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:백석",
+      "to": "L3:대곡",
+      "distanceKm": 2.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:대곡",
+      "to": "L3:화정",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:화정",
+      "to": "L3:원당",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:원당",
+      "to": "L3:원흥",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:원흥",
+      "to": "L3:삼송",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:삼송",
+      "to": "L3:지축",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:지축",
+      "to": "L3:구파발",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:구파발",
+      "to": "L3:연신내",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:연신내",
+      "to": "L3:불광",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:불광",
+      "to": "L3:녹번",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:녹번",
+      "to": "L3:홍제",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:홍제",
+      "to": "L3:무악재",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:무악재",
+      "to": "L3:독립문",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:독립문",
+      "to": "L3:경복궁",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:경복궁",
+      "to": "L3:안국",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:안국",
+      "to": "L3:종로3가",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:종로3가",
+      "to": "L3:을지로3가",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:을지로3가",
+      "to": "L3:충무로",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:충무로",
+      "to": "L3:동대입구",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:동대입구",
+      "to": "L3:약수",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:약수",
+      "to": "L3:금호",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:금호",
+      "to": "L3:옥수",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:옥수",
+      "to": "L3:압구정",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:압구정",
+      "to": "L3:신사",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:신사",
+      "to": "L3:잠원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:잠원",
+      "to": "L3:고속터미널",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:고속터미널",
+      "to": "L3:교대",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:교대",
+      "to": "L3:남부터미널",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:남부터미널",
+      "to": "L3:양재",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:양재",
+      "to": "L3:매봉",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:매봉",
+      "to": "L3:도곡",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:도곡",
+      "to": "L3:대치",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:대치",
+      "to": "L3:학여울",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:학여울",
+      "to": "L3:대청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:대청",
+      "to": "L3:일원",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:일원",
+      "to": "L3:수서",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:수서",
+      "to": "L3:가락시장",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:가락시장",
+      "to": "L3:경찰병원",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "L3:경찰병원",
+      "to": "L3:오금",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

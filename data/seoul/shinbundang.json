@@ -1,0 +1,429 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "shinbundang",
+    "name": "신분당선",
+    "graphType": "linear",
+    "terminals": [
+      "신사",
+      "광교"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_신분당선_역간거리_20250630.csv",
+    "validation": {
+      "stationCount": 16,
+      "rideEdgeCount": 15,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 33.6,
+      "directionalColumnComparableEdges": 15,
+      "directionalColumnMatchedEdges": 13
+    },
+    "notes": [
+      "국가철도공단 2025-06-30 신분당선 역간거리 CSV를 기준으로 생성함.",
+      "edge 거리는 공공데이터포털 정의에 따라 출발역의 후행역간거리를 우선 사용하고, 값이 없을 때 도착역의 역간거리를 사용함.",
+      "두 거리 열이 모두 존재하는 경우의 일치 여부는 directionalColumnCheck에 별도로 기록해 원본 차이를 숨기지 않음.",
+      "원본 병기 역명은 sourceName에 보존함."
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "신사",
+        "to": "논현",
+        "sourceFollowingKm": 0.7,
+        "destinationPreviousKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "논현",
+        "to": "신논현",
+        "sourceFollowingKm": 0.8,
+        "destinationPreviousKm": 0.8,
+        "matched": true
+      },
+      {
+        "from": "신논현",
+        "to": "강남",
+        "sourceFollowingKm": 0.9,
+        "destinationPreviousKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "강남",
+        "to": "양재",
+        "sourceFollowingKm": 1.5,
+        "destinationPreviousKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "양재",
+        "to": "양재시민의숲",
+        "sourceFollowingKm": 1.6,
+        "destinationPreviousKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "양재시민의숲",
+        "to": "청계산입구",
+        "sourceFollowingKm": 2.9,
+        "destinationPreviousKm": 2.9,
+        "matched": true
+      },
+      {
+        "from": "청계산입구",
+        "to": "판교",
+        "sourceFollowingKm": 8.2,
+        "destinationPreviousKm": 8.2,
+        "matched": true
+      },
+      {
+        "from": "판교",
+        "to": "정자",
+        "sourceFollowingKm": 3.1,
+        "destinationPreviousKm": 3.1,
+        "matched": true
+      },
+      {
+        "from": "정자",
+        "to": "미금",
+        "sourceFollowingKm": 1.9,
+        "destinationPreviousKm": 1.8,
+        "matched": false
+      },
+      {
+        "from": "미금",
+        "to": "동천",
+        "sourceFollowingKm": 1.7,
+        "destinationPreviousKm": 1.7,
+        "matched": true
+      },
+      {
+        "from": "동천",
+        "to": "수지구청",
+        "sourceFollowingKm": 2.1,
+        "destinationPreviousKm": 2.1,
+        "matched": true
+      },
+      {
+        "from": "수지구청",
+        "to": "성복",
+        "sourceFollowingKm": 1.7,
+        "destinationPreviousKm": 1.7,
+        "matched": true
+      },
+      {
+        "from": "성복",
+        "to": "상현",
+        "sourceFollowingKm": 2.1,
+        "destinationPreviousKm": 2.1,
+        "matched": true
+      },
+      {
+        "from": "상현",
+        "to": "광교중앙",
+        "sourceFollowingKm": 2.4,
+        "destinationPreviousKm": 2.3,
+        "matched": false
+      },
+      {
+        "from": "광교중앙",
+        "to": "광교",
+        "sourceFollowingKm": 2.0,
+        "destinationPreviousKm": 2.0,
+        "matched": true
+      }
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "광교 방면",
+    "towardLowerIndex": "신사 방면"
+  },
+  "stations": [
+    {
+      "id": "SB:신사",
+      "name": "신사",
+      "sourceName": "신사",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 0
+    },
+    {
+      "id": "SB:논현",
+      "name": "논현",
+      "sourceName": "논현",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 1
+    },
+    {
+      "id": "SB:신논현",
+      "name": "신논현",
+      "sourceName": "신논현",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 2
+    },
+    {
+      "id": "SB:강남",
+      "name": "강남",
+      "sourceName": "강남",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 3
+    },
+    {
+      "id": "SB:양재",
+      "name": "양재",
+      "sourceName": "양재(서초구청)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 4
+    },
+    {
+      "id": "SB:양재시민의숲",
+      "name": "양재시민의숲",
+      "sourceName": "양재시민의숲(매헌)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 5
+    },
+    {
+      "id": "SB:청계산입구",
+      "name": "청계산입구",
+      "sourceName": "청계산입구",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 6
+    },
+    {
+      "id": "SB:판교",
+      "name": "판교",
+      "sourceName": "판교(판교테크노밸리)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 7
+    },
+    {
+      "id": "SB:정자",
+      "name": "정자",
+      "sourceName": "정자",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 8
+    },
+    {
+      "id": "SB:미금",
+      "name": "미금",
+      "sourceName": "미금(분당서울대병원)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 9
+    },
+    {
+      "id": "SB:동천",
+      "name": "동천",
+      "sourceName": "동천",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 10
+    },
+    {
+      "id": "SB:수지구청",
+      "name": "수지구청",
+      "sourceName": "수지구청",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 11
+    },
+    {
+      "id": "SB:성복",
+      "name": "성복",
+      "sourceName": "성복",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 12
+    },
+    {
+      "id": "SB:상현",
+      "name": "상현",
+      "sourceName": "상현",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 13
+    },
+    {
+      "id": "SB:광교중앙",
+      "name": "광교중앙",
+      "sourceName": "광교중앙(아주대)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 14
+    },
+    {
+      "id": "SB:광교",
+      "name": "광교",
+      "sourceName": "광교(경기대)",
+      "line": "shinbundang",
+      "lineName": "신분당선",
+      "operator": "네오트랜스주식회사",
+      "index": 15
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:신사",
+      "to": "SB:논현",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:논현",
+      "to": "SB:신논현",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:신논현",
+      "to": "SB:강남",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:강남",
+      "to": "SB:양재",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:양재",
+      "to": "SB:양재시민의숲",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:양재시민의숲",
+      "to": "SB:청계산입구",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:청계산입구",
+      "to": "SB:판교",
+      "distanceKm": 8.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:판교",
+      "to": "SB:정자",
+      "distanceKm": 3.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:정자",
+      "to": "SB:미금",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:미금",
+      "to": "SB:동천",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:동천",
+      "to": "SB:수지구청",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:수지구청",
+      "to": "SB:성복",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:성복",
+      "to": "SB:상현",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:상현",
+      "to": "SB:광교중앙",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "shinbundang",
+      "segment": "main",
+      "from": "SB:광교중앙",
+      "to": "SB:광교",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

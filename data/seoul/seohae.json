@@ -1,0 +1,397 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "seohae",
+    "name": "서해선",
+    "graphType": "linear",
+    "terminals": [
+      "일산",
+      "원시"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_코레일 역간거리_20251231.CSV",
+    "validation": {
+      "stationCount": 21,
+      "rideEdgeCount": 20,
+      "expectedLinearEdgeCount": 20,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "combinedDistanceSumKm": 47.286,
+      "officialSourceEdgeCount": 9,
+      "officialSourceDistanceSumKm": 25.3,
+      "supplementalEdgeCount": 11,
+      "supplementalDistanceSumKm": 21.986
+    },
+    "sourcePolicy": {
+      "official": "국가철도공단_코레일 역간거리_20251231.CSV의 서해선 9행. 일산부터 부천종합운동장까지 각 행 값을 다음 서비스역 edge에 적용하며, 부천종합운동장 행 2.7km는 소사 연결에 사용.",
+      "supplemental_non_official": "Rail.Blue 소사원시선 철도거리표. 공식 역 순서/구간 확인 자료와 교차 확인하되 거리 자체는 비공식 보조자료로 명시."
+    },
+    "notes": [
+      "현재 서해선 21개 여객역 순서는 철도산업정보센터 공식 도시/광역철도 현황과 일치하도록 구성함.",
+      "소사~원시 구간의 개별 역간거리는 공식 CSV를 확보하지 못해 Rail.Blue 값을 보조자료로 사용함.",
+      "Rail.Blue에는 여객역 목록에 없는 하중이 중간 지점으로 수록되어 있어, 신현→시흥시청은 신현→하중 1.700km와 하중→시흥시청 1.960km를 합산한 3.660km로 처리함.",
+      "보조 거리값은 추후 공식 개별 역간거리 자료 확보 시 교체하도록 각 edge에 sourceTier를 기록함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "원시 방면",
+    "towardLowerIndex": "일산 방면"
+  },
+  "stations": [
+    {
+      "id": "SH:일산",
+      "name": "일산",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 0
+    },
+    {
+      "id": "SH:풍산",
+      "name": "풍산",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 1
+    },
+    {
+      "id": "SH:백마",
+      "name": "백마",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 2
+    },
+    {
+      "id": "SH:곡산",
+      "name": "곡산",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 3
+    },
+    {
+      "id": "SH:대곡",
+      "name": "대곡",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 4
+    },
+    {
+      "id": "SH:능곡",
+      "name": "능곡",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 5
+    },
+    {
+      "id": "SH:김포공항",
+      "name": "김포공항",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 6
+    },
+    {
+      "id": "SH:원종",
+      "name": "원종",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 7
+    },
+    {
+      "id": "SH:부천종합운동장",
+      "name": "부천종합운동장",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 8
+    },
+    {
+      "id": "SH:소사",
+      "name": "소사",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 9
+    },
+    {
+      "id": "SH:소새울",
+      "name": "소새울",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 10
+    },
+    {
+      "id": "SH:시흥대야",
+      "name": "시흥대야",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 11
+    },
+    {
+      "id": "SH:신천",
+      "name": "신천",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 12
+    },
+    {
+      "id": "SH:신현",
+      "name": "신현",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 13
+    },
+    {
+      "id": "SH:시흥시청",
+      "name": "시흥시청",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 14
+    },
+    {
+      "id": "SH:시흥능곡",
+      "name": "시흥능곡",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 15
+    },
+    {
+      "id": "SH:달미",
+      "name": "달미",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 16
+    },
+    {
+      "id": "SH:선부",
+      "name": "선부",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 17
+    },
+    {
+      "id": "SH:초지",
+      "name": "초지",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 18
+    },
+    {
+      "id": "SH:시우",
+      "name": "시우",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 19
+    },
+    {
+      "id": "SH:원시",
+      "name": "원시",
+      "line": "seohae",
+      "lineName": "서해선",
+      "index": 20
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:일산",
+      "to": "SH:풍산",
+      "distanceKm": 1.9,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:풍산",
+      "to": "SH:백마",
+      "distanceKm": 1.7,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:백마",
+      "to": "SH:곡산",
+      "distanceKm": 1.6,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:곡산",
+      "to": "SH:대곡",
+      "distanceKm": 1.7,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:대곡",
+      "to": "SH:능곡",
+      "distanceKm": 1.8,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:능곡",
+      "to": "SH:김포공항",
+      "distanceKm": 7.5,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:김포공항",
+      "to": "SH:원종",
+      "distanceKm": 4.3,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:원종",
+      "to": "SH:부천종합운동장",
+      "distanceKm": 2.1,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "official_korail_20251231",
+      "from": "SH:부천종합운동장",
+      "to": "SH:소사",
+      "distanceKm": 2.7,
+      "bidirectional": true,
+      "sourceTier": "official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:소사",
+      "to": "SH:소새울",
+      "distanceKm": 1.678,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:소새울",
+      "to": "SH:시흥대야",
+      "distanceKm": 2.14,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:시흥대야",
+      "to": "SH:신천",
+      "distanceKm": 1.37,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:신천",
+      "to": "SH:신현",
+      "distanceKm": 3.34,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:신현",
+      "to": "SH:시흥시청",
+      "distanceKm": 3.66,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:시흥시청",
+      "to": "SH:시흥능곡",
+      "distanceKm": 1.293,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:시흥능곡",
+      "to": "SH:달미",
+      "distanceKm": 2.382,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:달미",
+      "to": "SH:선부",
+      "distanceKm": 1.618,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:선부",
+      "to": "SH:초지",
+      "distanceKm": 1.654,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:초지",
+      "to": "SH:시우",
+      "distanceKm": 1.363,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    },
+    {
+      "type": "ride",
+      "line": "seohae",
+      "segment": "sosa_wonsi",
+      "from": "SH:시우",
+      "to": "SH:원시",
+      "distanceKm": 1.488,
+      "bidirectional": true,
+      "sourceTier": "supplemental_non_official"
+    }
+  ],
+  "transferEdges": []
+}

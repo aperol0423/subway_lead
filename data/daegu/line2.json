@@ -1,0 +1,796 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "daegu",
+    "name": "대구",
+    "operator": "대구교통공사"
+  },
+  "line": {
+    "id": "2",
+    "name": "대구 도시철도 2호선",
+    "graphType": "linear",
+    "terminals": [
+      "문양",
+      "영남대"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "대구교통공사_2호선 역 구간정보_20251231.csv",
+    "sourceType": "대구교통공사 공식 역 구간정보",
+    "validation": {
+      "sourceRowCount": 30,
+      "passengerStationCount": 29,
+      "excludedNonPassengerRowCount": 1,
+      "rideEdgeCount": 28,
+      "expectedLinearEdgeCount": 28,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "directionalColumnComparableEdges": 28,
+      "directionalColumnMatchedEdges": 28,
+      "directionalColumnAllMatched": true,
+      "totalStationToStationDistanceKm": 31.4
+    },
+    "excludedNonPassengerRows": [
+      {
+        "name": "문양기지",
+        "stationCode": "200",
+        "stationType": "차량기지"
+      }
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "문양",
+        "to": "다사",
+        "sourceDownKm": 2.9,
+        "nextStationUpKm": 2.9,
+        "matched": true,
+        "distanceKmUsed": 2.9
+      },
+      {
+        "from": "다사",
+        "to": "대실",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "대실",
+        "to": "강창",
+        "sourceDownKm": 1.4,
+        "nextStationUpKm": 1.4,
+        "matched": true,
+        "distanceKmUsed": 1.4
+      },
+      {
+        "from": "강창",
+        "to": "계명대",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "계명대",
+        "to": "성서산단",
+        "sourceDownKm": 1.3,
+        "nextStationUpKm": 1.3,
+        "matched": true,
+        "distanceKmUsed": 1.3
+      },
+      {
+        "from": "성서산단",
+        "to": "이곡",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "이곡",
+        "to": "용산",
+        "sourceDownKm": 1.3,
+        "nextStationUpKm": 1.3,
+        "matched": true,
+        "distanceKmUsed": 1.3
+      },
+      {
+        "from": "용산",
+        "to": "죽전",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "죽전",
+        "to": "감삼",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "감삼",
+        "to": "두류",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "두류",
+        "to": "내당",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "내당",
+        "to": "반고개",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "반고개",
+        "to": "청라언덕2",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "청라언덕2",
+        "to": "반월당2",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "반월당2",
+        "to": "경대병원",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "경대병원",
+        "to": "대구은행",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "대구은행",
+        "to": "범어",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "범어",
+        "to": "수성구청",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "수성구청",
+        "to": "만촌",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "만촌",
+        "to": "담티",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "담티",
+        "to": "연호",
+        "sourceDownKm": 1.8,
+        "nextStationUpKm": 1.8,
+        "matched": true,
+        "distanceKmUsed": 1.8
+      },
+      {
+        "from": "연호",
+        "to": "수성알파시티",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "수성알파시티",
+        "to": "고산",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "고산",
+        "to": "신매",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "신매",
+        "to": "사월",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "사월",
+        "to": "정평",
+        "sourceDownKm": 1.2,
+        "nextStationUpKm": 1.2,
+        "matched": true,
+        "distanceKmUsed": 1.2
+      },
+      {
+        "from": "정평",
+        "to": "임당",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "임당",
+        "to": "영남대",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      }
+    ],
+    "notes": [
+      "업로드된 대구교통공사 2025-12-31 역 구간정보 CSV를 기준으로 생성함.",
+      "역종류에 '기지'가 포함된 행은 여객역이 아니므로 stations 및 rideEdges에서 제외함.",
+      "인접 구간은 현재 역의 하행키로와 다음 여객역의 상행키로를 교차검증함.",
+      "거리값은 현재 역의 하행키로를 우선 사용하고, 없을 경우 다음 역의 상행키로를 사용함.",
+      "원본 역코드와 역종류는 station metadata에 보존함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "영남대 방면",
+    "towardLowerIndex": "문양 방면"
+  },
+  "stations": [
+    {
+      "id": "DG2:문양",
+      "name": "문양",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "216",
+      "stationType": "일반역",
+      "index": 0
+    },
+    {
+      "id": "DG2:다사",
+      "name": "다사",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "217",
+      "stationType": "일반역",
+      "index": 1
+    },
+    {
+      "id": "DG2:대실",
+      "name": "대실",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "218",
+      "stationType": "일반역",
+      "index": 2
+    },
+    {
+      "id": "DG2:강창",
+      "name": "강창",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "219",
+      "stationType": "일반역",
+      "index": 3
+    },
+    {
+      "id": "DG2:계명대",
+      "name": "계명대",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "220",
+      "stationType": "일반역",
+      "index": 4
+    },
+    {
+      "id": "DG2:성서산단",
+      "name": "성서산단",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "221",
+      "stationType": "일반역",
+      "index": 5
+    },
+    {
+      "id": "DG2:이곡",
+      "name": "이곡",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "222",
+      "stationType": "일반역",
+      "index": 6
+    },
+    {
+      "id": "DG2:용산",
+      "name": "용산",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "223",
+      "stationType": "일반역",
+      "index": 7
+    },
+    {
+      "id": "DG2:죽전",
+      "name": "죽전",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "224",
+      "stationType": "일반역",
+      "index": 8
+    },
+    {
+      "id": "DG2:감삼",
+      "name": "감삼",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "225",
+      "stationType": "일반역",
+      "index": 9
+    },
+    {
+      "id": "DG2:두류",
+      "name": "두류",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "226",
+      "stationType": "일반역",
+      "index": 10
+    },
+    {
+      "id": "DG2:내당",
+      "name": "내당",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "227",
+      "stationType": "일반역",
+      "index": 11
+    },
+    {
+      "id": "DG2:반고개",
+      "name": "반고개",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "228",
+      "stationType": "일반역",
+      "index": 12
+    },
+    {
+      "id": "DG2:청라언덕2",
+      "name": "청라언덕2",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "229",
+      "stationType": "일반역",
+      "index": 13
+    },
+    {
+      "id": "DG2:반월당2",
+      "name": "반월당2",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "230",
+      "stationType": "일반역",
+      "index": 14
+    },
+    {
+      "id": "DG2:경대병원",
+      "name": "경대병원",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "231",
+      "stationType": "일반역",
+      "index": 15
+    },
+    {
+      "id": "DG2:대구은행",
+      "name": "대구은행",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "232",
+      "stationType": "일반역",
+      "index": 16
+    },
+    {
+      "id": "DG2:범어",
+      "name": "범어",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "233",
+      "stationType": "일반역",
+      "index": 17
+    },
+    {
+      "id": "DG2:수성구청",
+      "name": "수성구청",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "234",
+      "stationType": "일반역",
+      "index": 18
+    },
+    {
+      "id": "DG2:만촌",
+      "name": "만촌",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "235",
+      "stationType": "일반역",
+      "index": 19
+    },
+    {
+      "id": "DG2:담티",
+      "name": "담티",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "236",
+      "stationType": "일반역",
+      "index": 20
+    },
+    {
+      "id": "DG2:연호",
+      "name": "연호",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "237",
+      "stationType": "일반역",
+      "index": 21
+    },
+    {
+      "id": "DG2:수성알파시티",
+      "name": "수성알파시티",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "238",
+      "stationType": "일반역",
+      "index": 22
+    },
+    {
+      "id": "DG2:고산",
+      "name": "고산",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "239",
+      "stationType": "일반역",
+      "index": 23
+    },
+    {
+      "id": "DG2:신매",
+      "name": "신매",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "240",
+      "stationType": "일반역",
+      "index": 24
+    },
+    {
+      "id": "DG2:사월",
+      "name": "사월",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "241",
+      "stationType": "일반역",
+      "index": 25
+    },
+    {
+      "id": "DG2:정평",
+      "name": "정평",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "242",
+      "stationType": "일반역",
+      "index": 26
+    },
+    {
+      "id": "DG2:임당",
+      "name": "임당",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "243",
+      "stationType": "일반역",
+      "index": 27
+    },
+    {
+      "id": "DG2:영남대",
+      "name": "영남대",
+      "line": "2",
+      "lineName": "대구 도시철도 2호선",
+      "stationCode": "244",
+      "stationType": "일반역",
+      "index": 28
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:문양",
+      "to": "DG2:다사",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:다사",
+      "to": "DG2:대실",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:대실",
+      "to": "DG2:강창",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:강창",
+      "to": "DG2:계명대",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:계명대",
+      "to": "DG2:성서산단",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:성서산단",
+      "to": "DG2:이곡",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:이곡",
+      "to": "DG2:용산",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:용산",
+      "to": "DG2:죽전",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:죽전",
+      "to": "DG2:감삼",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:감삼",
+      "to": "DG2:두류",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:두류",
+      "to": "DG2:내당",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:내당",
+      "to": "DG2:반고개",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:반고개",
+      "to": "DG2:청라언덕2",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:청라언덕2",
+      "to": "DG2:반월당2",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:반월당2",
+      "to": "DG2:경대병원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:경대병원",
+      "to": "DG2:대구은행",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:대구은행",
+      "to": "DG2:범어",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:범어",
+      "to": "DG2:수성구청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:수성구청",
+      "to": "DG2:만촌",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:만촌",
+      "to": "DG2:담티",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:담티",
+      "to": "DG2:연호",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:연호",
+      "to": "DG2:수성알파시티",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:수성알파시티",
+      "to": "DG2:고산",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:고산",
+      "to": "DG2:신매",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:신매",
+      "to": "DG2:사월",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:사월",
+      "to": "DG2:정평",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:정평",
+      "to": "DG2:임당",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "2",
+      "segment": "main",
+      "from": "DG2:임당",
+      "to": "DG2:영남대",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

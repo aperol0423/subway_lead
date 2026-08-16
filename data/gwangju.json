@@ -1,0 +1,404 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "gwangju",
+    "name": "광주",
+    "operator": "광주교통공사"
+  },
+  "scope": {
+    "includedLines": [
+      "1"
+    ],
+    "note": "현재 영업 운행 중인 광주 도시철도 1호선 기준"
+  },
+  "dataQuality": {
+    "stationOrder": "verified_against_GRTC_official_cyber_station",
+    "stationCodes": "verified_against_GRTC_official_cyber_station",
+    "segmentDistances": "GRTC_official_open_data",
+    "transfers": "none_within_current_Gwangju_metro_scope"
+  },
+  "routingNotes": {
+    "importantDirectionRule": "광주 1호선 녹동 방향 열차 중 일부는 소태에서 종착하므로 모든 동쪽 방향을 '녹동행'으로 표시하면 안 됨.",
+    "officialDirectionLabels": {
+      "towardLowerIndex": "소태(녹동)방면",
+      "towardHigherIndex": "평동방면"
+    },
+    "serviceDestinationLabels": [
+      "평동행",
+      "소태행",
+      "녹동행"
+    ],
+    "recommendedStaticUi": "시간표를 조회하지 않는 정적 길찾기에서는 '평동방면' 또는 '소태(녹동)방면' 표기를 권장"
+  },
+  "sources": [
+    {
+      "name": "광주교통공사 사이버스테이션",
+      "provider": "광주교통공사",
+      "coverage": "역 순서, 역번호, 공식 방향 표기, 실제 운행 행선지"
+    },
+    {
+      "name": "광주교통공사_역간구간거리및소요시간",
+      "provider": "광주교통공사 / 공공데이터포털",
+      "coverage": "19개 인접 구간 거리(km)",
+      "publicDataId": "15046044"
+    }
+  ],
+  "lines": {
+    "1": {
+      "name": "1호선",
+      "stationCount": 20,
+      "officialDirections": {
+        "lowerIndex": "소태(녹동)방면",
+        "higherIndex": "평동방면"
+      },
+      "terminalServices": [
+        "평동",
+        "소태",
+        "녹동"
+      ],
+      "stations": [
+        "녹동",
+        "소태",
+        "학동·증심사입구",
+        "남광주",
+        "문화전당(구도청)",
+        "금남로4가",
+        "금남로5가",
+        "양동시장",
+        "돌고개",
+        "농성",
+        "화정",
+        "쌍촌",
+        "운천",
+        "상무",
+        "김대중컨벤션센터(마륵)",
+        "공항",
+        "송정공원",
+        "광주송정역",
+        "도산",
+        "평동"
+      ]
+    }
+  },
+  "stations": [
+    {
+      "id": "L1:녹동",
+      "name": "녹동",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 0,
+      "stationCode": "100"
+    },
+    {
+      "id": "L1:소태",
+      "name": "소태",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 1,
+      "stationCode": "101"
+    },
+    {
+      "id": "L1:학동·증심사입구",
+      "name": "학동·증심사입구",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 2,
+      "stationCode": "102",
+      "officialDistanceAlias": "학동증심사"
+    },
+    {
+      "id": "L1:남광주",
+      "name": "남광주",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 3,
+      "stationCode": "103"
+    },
+    {
+      "id": "L1:문화전당(구도청)",
+      "name": "문화전당(구도청)",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 4,
+      "stationCode": "104",
+      "officialDistanceAlias": "문화전당"
+    },
+    {
+      "id": "L1:금남로4가",
+      "name": "금남로4가",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 5,
+      "stationCode": "105"
+    },
+    {
+      "id": "L1:금남로5가",
+      "name": "금남로5가",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 6,
+      "stationCode": "106"
+    },
+    {
+      "id": "L1:양동시장",
+      "name": "양동시장",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 7,
+      "stationCode": "107"
+    },
+    {
+      "id": "L1:돌고개",
+      "name": "돌고개",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 8,
+      "stationCode": "108"
+    },
+    {
+      "id": "L1:농성",
+      "name": "농성",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 9,
+      "stationCode": "109"
+    },
+    {
+      "id": "L1:화정",
+      "name": "화정",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 10,
+      "stationCode": "110"
+    },
+    {
+      "id": "L1:쌍촌",
+      "name": "쌍촌",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 11,
+      "stationCode": "111"
+    },
+    {
+      "id": "L1:운천",
+      "name": "운천",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 12,
+      "stationCode": "112"
+    },
+    {
+      "id": "L1:상무",
+      "name": "상무",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 13,
+      "stationCode": "113"
+    },
+    {
+      "id": "L1:김대중컨벤션센터(마륵)",
+      "name": "김대중컨벤션센터(마륵)",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 14,
+      "stationCode": "114",
+      "officialDistanceAlias": "마륵"
+    },
+    {
+      "id": "L1:공항",
+      "name": "공항",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 15,
+      "stationCode": "115"
+    },
+    {
+      "id": "L1:송정공원",
+      "name": "송정공원",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 16,
+      "stationCode": "116"
+    },
+    {
+      "id": "L1:광주송정역",
+      "name": "광주송정역",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 17,
+      "stationCode": "117",
+      "officialDistanceAlias": "광주송정"
+    },
+    {
+      "id": "L1:도산",
+      "name": "도산",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 18,
+      "stationCode": "118"
+    },
+    {
+      "id": "L1:평동",
+      "name": "평동",
+      "line": "1",
+      "lineName": "1호선",
+      "index": 19,
+      "stationCode": "119"
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:녹동",
+      "to": "L1:소태",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:소태",
+      "to": "L1:학동·증심사입구",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:학동·증심사입구",
+      "to": "L1:남광주",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:남광주",
+      "to": "L1:문화전당(구도청)",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:문화전당(구도청)",
+      "to": "L1:금남로4가",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:금남로4가",
+      "to": "L1:금남로5가",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:금남로5가",
+      "to": "L1:양동시장",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:양동시장",
+      "to": "L1:돌고개",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:돌고개",
+      "to": "L1:농성",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:농성",
+      "to": "L1:화정",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:화정",
+      "to": "L1:쌍촌",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:쌍촌",
+      "to": "L1:운천",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:운천",
+      "to": "L1:상무",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:상무",
+      "to": "L1:김대중컨벤션센터(마륵)",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:김대중컨벤션센터(마륵)",
+      "to": "L1:공항",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:공항",
+      "to": "L1:송정공원",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:송정공원",
+      "to": "L1:광주송정역",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:광주송정역",
+      "to": "L1:도산",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "from": "L1:도산",
+      "to": "L1:평동",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "region": { "id": "incheon", "name": "인천광역시" },
+  "baseRegion": "seoul",
+  "files": [
+    { "file": "line1.json", "lineId": "1", "internalLineId": "incheon_1" },
+    { "file": "line2.json", "lineId": "2", "internalLineId": "incheon_2" }
+  ],
+  "transferComplexes": [
+    { "name": "인천시청", "members": [{ "line": "incheon_1", "station": "인천시청" }, { "line": "incheon_2", "station": "인천시청" }] },
+    { "name": "계양", "members": [{ "line": "incheon_1", "station": "계양" }, { "line": "airport_railroad", "station": "계양" }] },
+    { "name": "부평", "members": [{ "line": "incheon_1", "station": "부평" }, { "line": "1", "station": "부평" }] },
+    { "name": "부평구청", "members": [{ "line": "incheon_1", "station": "부평구청" }, { "line": "7", "station": "부평구청" }] },
+    { "name": "원인재", "members": [{ "line": "incheon_1", "station": "원인재" }, { "line": "suin_bundang", "station": "원인재" }] },
+    { "name": "검암", "members": [{ "line": "incheon_2", "station": "검암" }, { "line": "airport_railroad", "station": "검암" }] },
+    { "name": "석남", "members": [{ "line": "incheon_2", "station": "석남" }, { "line": "7", "station": "석남" }] },
+    { "name": "주안", "members": [{ "line": "incheon_2", "station": "주안" }, { "line": "1", "station": "주안" }] }
+  ]
+}

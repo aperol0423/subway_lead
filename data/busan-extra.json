@@ -1,0 +1,828 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "busan-extra",
+    "name": "부산 추가 광역철도",
+    "operator": "한국철도공사 / 부산김해경전철"
+  },
+  "scope": {
+    "includedLines": [
+      "donghae",
+      "bgl"
+    ],
+    "note": "기존 부산 도시철도 1~4호선 JSON과 합쳐 사용"
+  },
+  "dataQuality": {
+    "donghaeStationOrder": "verified",
+    "donghaeSegmentDistances": "derived_from_user_provided_speed_time_table_and_cross_checked_total_length",
+    "donghaeTotalDistanceKm": 63.7975,
+    "bglSegmentDistances": "NOT_AVAILABLE",
+    "warning": "동해선 distanceKm는 사용자 제공 구간별 평균 표정속도와 구간 운행시간으로 계산했다. 북울산~태화강 구간은 광역전철 부전~태화강 범위 밖이므로 제외했다. 계산 합계는 63.7975km로 코레일이 안내하는 부전~태화강 총연장 63.8km와 반올림 기준 일치한다. 부산김해경전철 distanceKm는 신뢰 가능한 역간거리 원자료 미확보로 null이다."
+  },
+  "routingNotes": {
+    "donghaeDirection": "index 증가 방향은 태화강 방면, 감소 방향은 부전 방면",
+    "bglDirection": "index 증가 방향은 가야대 방면, 감소 방향은 사상 방면",
+    "bglShortestPathFallback": "distanceKm가 null이므로 필요 시 fallbackWeightStops 사용"
+  },
+  "lines": {
+    "donghae": {
+      "name": "동해선",
+      "terminals": {
+        "forward": "태화강",
+        "reverse": "부전"
+      },
+      "stations": [
+        "부전",
+        "거제해맞이",
+        "거제",
+        "교대",
+        "동래",
+        "안락",
+        "부산원동",
+        "재송",
+        "센텀",
+        "벡스코",
+        "신해운대",
+        "송정",
+        "오시리아",
+        "기장",
+        "일광",
+        "좌천",
+        "월내",
+        "서생",
+        "남창",
+        "망양",
+        "덕하",
+        "개운포",
+        "태화강"
+      ]
+    },
+    "bgl": {
+      "name": "부산김해경전철",
+      "terminals": {
+        "forward": "가야대",
+        "reverse": "사상"
+      },
+      "stations": [
+        "사상",
+        "괘법르네시떼",
+        "서부산유통지구",
+        "공항",
+        "덕두",
+        "등구",
+        "대저",
+        "평강",
+        "대사",
+        "불암",
+        "지내",
+        "김해대학",
+        "인제대",
+        "김해시청",
+        "부원",
+        "봉황",
+        "수로왕릉",
+        "박물관",
+        "연지공원",
+        "장신대",
+        "가야대"
+      ]
+    }
+  },
+  "stations": [
+    {
+      "id": "DH:부전",
+      "name": "부전",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 0
+    },
+    {
+      "id": "DH:거제해맞이",
+      "name": "거제해맞이",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 1
+    },
+    {
+      "id": "DH:거제",
+      "name": "거제",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 2
+    },
+    {
+      "id": "DH:교대",
+      "name": "교대",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 3
+    },
+    {
+      "id": "DH:동래",
+      "name": "동래",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 4
+    },
+    {
+      "id": "DH:안락",
+      "name": "안락",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 5
+    },
+    {
+      "id": "DH:부산원동",
+      "name": "부산원동",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 6
+    },
+    {
+      "id": "DH:재송",
+      "name": "재송",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 7
+    },
+    {
+      "id": "DH:센텀",
+      "name": "센텀",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 8
+    },
+    {
+      "id": "DH:벡스코",
+      "name": "벡스코",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 9
+    },
+    {
+      "id": "DH:신해운대",
+      "name": "신해운대",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 10
+    },
+    {
+      "id": "DH:송정",
+      "name": "송정",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 11
+    },
+    {
+      "id": "DH:오시리아",
+      "name": "오시리아",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 12
+    },
+    {
+      "id": "DH:기장",
+      "name": "기장",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 13
+    },
+    {
+      "id": "DH:일광",
+      "name": "일광",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 14
+    },
+    {
+      "id": "DH:좌천",
+      "name": "좌천",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 15
+    },
+    {
+      "id": "DH:월내",
+      "name": "월내",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 16
+    },
+    {
+      "id": "DH:서생",
+      "name": "서생",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 17
+    },
+    {
+      "id": "DH:남창",
+      "name": "남창",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 18
+    },
+    {
+      "id": "DH:망양",
+      "name": "망양",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 19
+    },
+    {
+      "id": "DH:덕하",
+      "name": "덕하",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 20
+    },
+    {
+      "id": "DH:개운포",
+      "name": "개운포",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 21
+    },
+    {
+      "id": "DH:태화강",
+      "name": "태화강",
+      "line": "donghae",
+      "lineName": "동해선",
+      "index": 22
+    },
+    {
+      "id": "BGL:사상",
+      "name": "사상",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 0
+    },
+    {
+      "id": "BGL:괘법르네시떼",
+      "name": "괘법르네시떼",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 1
+    },
+    {
+      "id": "BGL:서부산유통지구",
+      "name": "서부산유통지구",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 2
+    },
+    {
+      "id": "BGL:공항",
+      "name": "공항",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 3
+    },
+    {
+      "id": "BGL:덕두",
+      "name": "덕두",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 4
+    },
+    {
+      "id": "BGL:등구",
+      "name": "등구",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 5
+    },
+    {
+      "id": "BGL:대저",
+      "name": "대저",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 6
+    },
+    {
+      "id": "BGL:평강",
+      "name": "평강",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 7
+    },
+    {
+      "id": "BGL:대사",
+      "name": "대사",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 8
+    },
+    {
+      "id": "BGL:불암",
+      "name": "불암",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 9
+    },
+    {
+      "id": "BGL:지내",
+      "name": "지내",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 10
+    },
+    {
+      "id": "BGL:김해대학",
+      "name": "김해대학",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 11
+    },
+    {
+      "id": "BGL:인제대",
+      "name": "인제대",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 12
+    },
+    {
+      "id": "BGL:김해시청",
+      "name": "김해시청",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 13
+    },
+    {
+      "id": "BGL:부원",
+      "name": "부원",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 14
+    },
+    {
+      "id": "BGL:봉황",
+      "name": "봉황",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 15
+    },
+    {
+      "id": "BGL:수로왕릉",
+      "name": "수로왕릉",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 16
+    },
+    {
+      "id": "BGL:박물관",
+      "name": "박물관",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 17
+    },
+    {
+      "id": "BGL:연지공원",
+      "name": "연지공원",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 18
+    },
+    {
+      "id": "BGL:장신대",
+      "name": "장신대",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 19
+    },
+    {
+      "id": "BGL:가야대",
+      "name": "가야대",
+      "line": "bgl",
+      "lineName": "부산김해경전철",
+      "index": 20
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:부전",
+      "to": "DH:거제해맞이",
+      "distanceKm": 2.3,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:거제해맞이",
+      "to": "DH:거제",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:거제",
+      "to": "DH:교대",
+      "distanceKm": 0.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:교대",
+      "to": "DH:동래",
+      "distanceKm": 1.2,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:동래",
+      "to": "DH:안락",
+      "distanceKm": 0.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:안락",
+      "to": "DH:부산원동",
+      "distanceKm": 1.3,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:부산원동",
+      "to": "DH:재송",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:재송",
+      "to": "DH:센텀",
+      "distanceKm": 1.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:센텀",
+      "to": "DH:벡스코",
+      "distanceKm": 1.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:벡스코",
+      "to": "DH:신해운대",
+      "distanceKm": 4.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:신해운대",
+      "to": "DH:송정",
+      "distanceKm": 2.9,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:송정",
+      "to": "DH:오시리아",
+      "distanceKm": 1.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:오시리아",
+      "to": "DH:기장",
+      "distanceKm": 5.7,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:기장",
+      "to": "DH:일광",
+      "distanceKm": 3.0,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:일광",
+      "to": "DH:좌천",
+      "distanceKm": 5.1,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:좌천",
+      "to": "DH:월내",
+      "distanceKm": 3.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:월내",
+      "to": "DH:서생",
+      "distanceKm": 2.6,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:서생",
+      "to": "DH:남창",
+      "distanceKm": 8.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:남창",
+      "to": "DH:망양",
+      "distanceKm": 4.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:망양",
+      "to": "DH:덕하",
+      "distanceKm": 4.5,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:덕하",
+      "to": "DH:개운포",
+      "distanceKm": 2.4,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "donghae",
+      "from": "DH:개운포",
+      "to": "DH:태화강",
+      "distanceKm": 4.8975,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:사상",
+      "to": "BGL:괘법르네시떼",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:괘법르네시떼",
+      "to": "BGL:서부산유통지구",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:서부산유통지구",
+      "to": "BGL:공항",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:공항",
+      "to": "BGL:덕두",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:덕두",
+      "to": "BGL:등구",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:등구",
+      "to": "BGL:대저",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:대저",
+      "to": "BGL:평강",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:평강",
+      "to": "BGL:대사",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:대사",
+      "to": "BGL:불암",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:불암",
+      "to": "BGL:지내",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:지내",
+      "to": "BGL:김해대학",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:김해대학",
+      "to": "BGL:인제대",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:인제대",
+      "to": "BGL:김해시청",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:김해시청",
+      "to": "BGL:부원",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:부원",
+      "to": "BGL:봉황",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:봉황",
+      "to": "BGL:수로왕릉",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:수로왕릉",
+      "to": "BGL:박물관",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:박물관",
+      "to": "BGL:연지공원",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:연지공원",
+      "to": "BGL:장신대",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "bgl",
+      "from": "BGL:장신대",
+      "to": "BGL:가야대",
+      "distanceKm": null,
+      "fallbackWeightStops": 1,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": [
+    {
+      "type": "transfer",
+      "stationName": "교대",
+      "from": "L1:교대",
+      "to": "DH:교대",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "거제",
+      "from": "L3:거제",
+      "to": "DH:거제",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "벡스코",
+      "from": "L2:벡스코",
+      "to": "DH:벡스코",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "사상",
+      "from": "L2:사상",
+      "to": "BGL:사상",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    },
+    {
+      "type": "transfer",
+      "stationName": "대저",
+      "from": "L3:대저",
+      "to": "BGL:대저",
+      "transferCountCost": 1,
+      "distanceKm": 0,
+      "bidirectional": true
+    }
+  ]
+}

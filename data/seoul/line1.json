@@ -1,0 +1,1810 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권",
+    "operator": "한국철도공사 / 서울교통공사"
+  },
+  "line": {
+    "id": "1",
+    "name": "수도권 전철 1호선",
+    "graphType": "branched_tree"
+  },
+  "dataQuality": {
+    "stationOrderAndBranchStructure": "normalized_from_official_KR_1_line_service_variants",
+    "segmentDistances": "from_official_National_Railroad_Agency_2025-06-30_dataset_and_Seoul_Metro_rows",
+    "sourceFile": "국가철도공단_수도권1호선_역간거리_20250630.csv",
+    "validation": {
+      "stationCount": 102,
+      "rideEdgeCount": 101,
+      "expectedTreeEdgeCount": 101,
+      "treeCheckPassed": true,
+      "allDistancesPositive": true
+    }
+  },
+  "routingNotes": {
+    "directionPolicy": "1호선은 지선·중간종착 운행이 많으므로 실제 열차 행선지를 고정 추정하지 말고, 경로의 다음 분기와 최종 목적지를 기준으로 '방면' 안내를 생성하는 것을 권장",
+    "majorDirections": [
+      "연천 방면",
+      "인천 방면",
+      "신창(순천향대) 방면",
+      "광명 방면",
+      "서동탄 방면"
+    ],
+    "junctions": {
+      "구로": [
+        "인천 방향",
+        "신창 방향"
+      ],
+      "금천구청": [
+        "광명 방향",
+        "신창 방향"
+      ],
+      "병점": [
+        "서동탄 방향",
+        "신창 방향"
+      ]
+    }
+  },
+  "branches": {
+    "north": [
+      "연천",
+      "전곡",
+      "청산",
+      "소요산",
+      "동두천",
+      "보산",
+      "동두천중앙",
+      "지행",
+      "덕정",
+      "덕계",
+      "양주",
+      "녹양",
+      "가능",
+      "의정부",
+      "회룡",
+      "망월사",
+      "도봉산",
+      "도봉",
+      "방학",
+      "창동",
+      "녹천",
+      "월계",
+      "광운대",
+      "석계",
+      "신이문",
+      "외대앞",
+      "회기",
+      "청량리"
+    ],
+    "seoulCore": [
+      "청량리",
+      "제기동",
+      "신설동",
+      "동묘앞",
+      "동대문",
+      "종로5가",
+      "종로3가",
+      "종각",
+      "시청",
+      "서울역"
+    ],
+    "southCommon": [
+      "서울역",
+      "남영",
+      "용산",
+      "노량진",
+      "대방",
+      "신길",
+      "영등포",
+      "신도림",
+      "구로"
+    ],
+    "gyeonginToIncheon": [
+      "구로",
+      "구일",
+      "개봉",
+      "오류동",
+      "온수",
+      "역곡",
+      "소사",
+      "부천",
+      "중동",
+      "송내",
+      "부개",
+      "부평",
+      "백운",
+      "동암",
+      "간석",
+      "주안",
+      "도화",
+      "제물포",
+      "도원",
+      "동인천",
+      "인천"
+    ],
+    "gyeongbuJanghangToSinchang": [
+      "구로",
+      "가산디지털단지",
+      "독산",
+      "금천구청",
+      "석수",
+      "관악",
+      "안양",
+      "명학",
+      "금정",
+      "군포",
+      "당정",
+      "의왕",
+      "성균관대",
+      "화서",
+      "수원",
+      "세류",
+      "병점",
+      "세마",
+      "오산대",
+      "오산",
+      "진위",
+      "송탄",
+      "서정리",
+      "평택지제",
+      "평택",
+      "성환",
+      "직산",
+      "두정",
+      "천안",
+      "봉명",
+      "쌍용(나사렛대)",
+      "아산",
+      "탕정",
+      "배방",
+      "온양온천",
+      "신창(순천향대)"
+    ],
+    "gwangmyeongBranch": [
+      "금천구청",
+      "광명"
+    ],
+    "seodongtanBranch": [
+      "병점",
+      "서동탄"
+    ]
+  },
+  "stations": [
+    {
+      "id": "L1:연천",
+      "name": "연천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 0
+    },
+    {
+      "id": "L1:전곡",
+      "name": "전곡",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 1
+    },
+    {
+      "id": "L1:청산",
+      "name": "청산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 2
+    },
+    {
+      "id": "L1:소요산",
+      "name": "소요산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 3
+    },
+    {
+      "id": "L1:동두천",
+      "name": "동두천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 4
+    },
+    {
+      "id": "L1:보산",
+      "name": "보산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 5
+    },
+    {
+      "id": "L1:동두천중앙",
+      "name": "동두천중앙",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 6
+    },
+    {
+      "id": "L1:지행",
+      "name": "지행",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 7
+    },
+    {
+      "id": "L1:덕정",
+      "name": "덕정",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 8
+    },
+    {
+      "id": "L1:덕계",
+      "name": "덕계",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 9
+    },
+    {
+      "id": "L1:양주",
+      "name": "양주",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 10
+    },
+    {
+      "id": "L1:녹양",
+      "name": "녹양",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 11
+    },
+    {
+      "id": "L1:가능",
+      "name": "가능",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 12
+    },
+    {
+      "id": "L1:의정부",
+      "name": "의정부",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 13
+    },
+    {
+      "id": "L1:회룡",
+      "name": "회룡",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 14
+    },
+    {
+      "id": "L1:망월사",
+      "name": "망월사",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 15
+    },
+    {
+      "id": "L1:도봉산",
+      "name": "도봉산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 16
+    },
+    {
+      "id": "L1:도봉",
+      "name": "도봉",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 17
+    },
+    {
+      "id": "L1:방학",
+      "name": "방학",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 18
+    },
+    {
+      "id": "L1:창동",
+      "name": "창동",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 19
+    },
+    {
+      "id": "L1:녹천",
+      "name": "녹천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 20
+    },
+    {
+      "id": "L1:월계",
+      "name": "월계",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 21
+    },
+    {
+      "id": "L1:광운대",
+      "name": "광운대",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 22
+    },
+    {
+      "id": "L1:석계",
+      "name": "석계",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 23
+    },
+    {
+      "id": "L1:신이문",
+      "name": "신이문",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 24
+    },
+    {
+      "id": "L1:외대앞",
+      "name": "외대앞",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 25
+    },
+    {
+      "id": "L1:회기",
+      "name": "회기",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 26
+    },
+    {
+      "id": "L1:청량리",
+      "name": "청량리",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 27
+    },
+    {
+      "id": "L1:제기동",
+      "name": "제기동",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 28
+    },
+    {
+      "id": "L1:신설동",
+      "name": "신설동",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 29
+    },
+    {
+      "id": "L1:동묘앞",
+      "name": "동묘앞",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 30
+    },
+    {
+      "id": "L1:동대문",
+      "name": "동대문",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 31
+    },
+    {
+      "id": "L1:종로5가",
+      "name": "종로5가",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 32
+    },
+    {
+      "id": "L1:종로3가",
+      "name": "종로3가",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 33
+    },
+    {
+      "id": "L1:종각",
+      "name": "종각",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 34
+    },
+    {
+      "id": "L1:시청",
+      "name": "시청",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 35
+    },
+    {
+      "id": "L1:서울역",
+      "name": "서울역",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 36
+    },
+    {
+      "id": "L1:남영",
+      "name": "남영",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 37
+    },
+    {
+      "id": "L1:용산",
+      "name": "용산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 38
+    },
+    {
+      "id": "L1:노량진",
+      "name": "노량진",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 39
+    },
+    {
+      "id": "L1:대방",
+      "name": "대방",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 40
+    },
+    {
+      "id": "L1:신길",
+      "name": "신길",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 41
+    },
+    {
+      "id": "L1:영등포",
+      "name": "영등포",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 42
+    },
+    {
+      "id": "L1:신도림",
+      "name": "신도림",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 43
+    },
+    {
+      "id": "L1:구로",
+      "name": "구로",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 44,
+      "branchRoles": [
+        "경인선/경부선 분기"
+      ]
+    },
+    {
+      "id": "L1:구일",
+      "name": "구일",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 45
+    },
+    {
+      "id": "L1:개봉",
+      "name": "개봉",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 46
+    },
+    {
+      "id": "L1:오류동",
+      "name": "오류동",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 47
+    },
+    {
+      "id": "L1:온수",
+      "name": "온수",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 48
+    },
+    {
+      "id": "L1:역곡",
+      "name": "역곡",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 49
+    },
+    {
+      "id": "L1:소사",
+      "name": "소사",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 50
+    },
+    {
+      "id": "L1:부천",
+      "name": "부천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 51
+    },
+    {
+      "id": "L1:중동",
+      "name": "중동",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 52
+    },
+    {
+      "id": "L1:송내",
+      "name": "송내",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 53
+    },
+    {
+      "id": "L1:부개",
+      "name": "부개",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 54
+    },
+    {
+      "id": "L1:부평",
+      "name": "부평",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 55
+    },
+    {
+      "id": "L1:백운",
+      "name": "백운",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 56
+    },
+    {
+      "id": "L1:동암",
+      "name": "동암",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 57
+    },
+    {
+      "id": "L1:간석",
+      "name": "간석",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 58
+    },
+    {
+      "id": "L1:주안",
+      "name": "주안",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 59
+    },
+    {
+      "id": "L1:도화",
+      "name": "도화",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 60
+    },
+    {
+      "id": "L1:제물포",
+      "name": "제물포",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 61
+    },
+    {
+      "id": "L1:도원",
+      "name": "도원",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 62
+    },
+    {
+      "id": "L1:동인천",
+      "name": "동인천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 63
+    },
+    {
+      "id": "L1:인천",
+      "name": "인천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 64
+    },
+    {
+      "id": "L1:가산디지털단지",
+      "name": "가산디지털단지",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 65
+    },
+    {
+      "id": "L1:독산",
+      "name": "독산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 66
+    },
+    {
+      "id": "L1:금천구청",
+      "name": "금천구청",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 67,
+      "branchRoles": [
+        "광명지선 분기"
+      ]
+    },
+    {
+      "id": "L1:석수",
+      "name": "석수",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 68
+    },
+    {
+      "id": "L1:관악",
+      "name": "관악",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 69
+    },
+    {
+      "id": "L1:안양",
+      "name": "안양",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 70
+    },
+    {
+      "id": "L1:명학",
+      "name": "명학",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 71
+    },
+    {
+      "id": "L1:금정",
+      "name": "금정",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 72
+    },
+    {
+      "id": "L1:군포",
+      "name": "군포",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 73
+    },
+    {
+      "id": "L1:당정",
+      "name": "당정",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 74
+    },
+    {
+      "id": "L1:의왕",
+      "name": "의왕",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 75
+    },
+    {
+      "id": "L1:성균관대",
+      "name": "성균관대",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 76
+    },
+    {
+      "id": "L1:화서",
+      "name": "화서",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 77
+    },
+    {
+      "id": "L1:수원",
+      "name": "수원",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 78
+    },
+    {
+      "id": "L1:세류",
+      "name": "세류",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 79
+    },
+    {
+      "id": "L1:병점",
+      "name": "병점",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 80,
+      "branchRoles": [
+        "서동탄지선 분기"
+      ]
+    },
+    {
+      "id": "L1:세마",
+      "name": "세마",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 81
+    },
+    {
+      "id": "L1:오산대",
+      "name": "오산대",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 82
+    },
+    {
+      "id": "L1:오산",
+      "name": "오산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 83
+    },
+    {
+      "id": "L1:진위",
+      "name": "진위",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 84
+    },
+    {
+      "id": "L1:송탄",
+      "name": "송탄",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 85
+    },
+    {
+      "id": "L1:서정리",
+      "name": "서정리",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 86
+    },
+    {
+      "id": "L1:평택지제",
+      "name": "평택지제",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 87
+    },
+    {
+      "id": "L1:평택",
+      "name": "평택",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 88
+    },
+    {
+      "id": "L1:성환",
+      "name": "성환",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 89
+    },
+    {
+      "id": "L1:직산",
+      "name": "직산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 90
+    },
+    {
+      "id": "L1:두정",
+      "name": "두정",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 91
+    },
+    {
+      "id": "L1:천안",
+      "name": "천안",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 92
+    },
+    {
+      "id": "L1:봉명",
+      "name": "봉명",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 93
+    },
+    {
+      "id": "L1:쌍용(나사렛대)",
+      "name": "쌍용(나사렛대)",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 94
+    },
+    {
+      "id": "L1:아산",
+      "name": "아산",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 95
+    },
+    {
+      "id": "L1:탕정",
+      "name": "탕정",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 96
+    },
+    {
+      "id": "L1:배방",
+      "name": "배방",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 97
+    },
+    {
+      "id": "L1:온양온천",
+      "name": "온양온천",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 98
+    },
+    {
+      "id": "L1:신창(순천향대)",
+      "name": "신창(순천향대)",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 99
+    },
+    {
+      "id": "L1:광명",
+      "name": "광명",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 100
+    },
+    {
+      "id": "L1:서동탄",
+      "name": "서동탄",
+      "line": "1",
+      "lineName": "수도권 전철 1호선",
+      "graphIndex": 101
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:연천",
+      "to": "L1:전곡",
+      "distanceKm": 8.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:전곡",
+      "to": "L1:청산",
+      "distanceKm": 3.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:청산",
+      "to": "L1:소요산",
+      "distanceKm": 5.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:소요산",
+      "to": "L1:동두천",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:동두천",
+      "to": "L1:보산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:보산",
+      "to": "L1:동두천중앙",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:동두천중앙",
+      "to": "L1:지행",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:지행",
+      "to": "L1:덕정",
+      "distanceKm": 5.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:덕정",
+      "to": "L1:덕계",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:덕계",
+      "to": "L1:양주",
+      "distanceKm": 5.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:양주",
+      "to": "L1:녹양",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:녹양",
+      "to": "L1:가능",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:가능",
+      "to": "L1:의정부",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:의정부",
+      "to": "L1:회룡",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:회룡",
+      "to": "L1:망월사",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:망월사",
+      "to": "L1:도봉산",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:도봉산",
+      "to": "L1:도봉",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:도봉",
+      "to": "L1:방학",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:방학",
+      "to": "L1:창동",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:창동",
+      "to": "L1:녹천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:녹천",
+      "to": "L1:월계",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:월계",
+      "to": "L1:광운대",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:광운대",
+      "to": "L1:석계",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:석계",
+      "to": "L1:신이문",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:신이문",
+      "to": "L1:외대앞",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:외대앞",
+      "to": "L1:회기",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "north",
+      "from": "L1:회기",
+      "to": "L1:청량리",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:청량리",
+      "to": "L1:제기동",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:제기동",
+      "to": "L1:신설동",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:신설동",
+      "to": "L1:동묘앞",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:동묘앞",
+      "to": "L1:동대문",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:동대문",
+      "to": "L1:종로5가",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:종로5가",
+      "to": "L1:종로3가",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:종로3가",
+      "to": "L1:종각",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:종각",
+      "to": "L1:시청",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seoul_core",
+      "from": "L1:시청",
+      "to": "L1:서울역",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:서울역",
+      "to": "L1:남영",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:남영",
+      "to": "L1:용산",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:용산",
+      "to": "L1:노량진",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:노량진",
+      "to": "L1:대방",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:대방",
+      "to": "L1:신길",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:신길",
+      "to": "L1:영등포",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:영등포",
+      "to": "L1:신도림",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "south_common",
+      "from": "L1:신도림",
+      "to": "L1:구로",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:구로",
+      "to": "L1:구일",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:구일",
+      "to": "L1:개봉",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:개봉",
+      "to": "L1:오류동",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:오류동",
+      "to": "L1:온수",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:온수",
+      "to": "L1:역곡",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:역곡",
+      "to": "L1:소사",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:소사",
+      "to": "L1:부천",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:부천",
+      "to": "L1:중동",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:중동",
+      "to": "L1:송내",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:송내",
+      "to": "L1:부개",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:부개",
+      "to": "L1:부평",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:부평",
+      "to": "L1:백운",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:백운",
+      "to": "L1:동암",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:동암",
+      "to": "L1:간석",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:간석",
+      "to": "L1:주안",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:주안",
+      "to": "L1:도화",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:도화",
+      "to": "L1:제물포",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:제물포",
+      "to": "L1:도원",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:도원",
+      "to": "L1:동인천",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongin",
+      "from": "L1:동인천",
+      "to": "L1:인천",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:구로",
+      "to": "L1:가산디지털단지",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:가산디지털단지",
+      "to": "L1:독산",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:독산",
+      "to": "L1:금천구청",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:금천구청",
+      "to": "L1:석수",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:석수",
+      "to": "L1:관악",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:관악",
+      "to": "L1:안양",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:안양",
+      "to": "L1:명학",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:명학",
+      "to": "L1:금정",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:금정",
+      "to": "L1:군포",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:군포",
+      "to": "L1:당정",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:당정",
+      "to": "L1:의왕",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:의왕",
+      "to": "L1:성균관대",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:성균관대",
+      "to": "L1:화서",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:화서",
+      "to": "L1:수원",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:수원",
+      "to": "L1:세류",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:세류",
+      "to": "L1:병점",
+      "distanceKm": 4.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:병점",
+      "to": "L1:세마",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:세마",
+      "to": "L1:오산대",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:오산대",
+      "to": "L1:오산",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:오산",
+      "to": "L1:진위",
+      "distanceKm": 4.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:진위",
+      "to": "L1:송탄",
+      "distanceKm": 3.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:송탄",
+      "to": "L1:서정리",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:서정리",
+      "to": "L1:평택지제",
+      "distanceKm": 4.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:평택지제",
+      "to": "L1:평택",
+      "distanceKm": 3.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:평택",
+      "to": "L1:성환",
+      "distanceKm": 9.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:성환",
+      "to": "L1:직산",
+      "distanceKm": 5.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:직산",
+      "to": "L1:두정",
+      "distanceKm": 3.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:두정",
+      "to": "L1:천안",
+      "distanceKm": 3.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:천안",
+      "to": "L1:봉명",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:봉명",
+      "to": "L1:쌍용(나사렛대)",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:쌍용(나사렛대)",
+      "to": "L1:아산",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:아산",
+      "to": "L1:탕정",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:탕정",
+      "to": "L1:배방",
+      "distanceKm": 3.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:배방",
+      "to": "L1:온양온천",
+      "distanceKm": 4.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gyeongbu_janghang",
+      "from": "L1:온양온천",
+      "to": "L1:신창(순천향대)",
+      "distanceKm": 5.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "gwangmyeong_branch",
+      "from": "L1:금천구청",
+      "to": "L1:광명",
+      "distanceKm": 4.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "1",
+      "segment": "seodongtan_branch",
+      "from": "L1:병점",
+      "to": "L1:서동탄",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

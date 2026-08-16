@@ -1,0 +1,1197 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "4",
+    "name": "수도권 전철 4호선",
+    "graphType": "linear",
+    "terminals": [
+      "진접",
+      "오이도"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "국가철도공단_수도권4호선_역간거리_20251231.CSV",
+    "crossCheckSourceFile": "서울교통공사 역간거리 및 소요시간_240810.csv",
+    "primarySourceDate": "2025-12-31",
+    "validation": {
+      "stationCount": 51,
+      "rideEdgeCount": 50,
+      "expectedLinearEdgeCount": 50,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "totalPhysicalDistanceKm": 85.7,
+      "seoulMetroCrossCheckEdges": 24,
+      "seoulMetroCrossCheckMatched": 24
+    },
+    "notes": [
+      "국가철도공단 2025-12-31 수도권4호선 역간거리 CSV의 역 순서와 거리값을 기준으로 생성함.",
+      "원본의 병기 역명은 sourceName에 보존하고 앱 표시용 name은 간결하게 정규화함.",
+      "2021년 역명 변경이 반영된 국가철도공단 원본에 따라 신길온천이 아닌 능길을 사용함.",
+      "서울교통공사 구간은 별도 서울교통공사 공식 CSV와 교차검증 정보를 기록함."
+    ],
+    "seoulMetroCrossCheck": [
+      {
+        "from": "상계",
+        "to": "노원",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.2,
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "노원",
+        "to": "창동",
+        "nraKm": 1.4,
+        "seoulMetroCandidateKm": [
+          1.0,
+          1.4
+        ],
+        "matched": true
+      },
+      {
+        "from": "창동",
+        "to": "쌍문",
+        "nraKm": 1.3,
+        "seoulMetroCandidateKm": [
+          1.4,
+          1.3
+        ],
+        "matched": true
+      },
+      {
+        "from": "쌍문",
+        "to": "수유",
+        "nraKm": 1.5,
+        "seoulMetroCandidateKm": [
+          1.3,
+          1.5
+        ],
+        "matched": true
+      },
+      {
+        "from": "수유",
+        "to": "미아",
+        "nraKm": 1.4,
+        "seoulMetroCandidateKm": [
+          1.5,
+          1.4
+        ],
+        "matched": true
+      },
+      {
+        "from": "미아",
+        "to": "미아사거리",
+        "nraKm": 1.5,
+        "seoulMetroCandidateKm": [
+          1.4,
+          1.5
+        ],
+        "matched": true
+      },
+      {
+        "from": "미아사거리",
+        "to": "길음",
+        "nraKm": 1.3,
+        "seoulMetroCandidateKm": [
+          1.5,
+          1.3
+        ],
+        "matched": true
+      },
+      {
+        "from": "길음",
+        "to": "성신여대입구",
+        "nraKm": 1.4,
+        "seoulMetroCandidateKm": [
+          1.3,
+          1.4
+        ],
+        "matched": true
+      },
+      {
+        "from": "성신여대입구",
+        "to": "한성대입구",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          1.4,
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "한성대입구",
+        "to": "혜화",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          1.0,
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "혜화",
+        "to": "동대문",
+        "nraKm": 1.5,
+        "seoulMetroCandidateKm": [
+          0.9,
+          1.5
+        ],
+        "matched": true
+      },
+      {
+        "from": "동대문",
+        "to": "동대문역사문화공원",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          1.5,
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "동대문역사문화공원",
+        "to": "충무로",
+        "nraKm": 1.3,
+        "seoulMetroCandidateKm": [
+          0.7,
+          1.3
+        ],
+        "matched": true
+      },
+      {
+        "from": "충무로",
+        "to": "명동",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          1.3,
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "명동",
+        "to": "회현",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          0.7,
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "회현",
+        "to": "서울역",
+        "nraKm": 0.9,
+        "seoulMetroCandidateKm": [
+          0.7,
+          0.9
+        ],
+        "matched": true
+      },
+      {
+        "from": "서울역",
+        "to": "숙대입구",
+        "nraKm": 1.0,
+        "seoulMetroCandidateKm": [
+          0.9,
+          1.0
+        ],
+        "matched": true
+      },
+      {
+        "from": "숙대입구",
+        "to": "삼각지",
+        "nraKm": 1.2,
+        "seoulMetroCandidateKm": [
+          1.0,
+          1.2
+        ],
+        "matched": true
+      },
+      {
+        "from": "삼각지",
+        "to": "신용산",
+        "nraKm": 0.7,
+        "seoulMetroCandidateKm": [
+          1.2,
+          0.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "신용산",
+        "to": "이촌",
+        "nraKm": 1.3,
+        "seoulMetroCandidateKm": [
+          0.7,
+          1.3
+        ],
+        "matched": true
+      },
+      {
+        "from": "이촌",
+        "to": "동작",
+        "nraKm": 2.7,
+        "seoulMetroCandidateKm": [
+          1.3,
+          2.7
+        ],
+        "matched": true
+      },
+      {
+        "from": "동작",
+        "to": "총신대입구",
+        "nraKm": 1.8,
+        "seoulMetroCandidateKm": [
+          2.7,
+          1.8
+        ],
+        "matched": true
+      },
+      {
+        "from": "총신대입구",
+        "to": "사당",
+        "nraKm": 1.1,
+        "seoulMetroCandidateKm": [
+          1.8,
+          1.1
+        ],
+        "matched": true
+      },
+      {
+        "from": "사당",
+        "to": "남태령",
+        "nraKm": 1.6,
+        "seoulMetroCandidateKm": [
+          1.1,
+          1.6
+        ],
+        "matched": true
+      }
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "오이도 방면",
+    "towardLowerIndex": "진접 방면"
+  },
+  "stations": [
+    {
+      "id": "L4:진접",
+      "name": "진접",
+      "sourceName": "진접",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "남양주도시공사",
+      "index": 0
+    },
+    {
+      "id": "L4:오남",
+      "name": "오남",
+      "sourceName": "오남",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "남양주도시공사",
+      "index": 1
+    },
+    {
+      "id": "L4:별내별가람",
+      "name": "별내별가람",
+      "sourceName": "별내별가람",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "남양주도시공사",
+      "index": 2
+    },
+    {
+      "id": "L4:불암산",
+      "name": "불암산",
+      "sourceName": "불암산(당고개)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 3
+    },
+    {
+      "id": "L4:상계",
+      "name": "상계",
+      "sourceName": "상계",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 4
+    },
+    {
+      "id": "L4:노원",
+      "name": "노원",
+      "sourceName": "노원",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 5
+    },
+    {
+      "id": "L4:창동",
+      "name": "창동",
+      "sourceName": "창동",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 6
+    },
+    {
+      "id": "L4:쌍문",
+      "name": "쌍문",
+      "sourceName": "쌍문",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 7
+    },
+    {
+      "id": "L4:수유",
+      "name": "수유",
+      "sourceName": "수유(강북구청)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 8
+    },
+    {
+      "id": "L4:미아",
+      "name": "미아",
+      "sourceName": "미아",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 9
+    },
+    {
+      "id": "L4:미아사거리",
+      "name": "미아사거리",
+      "sourceName": "미아사거리",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 10
+    },
+    {
+      "id": "L4:길음",
+      "name": "길음",
+      "sourceName": "길음",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 11
+    },
+    {
+      "id": "L4:성신여대입구",
+      "name": "성신여대입구",
+      "sourceName": "성신여대입구(돈암)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 12
+    },
+    {
+      "id": "L4:한성대입구",
+      "name": "한성대입구",
+      "sourceName": "한성대입구(삼선교)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 13
+    },
+    {
+      "id": "L4:혜화",
+      "name": "혜화",
+      "sourceName": "혜화",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 14
+    },
+    {
+      "id": "L4:동대문",
+      "name": "동대문",
+      "sourceName": "동대문",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 15
+    },
+    {
+      "id": "L4:동대문역사문화공원",
+      "name": "동대문역사문화공원",
+      "sourceName": "동대문역사문화공원",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 16
+    },
+    {
+      "id": "L4:충무로",
+      "name": "충무로",
+      "sourceName": "충무로",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 17
+    },
+    {
+      "id": "L4:명동",
+      "name": "명동",
+      "sourceName": "명동",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 18
+    },
+    {
+      "id": "L4:회현",
+      "name": "회현",
+      "sourceName": "회현(남대문시장)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 19
+    },
+    {
+      "id": "L4:서울역",
+      "name": "서울역",
+      "sourceName": "서울역",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 20
+    },
+    {
+      "id": "L4:숙대입구",
+      "name": "숙대입구",
+      "sourceName": "숙대입구(갈월)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 21
+    },
+    {
+      "id": "L4:삼각지",
+      "name": "삼각지",
+      "sourceName": "삼각지",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 22
+    },
+    {
+      "id": "L4:신용산",
+      "name": "신용산",
+      "sourceName": "신용산",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 23
+    },
+    {
+      "id": "L4:이촌",
+      "name": "이촌",
+      "sourceName": "이촌(국립중앙박물관)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 24
+    },
+    {
+      "id": "L4:동작",
+      "name": "동작",
+      "sourceName": "동작(현충원)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 25
+    },
+    {
+      "id": "L4:총신대입구",
+      "name": "총신대입구",
+      "sourceName": "총신대입구(이수)",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 26
+    },
+    {
+      "id": "L4:사당",
+      "name": "사당",
+      "sourceName": "사당",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 27
+    },
+    {
+      "id": "L4:남태령",
+      "name": "남태령",
+      "sourceName": "남태령",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "서울교통공사",
+      "index": 28
+    },
+    {
+      "id": "L4:선바위",
+      "name": "선바위",
+      "sourceName": "선바위",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 29
+    },
+    {
+      "id": "L4:경마공원",
+      "name": "경마공원",
+      "sourceName": "경마공원",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 30
+    },
+    {
+      "id": "L4:대공원",
+      "name": "대공원",
+      "sourceName": "대공원",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 31
+    },
+    {
+      "id": "L4:과천",
+      "name": "과천",
+      "sourceName": "과천",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 32
+    },
+    {
+      "id": "L4:정부과천청사",
+      "name": "정부과천청사",
+      "sourceName": "정부과천청사",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 33
+    },
+    {
+      "id": "L4:인덕원",
+      "name": "인덕원",
+      "sourceName": "인덕원",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 34
+    },
+    {
+      "id": "L4:평촌",
+      "name": "평촌",
+      "sourceName": "평촌",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 35
+    },
+    {
+      "id": "L4:범계",
+      "name": "범계",
+      "sourceName": "범계",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 36
+    },
+    {
+      "id": "L4:금정",
+      "name": "금정",
+      "sourceName": "금정",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 37
+    },
+    {
+      "id": "L4:산본",
+      "name": "산본",
+      "sourceName": "산본",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 38
+    },
+    {
+      "id": "L4:수리산",
+      "name": "수리산",
+      "sourceName": "수리산",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 39
+    },
+    {
+      "id": "L4:대야미",
+      "name": "대야미",
+      "sourceName": "대야미",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 40
+    },
+    {
+      "id": "L4:반월",
+      "name": "반월",
+      "sourceName": "반월",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 41
+    },
+    {
+      "id": "L4:상록수",
+      "name": "상록수",
+      "sourceName": "상록수",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 42
+    },
+    {
+      "id": "L4:한대앞",
+      "name": "한대앞",
+      "sourceName": "한대앞",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 43
+    },
+    {
+      "id": "L4:중앙",
+      "name": "중앙",
+      "sourceName": "중앙",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 44
+    },
+    {
+      "id": "L4:고잔",
+      "name": "고잔",
+      "sourceName": "고잔",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 45
+    },
+    {
+      "id": "L4:초지",
+      "name": "초지",
+      "sourceName": "초지",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 46
+    },
+    {
+      "id": "L4:안산",
+      "name": "안산",
+      "sourceName": "안산",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 47
+    },
+    {
+      "id": "L4:능길",
+      "name": "능길",
+      "sourceName": "능길",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 48
+    },
+    {
+      "id": "L4:정왕",
+      "name": "정왕",
+      "sourceName": "정왕",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 49
+    },
+    {
+      "id": "L4:오이도",
+      "name": "오이도",
+      "sourceName": "오이도",
+      "line": "4",
+      "lineName": "수도권 전철 4호선",
+      "operator": "코레일",
+      "index": 50
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:진접",
+      "to": "L4:오남",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:오남",
+      "to": "L4:별내별가람",
+      "distanceKm": 7.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:별내별가람",
+      "to": "L4:불암산",
+      "distanceKm": 4.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:불암산",
+      "to": "L4:상계",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:상계",
+      "to": "L4:노원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:노원",
+      "to": "L4:창동",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:창동",
+      "to": "L4:쌍문",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:쌍문",
+      "to": "L4:수유",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:수유",
+      "to": "L4:미아",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:미아",
+      "to": "L4:미아사거리",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:미아사거리",
+      "to": "L4:길음",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:길음",
+      "to": "L4:성신여대입구",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:성신여대입구",
+      "to": "L4:한성대입구",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:한성대입구",
+      "to": "L4:혜화",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:혜화",
+      "to": "L4:동대문",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:동대문",
+      "to": "L4:동대문역사문화공원",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:동대문역사문화공원",
+      "to": "L4:충무로",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:충무로",
+      "to": "L4:명동",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:명동",
+      "to": "L4:회현",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:회현",
+      "to": "L4:서울역",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:서울역",
+      "to": "L4:숙대입구",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:숙대입구",
+      "to": "L4:삼각지",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:삼각지",
+      "to": "L4:신용산",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:신용산",
+      "to": "L4:이촌",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:이촌",
+      "to": "L4:동작",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:동작",
+      "to": "L4:총신대입구",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:총신대입구",
+      "to": "L4:사당",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:사당",
+      "to": "L4:남태령",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:남태령",
+      "to": "L4:선바위",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:선바위",
+      "to": "L4:경마공원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:경마공원",
+      "to": "L4:대공원",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:대공원",
+      "to": "L4:과천",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:과천",
+      "to": "L4:정부과천청사",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:정부과천청사",
+      "to": "L4:인덕원",
+      "distanceKm": 3.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:인덕원",
+      "to": "L4:평촌",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:평촌",
+      "to": "L4:범계",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:범계",
+      "to": "L4:금정",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:금정",
+      "to": "L4:산본",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:산본",
+      "to": "L4:수리산",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:수리산",
+      "to": "L4:대야미",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:대야미",
+      "to": "L4:반월",
+      "distanceKm": 2.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:반월",
+      "to": "L4:상록수",
+      "distanceKm": 3.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:상록수",
+      "to": "L4:한대앞",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:한대앞",
+      "to": "L4:중앙",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:중앙",
+      "to": "L4:고잔",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:고잔",
+      "to": "L4:초지",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:초지",
+      "to": "L4:안산",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:안산",
+      "to": "L4:능길",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:능길",
+      "to": "L4:정왕",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "4",
+      "segment": "main",
+      "from": "L4:정왕",
+      "to": "L4:오이도",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

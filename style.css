@@ -341,20 +341,70 @@ h2 {
   line-height: 1.75;
 }
 
+.route-summary {
+  color: #60778a;
+  font-size: 0.92rem;
+  margin-bottom: 14px;
+}
+
 .route-station {
   font-weight: bold;
   color: #1b3c59;
 }
 
 .route-train {
-  color: #ff3b3b;
-  font-weight: bold;
+  color: #263746;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .route-transfer {
-  color: #ff3b3b;
-  font-weight: bold;
+  color: #263746;
+  font-weight: 600;
   margin-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.route-line-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--line-color, #60778A);
+  color: var(--line-text-color, #FFFFFF);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+.route-direction {
+  min-width: 0;
+}
+
+.fast-transfer-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 100%;
+  margin: 3px 0 8px;
+  color: #60778a;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.fast-transfer-label {
+  font-weight: 700;
+  color: #40576a;
 }
 
 .route-arrow {

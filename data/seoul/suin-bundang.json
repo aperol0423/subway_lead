@@ -1,0 +1,1619 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "seoul-metropolitan-area",
+    "name": "수도권"
+  },
+  "line": {
+    "id": "suin_bundang",
+    "name": "수인·분당선",
+    "graphType": "linear",
+    "serviceTerminals": [
+      "청량리",
+      "인천"
+    ],
+    "distanceGraphTerminals": [
+      "청량리",
+      "인천"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFiles": [
+      "국가철도공단_분당선_역간거리_20250630.csv",
+      "국가철도공단_수인선_역간거리_20250630.csv"
+    ],
+    "validation": {
+      "sourceRowCountEach": 63,
+      "twoUploadedFilesCoreRowsIdentical": true,
+      "stationCount": 63,
+      "resolvedRideEdgeCount": 62,
+      "allResolvedDistancesPositive": true,
+      "resolvedPhysicalDistanceKm": 106.5,
+      "directionalColumnComparableEdges": 60,
+      "directionalColumnMatchedEdges": 54,
+      "fullLinearEdgeCountExpected": 62,
+      "fullLinearCheckPassed": true
+    },
+    "unresolvedEdges": [],
+    "notes": [
+      "업로드된 국가철도공단 2025-06-30 '분당선' 및 '수인선' CSV는 핵심 63개 행의 역명·역간거리·후행역간거리 값이 서로 동일하며 이미 청량리~인천 수인·분당선 통합 역 목록을 담고 있음.",
+      "따라서 수원에서 두 파일을 임의 결합하지 않고, 중복 데이터임을 확인한 뒤 하나의 통합 물리 그래프로 정규화함.",
+      "확정 edge는 도착역 행의 역간거리를 우선 사용하며, 출발역 후행역간거리와의 일치 여부를 directionalColumnCheck에 보존함.",
+      "원본 병기 역명은 sourceName에 보존함.",
+      "청량리-왕십리 2.4km는 업로드된 국가철도공단 CSV의 공란을 보완하기 위해 서울연구원 공식 자료에 수록된 경원선 왕십리-청량리 구간거리(한국철도공사 자료 협조)를 사용함."
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "왕십리",
+        "to": "서울숲",
+        "destinationPreviousKm": 2.2,
+        "sourceFollowingKm": null,
+        "matched": null
+      },
+      {
+        "from": "서울숲",
+        "to": "압구정로데오",
+        "destinationPreviousKm": 1.9,
+        "sourceFollowingKm": 1.9,
+        "matched": true
+      },
+      {
+        "from": "압구정로데오",
+        "to": "강남구청",
+        "destinationPreviousKm": 1.2,
+        "sourceFollowingKm": 1.2,
+        "matched": true
+      },
+      {
+        "from": "강남구청",
+        "to": "선정릉",
+        "destinationPreviousKm": 0.7,
+        "sourceFollowingKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "선정릉",
+        "to": "선릉",
+        "destinationPreviousKm": 0.7,
+        "sourceFollowingKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "선릉",
+        "to": "한티",
+        "destinationPreviousKm": 1.1,
+        "sourceFollowingKm": 1.0,
+        "matched": false
+      },
+      {
+        "from": "한티",
+        "to": "도곡",
+        "destinationPreviousKm": 0.7,
+        "sourceFollowingKm": 1.0,
+        "matched": false
+      },
+      {
+        "from": "도곡",
+        "to": "구룡",
+        "destinationPreviousKm": 0.6,
+        "sourceFollowingKm": 0.6,
+        "matched": true
+      },
+      {
+        "from": "구룡",
+        "to": "개포동",
+        "destinationPreviousKm": 0.7,
+        "sourceFollowingKm": 0.7,
+        "matched": true
+      },
+      {
+        "from": "개포동",
+        "to": "대모산입구",
+        "destinationPreviousKm": 0.6,
+        "sourceFollowingKm": 0.6,
+        "matched": true
+      },
+      {
+        "from": "대모산입구",
+        "to": "수서",
+        "destinationPreviousKm": 3.2,
+        "sourceFollowingKm": 3.0,
+        "matched": false
+      },
+      {
+        "from": "수서",
+        "to": "복정",
+        "destinationPreviousKm": 3.2,
+        "sourceFollowingKm": 1.8,
+        "matched": false
+      },
+      {
+        "from": "복정",
+        "to": "가천대",
+        "destinationPreviousKm": 2.4,
+        "sourceFollowingKm": 2.4,
+        "matched": true
+      },
+      {
+        "from": "가천대",
+        "to": "태평",
+        "destinationPreviousKm": 1.0,
+        "sourceFollowingKm": 1.2,
+        "matched": false
+      },
+      {
+        "from": "태평",
+        "to": "모란",
+        "destinationPreviousKm": 0.9,
+        "sourceFollowingKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "모란",
+        "to": "야탑",
+        "destinationPreviousKm": 2.3,
+        "sourceFollowingKm": 2.3,
+        "matched": true
+      },
+      {
+        "from": "야탑",
+        "to": "이매",
+        "destinationPreviousKm": 1.7,
+        "sourceFollowingKm": 1.7,
+        "matched": true
+      },
+      {
+        "from": "이매",
+        "to": "서현",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "서현",
+        "to": "수내",
+        "destinationPreviousKm": 1.1,
+        "sourceFollowingKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "수내",
+        "to": "정자",
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "정자",
+        "to": "미금",
+        "destinationPreviousKm": 1.8,
+        "sourceFollowingKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "미금",
+        "to": "오리",
+        "destinationPreviousKm": 1.1,
+        "sourceFollowingKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "오리",
+        "to": "죽전",
+        "destinationPreviousKm": 1.8,
+        "sourceFollowingKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "죽전",
+        "to": "보정",
+        "destinationPreviousKm": 1.3,
+        "sourceFollowingKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "보정",
+        "to": "구성",
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "구성",
+        "to": "신갈",
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "신갈",
+        "to": "기흥",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "기흥",
+        "to": "상갈",
+        "destinationPreviousKm": 1.9,
+        "sourceFollowingKm": 1.9,
+        "matched": true
+      },
+      {
+        "from": "상갈",
+        "to": "청명",
+        "destinationPreviousKm": 2.8,
+        "sourceFollowingKm": 2.8,
+        "matched": true
+      },
+      {
+        "from": "청명",
+        "to": "영통",
+        "destinationPreviousKm": 1.1,
+        "sourceFollowingKm": 1.1,
+        "matched": true
+      },
+      {
+        "from": "영통",
+        "to": "망포",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "망포",
+        "to": "매탄권선",
+        "destinationPreviousKm": 1.8,
+        "sourceFollowingKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "매탄권선",
+        "to": "수원시청",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "수원시청",
+        "to": "매교",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "매교",
+        "to": "수원",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "수원",
+        "to": "고색",
+        "destinationPreviousKm": 2.7,
+        "sourceFollowingKm": 2.7,
+        "matched": true
+      },
+      {
+        "from": "고색",
+        "to": "오목천",
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "오목천",
+        "to": "어천",
+        "destinationPreviousKm": 5.1,
+        "sourceFollowingKm": 5.1,
+        "matched": true
+      },
+      {
+        "from": "어천",
+        "to": "야목",
+        "destinationPreviousKm": 2.6,
+        "sourceFollowingKm": 2.6,
+        "matched": true
+      },
+      {
+        "from": "야목",
+        "to": "사리",
+        "destinationPreviousKm": 4.7,
+        "sourceFollowingKm": 4.7,
+        "matched": true
+      },
+      {
+        "from": "사리",
+        "to": "한대앞",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 2.2,
+        "matched": false
+      },
+      {
+        "from": "한대앞",
+        "to": "중앙",
+        "destinationPreviousKm": 1.6,
+        "sourceFollowingKm": 1.6,
+        "matched": true
+      },
+      {
+        "from": "중앙",
+        "to": "고잔",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "고잔",
+        "to": "초지",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "초지",
+        "to": "안산",
+        "destinationPreviousKm": 1.8,
+        "sourceFollowingKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "안산",
+        "to": "신길온천",
+        "destinationPreviousKm": 2.2,
+        "sourceFollowingKm": 2.2,
+        "matched": true
+      },
+      {
+        "from": "신길온천",
+        "to": "정왕",
+        "destinationPreviousKm": 2.9,
+        "sourceFollowingKm": 2.9,
+        "matched": true
+      },
+      {
+        "from": "정왕",
+        "to": "오이도",
+        "destinationPreviousKm": 1.4,
+        "sourceFollowingKm": 1.4,
+        "matched": true
+      },
+      {
+        "from": "오이도",
+        "to": "달월",
+        "destinationPreviousKm": 2.1,
+        "sourceFollowingKm": 2.1,
+        "matched": true
+      },
+      {
+        "from": "달월",
+        "to": "월곶",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "월곶",
+        "to": "소래포구",
+        "destinationPreviousKm": 1.3,
+        "sourceFollowingKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "소래포구",
+        "to": "인천논현",
+        "destinationPreviousKm": 1.0,
+        "sourceFollowingKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "인천논현",
+        "to": "호구포",
+        "destinationPreviousKm": 1.3,
+        "sourceFollowingKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "호구포",
+        "to": "남동인더스파크",
+        "destinationPreviousKm": 1.3,
+        "sourceFollowingKm": 1.3,
+        "matched": true
+      },
+      {
+        "from": "남동인더스파크",
+        "to": "원인재",
+        "destinationPreviousKm": 1.0,
+        "sourceFollowingKm": 1.0,
+        "matched": true
+      },
+      {
+        "from": "원인재",
+        "to": "연수",
+        "destinationPreviousKm": 0.9,
+        "sourceFollowingKm": 0.9,
+        "matched": true
+      },
+      {
+        "from": "연수",
+        "to": "송도",
+        "destinationPreviousKm": 2.7,
+        "sourceFollowingKm": 2.7,
+        "matched": true
+      },
+      {
+        "from": "송도",
+        "to": "인하대",
+        "destinationPreviousKm": 2.4,
+        "sourceFollowingKm": 2.4,
+        "matched": true
+      },
+      {
+        "from": "인하대",
+        "to": "숭의",
+        "destinationPreviousKm": 1.8,
+        "sourceFollowingKm": 1.8,
+        "matched": true
+      },
+      {
+        "from": "숭의",
+        "to": "신포",
+        "destinationPreviousKm": 1.5,
+        "sourceFollowingKm": 1.5,
+        "matched": true
+      },
+      {
+        "from": "신포",
+        "to": "인천",
+        "destinationPreviousKm": 1.1,
+        "sourceFollowingKm": 1.1,
+        "matched": true
+      }
+    ],
+    "supplementalSources": [
+      {
+        "edge": "청량리-왕십리",
+        "distanceKm": 2.4,
+        "source": "서울연구원 공식 연구자료 내 경원선 왕십리-청량리 구간거리 표",
+        "sourceBasis": "한국철도공사 자료 협조",
+        "usage": "국가철도공단 수인선/분당선 CSV에서 공란이었던 청량리-왕십리 거리 보강"
+      }
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "인천 방면",
+    "towardLowerIndex": "왕십리/청량리 방면",
+    "important": "청량리-왕십리 2.4km 보강 완료. 현재 청량리~인천 전 구간이 거리 그래프로 연결됨."
+  },
+  "stations": [
+    {
+      "id": "SB:청량리",
+      "name": "청량리",
+      "sourceName": "청량리",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 0
+    },
+    {
+      "id": "SB:왕십리",
+      "name": "왕십리",
+      "sourceName": "왕십리",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 1
+    },
+    {
+      "id": "SB:서울숲",
+      "name": "서울숲",
+      "sourceName": "서울숲",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 2
+    },
+    {
+      "id": "SB:압구정로데오",
+      "name": "압구정로데오",
+      "sourceName": "압구정로데오",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 3
+    },
+    {
+      "id": "SB:강남구청",
+      "name": "강남구청",
+      "sourceName": "강남구청",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 4
+    },
+    {
+      "id": "SB:선정릉",
+      "name": "선정릉",
+      "sourceName": "선정릉(한국과학창의재단)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 5
+    },
+    {
+      "id": "SB:선릉",
+      "name": "선릉",
+      "sourceName": "선릉",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 6
+    },
+    {
+      "id": "SB:한티",
+      "name": "한티",
+      "sourceName": "한티",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 7
+    },
+    {
+      "id": "SB:도곡",
+      "name": "도곡",
+      "sourceName": "도곡",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 8
+    },
+    {
+      "id": "SB:구룡",
+      "name": "구룡",
+      "sourceName": "구룡",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 9
+    },
+    {
+      "id": "SB:개포동",
+      "name": "개포동",
+      "sourceName": "개포동",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 10
+    },
+    {
+      "id": "SB:대모산입구",
+      "name": "대모산입구",
+      "sourceName": "대모산입구",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 11
+    },
+    {
+      "id": "SB:수서",
+      "name": "수서",
+      "sourceName": "수서",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 12
+    },
+    {
+      "id": "SB:복정",
+      "name": "복정",
+      "sourceName": "복정(동서울대학)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 13
+    },
+    {
+      "id": "SB:가천대",
+      "name": "가천대",
+      "sourceName": "가천대",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 14
+    },
+    {
+      "id": "SB:태평",
+      "name": "태평",
+      "sourceName": "태평",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 15
+    },
+    {
+      "id": "SB:모란",
+      "name": "모란",
+      "sourceName": "모란",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 16
+    },
+    {
+      "id": "SB:야탑",
+      "name": "야탑",
+      "sourceName": "야탑",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 17
+    },
+    {
+      "id": "SB:이매",
+      "name": "이매",
+      "sourceName": "이매(성남아트센터)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 18
+    },
+    {
+      "id": "SB:서현",
+      "name": "서현",
+      "sourceName": "서현",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 19
+    },
+    {
+      "id": "SB:수내",
+      "name": "수내",
+      "sourceName": "수내(한국잡월드)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 20
+    },
+    {
+      "id": "SB:정자",
+      "name": "정자",
+      "sourceName": "정자",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 21
+    },
+    {
+      "id": "SB:미금",
+      "name": "미금",
+      "sourceName": "미금(분당서울대병원)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 22
+    },
+    {
+      "id": "SB:오리",
+      "name": "오리",
+      "sourceName": "오리",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 23
+    },
+    {
+      "id": "SB:죽전",
+      "name": "죽전",
+      "sourceName": "죽전(단국대)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 24
+    },
+    {
+      "id": "SB:보정",
+      "name": "보정",
+      "sourceName": "보정",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 25
+    },
+    {
+      "id": "SB:구성",
+      "name": "구성",
+      "sourceName": "구성",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 26
+    },
+    {
+      "id": "SB:신갈",
+      "name": "신갈",
+      "sourceName": "신갈",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 27
+    },
+    {
+      "id": "SB:기흥",
+      "name": "기흥",
+      "sourceName": "기흥(백남준아트센터)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 28
+    },
+    {
+      "id": "SB:상갈",
+      "name": "상갈",
+      "sourceName": "상갈(루터대학교)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 29
+    },
+    {
+      "id": "SB:청명",
+      "name": "청명",
+      "sourceName": "청명",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 30
+    },
+    {
+      "id": "SB:영통",
+      "name": "영통",
+      "sourceName": "영통(경희대)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 31
+    },
+    {
+      "id": "SB:망포",
+      "name": "망포",
+      "sourceName": "망포",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 32
+    },
+    {
+      "id": "SB:매탄권선",
+      "name": "매탄권선",
+      "sourceName": "매탄권선",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 33
+    },
+    {
+      "id": "SB:수원시청",
+      "name": "수원시청",
+      "sourceName": "수원시청(경기도문화의전당)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 34
+    },
+    {
+      "id": "SB:매교",
+      "name": "매교",
+      "sourceName": "매교",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 35
+    },
+    {
+      "id": "SB:수원",
+      "name": "수원",
+      "sourceName": "수원",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 36
+    },
+    {
+      "id": "SB:고색",
+      "name": "고색",
+      "sourceName": "고색",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 37
+    },
+    {
+      "id": "SB:오목천",
+      "name": "오목천",
+      "sourceName": "오목천",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 38
+    },
+    {
+      "id": "SB:어천",
+      "name": "어천",
+      "sourceName": "어천",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 39
+    },
+    {
+      "id": "SB:야목",
+      "name": "야목",
+      "sourceName": "야목",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 40
+    },
+    {
+      "id": "SB:사리",
+      "name": "사리",
+      "sourceName": "사리",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 41
+    },
+    {
+      "id": "SB:한대앞",
+      "name": "한대앞",
+      "sourceName": "한대앞",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 42
+    },
+    {
+      "id": "SB:중앙",
+      "name": "중앙",
+      "sourceName": "중앙",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 43
+    },
+    {
+      "id": "SB:고잔",
+      "name": "고잔",
+      "sourceName": "고잔",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 44
+    },
+    {
+      "id": "SB:초지",
+      "name": "초지",
+      "sourceName": "초지",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 45
+    },
+    {
+      "id": "SB:안산",
+      "name": "안산",
+      "sourceName": "안산",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 46
+    },
+    {
+      "id": "SB:신길온천",
+      "name": "신길온천",
+      "sourceName": "신길온천",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 47
+    },
+    {
+      "id": "SB:정왕",
+      "name": "정왕",
+      "sourceName": "정왕",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 48
+    },
+    {
+      "id": "SB:오이도",
+      "name": "오이도",
+      "sourceName": "오이도",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 49
+    },
+    {
+      "id": "SB:달월",
+      "name": "달월",
+      "sourceName": "달월",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 50
+    },
+    {
+      "id": "SB:월곶",
+      "name": "월곶",
+      "sourceName": "월곶",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 51
+    },
+    {
+      "id": "SB:소래포구",
+      "name": "소래포구",
+      "sourceName": "소래포구",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 52
+    },
+    {
+      "id": "SB:인천논현",
+      "name": "인천논현",
+      "sourceName": "인천논현",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 53
+    },
+    {
+      "id": "SB:호구포",
+      "name": "호구포",
+      "sourceName": "호구포",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 54
+    },
+    {
+      "id": "SB:남동인더스파크",
+      "name": "남동인더스파크",
+      "sourceName": "남동인더스파크",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 55
+    },
+    {
+      "id": "SB:원인재",
+      "name": "원인재",
+      "sourceName": "원인재",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 56
+    },
+    {
+      "id": "SB:연수",
+      "name": "연수",
+      "sourceName": "연수",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 57
+    },
+    {
+      "id": "SB:송도",
+      "name": "송도",
+      "sourceName": "송도",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 58
+    },
+    {
+      "id": "SB:인하대",
+      "name": "인하대",
+      "sourceName": "인하대",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 59
+    },
+    {
+      "id": "SB:숭의",
+      "name": "숭의",
+      "sourceName": "숭의(인하대병원)",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 60
+    },
+    {
+      "id": "SB:신포",
+      "name": "신포",
+      "sourceName": "신포",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 61
+    },
+    {
+      "id": "SB:인천",
+      "name": "인천",
+      "sourceName": "인천",
+      "line": "suin_bundang",
+      "lineName": "수인·분당선",
+      "operator": "코레일",
+      "index": 62
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "gyeongwon_shared_extension",
+      "from": "SB:청량리",
+      "to": "SB:왕십리",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:왕십리",
+      "to": "SB:서울숲",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:서울숲",
+      "to": "SB:압구정로데오",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:압구정로데오",
+      "to": "SB:강남구청",
+      "distanceKm": 1.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:강남구청",
+      "to": "SB:선정릉",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:선정릉",
+      "to": "SB:선릉",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:선릉",
+      "to": "SB:한티",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:한티",
+      "to": "SB:도곡",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:도곡",
+      "to": "SB:구룡",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:구룡",
+      "to": "SB:개포동",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:개포동",
+      "to": "SB:대모산입구",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:대모산입구",
+      "to": "SB:수서",
+      "distanceKm": 3.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:수서",
+      "to": "SB:복정",
+      "distanceKm": 3.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:복정",
+      "to": "SB:가천대",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:가천대",
+      "to": "SB:태평",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:태평",
+      "to": "SB:모란",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:모란",
+      "to": "SB:야탑",
+      "distanceKm": 2.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:야탑",
+      "to": "SB:이매",
+      "distanceKm": 1.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:이매",
+      "to": "SB:서현",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:서현",
+      "to": "SB:수내",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:수내",
+      "to": "SB:정자",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:정자",
+      "to": "SB:미금",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:미금",
+      "to": "SB:오리",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:오리",
+      "to": "SB:죽전",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:죽전",
+      "to": "SB:보정",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:보정",
+      "to": "SB:구성",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:구성",
+      "to": "SB:신갈",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:신갈",
+      "to": "SB:기흥",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:기흥",
+      "to": "SB:상갈",
+      "distanceKm": 1.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:상갈",
+      "to": "SB:청명",
+      "distanceKm": 2.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:청명",
+      "to": "SB:영통",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:영통",
+      "to": "SB:망포",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:망포",
+      "to": "SB:매탄권선",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:매탄권선",
+      "to": "SB:수원시청",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:수원시청",
+      "to": "SB:매교",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:매교",
+      "to": "SB:수원",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:수원",
+      "to": "SB:고색",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:고색",
+      "to": "SB:오목천",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:오목천",
+      "to": "SB:어천",
+      "distanceKm": 5.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:어천",
+      "to": "SB:야목",
+      "distanceKm": 2.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:야목",
+      "to": "SB:사리",
+      "distanceKm": 4.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:사리",
+      "to": "SB:한대앞",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:한대앞",
+      "to": "SB:중앙",
+      "distanceKm": 1.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:중앙",
+      "to": "SB:고잔",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:고잔",
+      "to": "SB:초지",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:초지",
+      "to": "SB:안산",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:안산",
+      "to": "SB:신길온천",
+      "distanceKm": 2.2,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:신길온천",
+      "to": "SB:정왕",
+      "distanceKm": 2.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:정왕",
+      "to": "SB:오이도",
+      "distanceKm": 1.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:오이도",
+      "to": "SB:달월",
+      "distanceKm": 2.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:달월",
+      "to": "SB:월곶",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:월곶",
+      "to": "SB:소래포구",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:소래포구",
+      "to": "SB:인천논현",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:인천논현",
+      "to": "SB:호구포",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:호구포",
+      "to": "SB:남동인더스파크",
+      "distanceKm": 1.3,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:남동인더스파크",
+      "to": "SB:원인재",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:원인재",
+      "to": "SB:연수",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:연수",
+      "to": "SB:송도",
+      "distanceKm": 2.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:송도",
+      "to": "SB:인하대",
+      "distanceKm": 2.4,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:인하대",
+      "to": "SB:숭의",
+      "distanceKm": 1.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:숭의",
+      "to": "SB:신포",
+      "distanceKm": 1.5,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "suin_bundang",
+      "segment": "main",
+      "from": "SB:신포",
+      "to": "SB:인천",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}

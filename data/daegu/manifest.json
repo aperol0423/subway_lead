@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "region": { "id": "daegu", "name": "대구광역시" },
+  "files": [
+    { "file": "line1.json", "lineId": "1", "internalLineId": "1" },
+    { "file": "line2.json", "lineId": "2", "internalLineId": "2" },
+    { "file": "line3.json", "lineId": "3", "internalLineId": "3" }
+  ],
+  "displayStationNames": {
+    "DG1:반월당1": "반월당",
+    "DG2:반월당2": "반월당",
+    "DG1:명덕1": "명덕",
+    "DG3:명덕3": "명덕",
+    "DG2:청라언덕2": "청라언덕",
+    "DG3:청라언덕3": "청라언덕"
+  },
+  "transferComplexes": [
+    { "name": "반월당", "members": [{ "line": "1", "station": "반월당1" }, { "line": "2", "station": "반월당2" }] },
+    { "name": "명덕", "members": [{ "line": "1", "station": "명덕1" }, { "line": "3", "station": "명덕3" }] },
+    { "name": "청라언덕", "members": [{ "line": "2", "station": "청라언덕2" }, { "line": "3", "station": "청라언덕3" }] }
+  ]
+}

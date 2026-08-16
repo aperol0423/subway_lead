@@ -1,0 +1,827 @@
+{
+  "schemaVersion": "1.0",
+  "region": {
+    "id": "daegu",
+    "name": "대구",
+    "operator": "대구교통공사"
+  },
+  "line": {
+    "id": "3",
+    "name": "대구 도시철도 3호선",
+    "graphType": "linear",
+    "terminals": [
+      "칠곡경대병원",
+      "용지"
+    ]
+  },
+  "dataQuality": {
+    "primarySourceFile": "대구교통공사_3호선 역 구간정보_20251231.csv",
+    "sourceType": "대구교통공사 공식 역 구간정보",
+    "validation": {
+      "sourceRowCount": 32,
+      "passengerStationCount": 30,
+      "excludedNonPassengerRowCount": 2,
+      "rideEdgeCount": 29,
+      "expectedLinearEdgeCount": 29,
+      "linearCheckPassed": true,
+      "allDistancesPositive": true,
+      "directionalColumnComparableEdges": 29,
+      "directionalColumnMatchedEdges": 29,
+      "directionalColumnAllMatched": true,
+      "totalStationToStationDistanceKm": 23.1
+    },
+    "excludedNonPassengerRows": [
+      {
+        "name": "칠곡기지",
+        "stationCode": "300",
+        "stationType": "차량기지"
+      },
+      {
+        "name": "범물기지",
+        "stationCode": "350",
+        "stationType": "차량기지"
+      }
+    ],
+    "directionalColumnCheck": [
+      {
+        "from": "칠곡경대병원",
+        "to": "학정",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "학정",
+        "to": "팔거",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "팔거",
+        "to": "동천",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "동천",
+        "to": "칠곡운암",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "칠곡운암",
+        "to": "구암",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "구암",
+        "to": "태전",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "태전",
+        "to": "매천",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "매천",
+        "to": "매천시장",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "매천시장",
+        "to": "팔달",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "팔달",
+        "to": "공단",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "공단",
+        "to": "만평",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "만평",
+        "to": "팔달시장",
+        "sourceDownKm": 0.6,
+        "nextStationUpKm": 0.6,
+        "matched": true,
+        "distanceKmUsed": 0.6
+      },
+      {
+        "from": "팔달시장",
+        "to": "원대",
+        "sourceDownKm": 0.6,
+        "nextStationUpKm": 0.6,
+        "matched": true,
+        "distanceKmUsed": 0.6
+      },
+      {
+        "from": "원대",
+        "to": "북구청",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "북구청",
+        "to": "달성공원",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "달성공원",
+        "to": "서문시장",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "서문시장",
+        "to": "청라언덕3",
+        "sourceDownKm": 0.6,
+        "nextStationUpKm": 0.6,
+        "matched": true,
+        "distanceKmUsed": 0.6
+      },
+      {
+        "from": "청라언덕3",
+        "to": "남산",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "남산",
+        "to": "명덕3",
+        "sourceDownKm": 0.6,
+        "nextStationUpKm": 0.6,
+        "matched": true,
+        "distanceKmUsed": 0.6
+      },
+      {
+        "from": "명덕3",
+        "to": "건들바위",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "건들바위",
+        "to": "대봉교",
+        "sourceDownKm": 0.6,
+        "nextStationUpKm": 0.6,
+        "matched": true,
+        "distanceKmUsed": 0.6
+      },
+      {
+        "from": "대봉교",
+        "to": "수성시장",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "수성시장",
+        "to": "수성구민운동장",
+        "sourceDownKm": 1.0,
+        "nextStationUpKm": 1.0,
+        "matched": true,
+        "distanceKmUsed": 1.0
+      },
+      {
+        "from": "수성구민운동장",
+        "to": "어린이세상",
+        "sourceDownKm": 0.8,
+        "nextStationUpKm": 0.8,
+        "matched": true,
+        "distanceKmUsed": 0.8
+      },
+      {
+        "from": "어린이세상",
+        "to": "황금",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      },
+      {
+        "from": "황금",
+        "to": "수성못",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "수성못",
+        "to": "지산",
+        "sourceDownKm": 1.1,
+        "nextStationUpKm": 1.1,
+        "matched": true,
+        "distanceKmUsed": 1.1
+      },
+      {
+        "from": "지산",
+        "to": "범물",
+        "sourceDownKm": 0.9,
+        "nextStationUpKm": 0.9,
+        "matched": true,
+        "distanceKmUsed": 0.9
+      },
+      {
+        "from": "범물",
+        "to": "용지",
+        "sourceDownKm": 0.7,
+        "nextStationUpKm": 0.7,
+        "matched": true,
+        "distanceKmUsed": 0.7
+      }
+    ],
+    "notes": [
+      "업로드된 대구교통공사 2025-12-31 역 구간정보 CSV를 기준으로 생성함.",
+      "역종류에 '기지'가 포함된 행은 여객역이 아니므로 stations 및 rideEdges에서 제외함.",
+      "인접 구간은 현재 역의 하행키로와 다음 여객역의 상행키로를 교차검증함.",
+      "거리값은 현재 역의 하행키로를 우선 사용하고, 없을 경우 다음 역의 상행키로를 사용함.",
+      "원본 역코드와 역종류는 station metadata에 보존함."
+    ]
+  },
+  "routingNotes": {
+    "towardHigherIndex": "용지 방면",
+    "towardLowerIndex": "칠곡경대병원 방면"
+  },
+  "stations": [
+    {
+      "id": "DG3:칠곡경대병원",
+      "name": "칠곡경대병원",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "312",
+      "stationType": "일반역",
+      "index": 0
+    },
+    {
+      "id": "DG3:학정",
+      "name": "학정",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "313",
+      "stationType": "일반역",
+      "index": 1
+    },
+    {
+      "id": "DG3:팔거",
+      "name": "팔거",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "314",
+      "stationType": "일반역",
+      "index": 2
+    },
+    {
+      "id": "DG3:동천",
+      "name": "동천",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "315",
+      "stationType": "일반역",
+      "index": 3
+    },
+    {
+      "id": "DG3:칠곡운암",
+      "name": "칠곡운암",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "316",
+      "stationType": "일반역",
+      "index": 4
+    },
+    {
+      "id": "DG3:구암",
+      "name": "구암",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "317",
+      "stationType": "일반역",
+      "index": 5
+    },
+    {
+      "id": "DG3:태전",
+      "name": "태전",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "318",
+      "stationType": "일반역",
+      "index": 6
+    },
+    {
+      "id": "DG3:매천",
+      "name": "매천",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "319",
+      "stationType": "일반역",
+      "index": 7
+    },
+    {
+      "id": "DG3:매천시장",
+      "name": "매천시장",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "320",
+      "stationType": "일반역",
+      "index": 8
+    },
+    {
+      "id": "DG3:팔달",
+      "name": "팔달",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "321",
+      "stationType": "일반역",
+      "index": 9
+    },
+    {
+      "id": "DG3:공단",
+      "name": "공단",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "322",
+      "stationType": "일반역",
+      "index": 10
+    },
+    {
+      "id": "DG3:만평",
+      "name": "만평",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "323",
+      "stationType": "일반역",
+      "index": 11
+    },
+    {
+      "id": "DG3:팔달시장",
+      "name": "팔달시장",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "324",
+      "stationType": "일반역",
+      "index": 12
+    },
+    {
+      "id": "DG3:원대",
+      "name": "원대",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "325",
+      "stationType": "일반역",
+      "index": 13
+    },
+    {
+      "id": "DG3:북구청",
+      "name": "북구청",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "326",
+      "stationType": "일반역",
+      "index": 14
+    },
+    {
+      "id": "DG3:달성공원",
+      "name": "달성공원",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "327",
+      "stationType": "일반역",
+      "index": 15
+    },
+    {
+      "id": "DG3:서문시장",
+      "name": "서문시장",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "328",
+      "stationType": "일반역",
+      "index": 16
+    },
+    {
+      "id": "DG3:청라언덕3",
+      "name": "청라언덕3",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "329",
+      "stationType": "일반역",
+      "index": 17
+    },
+    {
+      "id": "DG3:남산",
+      "name": "남산",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "330",
+      "stationType": "일반역",
+      "index": 18
+    },
+    {
+      "id": "DG3:명덕3",
+      "name": "명덕3",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "331",
+      "stationType": "일반역",
+      "index": 19
+    },
+    {
+      "id": "DG3:건들바위",
+      "name": "건들바위",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "332",
+      "stationType": "일반역",
+      "index": 20
+    },
+    {
+      "id": "DG3:대봉교",
+      "name": "대봉교",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "333",
+      "stationType": "일반역",
+      "index": 21
+    },
+    {
+      "id": "DG3:수성시장",
+      "name": "수성시장",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "334",
+      "stationType": "일반역",
+      "index": 22
+    },
+    {
+      "id": "DG3:수성구민운동장",
+      "name": "수성구민운동장",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "335",
+      "stationType": "일반역",
+      "index": 23
+    },
+    {
+      "id": "DG3:어린이세상",
+      "name": "어린이세상",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "336",
+      "stationType": "일반역",
+      "index": 24
+    },
+    {
+      "id": "DG3:황금",
+      "name": "황금",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "337",
+      "stationType": "일반역",
+      "index": 25
+    },
+    {
+      "id": "DG3:수성못",
+      "name": "수성못",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "338",
+      "stationType": "일반역",
+      "index": 26
+    },
+    {
+      "id": "DG3:지산",
+      "name": "지산",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "339",
+      "stationType": "일반역",
+      "index": 27
+    },
+    {
+      "id": "DG3:범물",
+      "name": "범물",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "340",
+      "stationType": "일반역",
+      "index": 28
+    },
+    {
+      "id": "DG3:용지",
+      "name": "용지",
+      "line": "3",
+      "lineName": "대구 도시철도 3호선",
+      "stationCode": "341",
+      "stationType": "일반역",
+      "index": 29
+    }
+  ],
+  "rideEdges": [
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:칠곡경대병원",
+      "to": "DG3:학정",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:학정",
+      "to": "DG3:팔거",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:팔거",
+      "to": "DG3:동천",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:동천",
+      "to": "DG3:칠곡운암",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:칠곡운암",
+      "to": "DG3:구암",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:구암",
+      "to": "DG3:태전",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:태전",
+      "to": "DG3:매천",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:매천",
+      "to": "DG3:매천시장",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:매천시장",
+      "to": "DG3:팔달",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:팔달",
+      "to": "DG3:공단",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:공단",
+      "to": "DG3:만평",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:만평",
+      "to": "DG3:팔달시장",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:팔달시장",
+      "to": "DG3:원대",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:원대",
+      "to": "DG3:북구청",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:북구청",
+      "to": "DG3:달성공원",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:달성공원",
+      "to": "DG3:서문시장",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:서문시장",
+      "to": "DG3:청라언덕3",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:청라언덕3",
+      "to": "DG3:남산",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:남산",
+      "to": "DG3:명덕3",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:명덕3",
+      "to": "DG3:건들바위",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:건들바위",
+      "to": "DG3:대봉교",
+      "distanceKm": 0.6,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:대봉교",
+      "to": "DG3:수성시장",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:수성시장",
+      "to": "DG3:수성구민운동장",
+      "distanceKm": 1.0,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:수성구민운동장",
+      "to": "DG3:어린이세상",
+      "distanceKm": 0.8,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:어린이세상",
+      "to": "DG3:황금",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:황금",
+      "to": "DG3:수성못",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:수성못",
+      "to": "DG3:지산",
+      "distanceKm": 1.1,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:지산",
+      "to": "DG3:범물",
+      "distanceKm": 0.9,
+      "bidirectional": true
+    },
+    {
+      "type": "ride",
+      "line": "3",
+      "segment": "main",
+      "from": "DG3:범물",
+      "to": "DG3:용지",
+      "distanceKm": 0.7,
+      "bidirectional": true
+    }
+  ],
+  "transferEdges": []
+}
